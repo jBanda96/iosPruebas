@@ -120,6 +120,26 @@
                                             <segue destination="4Kp-KC-tQt" kind="show" id="xOG-hf-c59"/>
                                         </connections>
                                     </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" textLabel="BNX-Ce-JjR" style="IBUITableViewCellStyleDefault" id="Rkz-ze-yVS">
+                                        <rect key="frame" x="0.0" y="220" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rkz-ze-yVS" id="gdV-Y2-lOL">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Capturing photos and videos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="BNX-Ce-JjR">
+                                                    <rect key="frame" x="16" y="0.0" width="343" height="43.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="k0o-2A-1lg" kind="show" id="Ha8-N9-OLQ"/>
+                                        </connections>
+                                    </tableViewCell>
                                 </cells>
                             </tableViewSection>
                         </sections>
@@ -156,7 +176,7 @@
                 <viewControllerPlaceholder storyboardName="ScrollView" id="BWc-xN-iAq" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z48-H7-UPp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-170" y="-895"/>
+            <point key="canvasLocation" x="-158" y="-895"/>
         </scene>
         <!--TableView-->
         <scene sceneID="idG-ve-aQM">
@@ -164,7 +184,7 @@
                 <viewControllerPlaceholder storyboardName="TableView" id="3fr-oe-hLm" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fKt-WC-Hmp" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-168" y="-829"/>
+            <point key="canvasLocation" x="-160" y="-830"/>
         </scene>
         <!--CustomView-->
         <scene sceneID="nEs-1s-3Q0">
@@ -172,7 +192,7 @@
                 <viewControllerPlaceholder storyboardName="CustomView" id="C7u-uQ-8Jv" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBy-bD-RkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-158" y="-741"/>
+            <point key="canvasLocation" x="-149" y="-740"/>
         </scene>
         <!--Segues-->
         <scene sceneID="dsN-Gd-vfI">
@@ -180,7 +200,7 @@
                 <viewControllerPlaceholder storyboardName="Segues" id="dmi-e9-6hr" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="wo9-ie-YeX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-186" y="-659"/>
+            <point key="canvasLocation" x="-174" y="-660"/>
         </scene>
         <!--Multimedia-->
         <scene sceneID="9Xw-3R-1fF">
@@ -188,7 +208,15 @@
                 <viewControllerPlaceholder storyboardName="Multimedia" id="4Kp-KC-tQt" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="flt-3V-KU4" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-163" y="-581"/>
+            <point key="canvasLocation" x="-155" y="-581"/>
+        </scene>
+        <!--PhotosAndVideos-->
+        <scene sceneID="hLP-Rc-dZf">
+            <objects>
+                <viewControllerPlaceholder storyboardName="PhotosAndVideos" id="k0o-2A-1lg" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1Vn-LC-TlQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-123" y="-512"/>
         </scene>
     </scenes>
 </document>

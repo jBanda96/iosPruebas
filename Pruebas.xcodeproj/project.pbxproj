@@ -25,6 +25,8 @@
 		2AA4C9BA209975FA00E004CD /* Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4C9B9209975FA00E004CD /* Song.mp3 */; };
 		2AD1108A209A2AA3002F4B3C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD11089209A2AA3002F4B3C /* VideoViewController.swift */; };
 		2AD1108D209A300C002F4B3C /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2AD1108C209A2ED1002F4B3C /* Video.mp4 */; };
+		2AD11090209A3463002F4B3C /* PhotosAndVideos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD1108F209A3463002F4B3C /* PhotosAndVideos.storyboard */; };
+		2AD11092209A3528002F4B3C /* CapturePhotosAndVideosViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD11091209A3528002F4B3C /* CapturePhotosAndVideosViewController.swift */; };
 		2ADA09DE2099398600FDB60F /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA09DD2099398600FDB60F /* BlueViewController.swift */; };
 		2ADA09E02099399100FDB60F /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA09DF2099399100FDB60F /* RedViewController.swift */; };
 		2ADA09E220993A0100FDB60F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA09E120993A0100FDB60F /* FirstViewController.swift */; };
@@ -52,6 +54,8 @@
 		2AA4C9B9209975FA00E004CD /* Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Song.mp3; sourceTree = "<group>"; };
 		2AD11089209A2AA3002F4B3C /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		2AD1108C209A2ED1002F4B3C /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video.mp4; sourceTree = "<group>"; };
+		2AD1108F209A3463002F4B3C /* PhotosAndVideos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotosAndVideos.storyboard; sourceTree = "<group>"; };
+		2AD11091209A3528002F4B3C /* CapturePhotosAndVideosViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CapturePhotosAndVideosViewController.swift; sourceTree = "<group>"; };
 		2ADA09DD2099398600FDB60F /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		2ADA09DF2099399100FDB60F /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		2ADA09E120993A0100FDB60F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -114,6 +118,7 @@
 				2A56D8512098E83D001A1352 /* Animations and Graphics */,
 				2ADA09DC2099396D00FDB60F /* Segues */,
 				2AA4C9B4209971F800E004CD /* Multimedia */,
+				2AD1108E209A3440002F4B3C /* Capturing Photos and Videos */,
 				2A3A094020956F6A0095F163 /* Assets.xcassets */,
 				2A3A094220956F6A0095F163 /* LaunchScreen.storyboard */,
 				2A3A094520956F6A0095F163 /* Info.plist */,
@@ -141,6 +146,15 @@
 				2AD11089209A2AA3002F4B3C /* VideoViewController.swift */,
 			);
 			path = Multimedia;
+			sourceTree = "<group>";
+		};
+		2AD1108E209A3440002F4B3C /* Capturing Photos and Videos */ = {
+			isa = PBXGroup;
+			children = (
+				2AD1108F209A3463002F4B3C /* PhotosAndVideos.storyboard */,
+				2AD11091209A3528002F4B3C /* CapturePhotosAndVideosViewController.swift */,
+			);
+			path = "Capturing Photos and Videos";
 			sourceTree = "<group>";
 		};
 		2ADA09DC2099396D00FDB60F /* Segues */ = {
@@ -215,6 +229,7 @@
 			files = (
 				2AD1108D209A300C002F4B3C /* Video.mp4 in Resources */,
 				2A3A094420956F6A0095F163 /* LaunchScreen.storyboard in Resources */,
+				2AD11090209A3463002F4B3C /* PhotosAndVideos.storyboard in Resources */,
 				2A3A094120956F6A0095F163 /* Assets.xcassets in Resources */,
 				2AA4C9B32099718500E004CD /* Segues.storyboard in Resources */,
 				2AA4C9AF209970FF00E004CD /* TableView.storyboard in Resources */,
@@ -244,6 +259,7 @@
 				2A3A093A20956F690095F163 /* AppDelegate.swift in Sources */,
 				2A56D8502098E836001A1352 /* AnimationsViewController.swift in Sources */,
 				2ADA09E520993C7600FDB60F /* CustomSegue.swift in Sources */,
+				2AD11092209A3528002F4B3C /* CapturePhotosAndVideosViewController.swift in Sources */,
 				2ADA09DE2099398600FDB60F /* BlueViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
