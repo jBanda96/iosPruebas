@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="s4z-g5-J80">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Multimedia-->
+        <scene sceneID="P2q-QP-Ey2">
+            <objects>
+                <viewController title="Multimedia" id="s4z-g5-J80" customClass="MultimediaViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="XgP-Oz-ATl">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lbo-WK-KBm">
+                                <rect key="frame" x="172.5" y="629" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <action selector="didClickOnPlayAudio:" destination="s4z-g5-J80" eventType="touchUpInside" id="1LT-0t-f89"/>
+                                </connections>
+                            </button>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eCq-54-w5l">
+                                <rect key="frame" x="0.0" y="64" width="375" height="250"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="250" id="bVx-0x-XXd"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="CZs-bk-IAr" kind="embed" identifier="showPlayerController" id="sXb-2T-6tw"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="eCq-54-w5l" firstAttribute="leading" secondItem="JHe-w7-Vcw" secondAttribute="leading" id="Gbq-Kn-woz"/>
+                            <constraint firstItem="JHe-w7-Vcw" firstAttribute="trailing" secondItem="eCq-54-w5l" secondAttribute="trailing" id="Uxc-OR-Jsw"/>
+                            <constraint firstItem="Lbo-WK-KBm" firstAttribute="centerX" secondItem="XgP-Oz-ATl" secondAttribute="centerX" id="ZDe-Ln-71z"/>
+                            <constraint firstItem="JHe-w7-Vcw" firstAttribute="bottom" secondItem="Lbo-WK-KBm" secondAttribute="bottom" constant="8" id="mtr-f5-EMm"/>
+                            <constraint firstItem="eCq-54-w5l" firstAttribute="top" secondItem="JHe-w7-Vcw" secondAttribute="top" id="qHz-cU-LbZ"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JHe-w7-Vcw"/>
+                    </view>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="playButton" destination="Lbo-WK-KBm" id="QrN-mD-up7"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dsM-S9-5EC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="292" y="156"/>
+        </scene>
+        <!--AV Player View Controller-->
+        <scene sceneID="Knt-JK-BJy">
+            <objects>
+                <avPlayerViewController videoGravity="AVLayerVideoGravityResizeAspect" id="CZs-bk-IAr" customClass="VideoViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="NuW-9C-QrY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1231" y="155"/>
+        </scene>
+    </scenes>
+</document>

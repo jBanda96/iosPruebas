@@ -16,6 +16,15 @@
 		2A3A094420956F6A0095F163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3A094220956F6A0095F163 /* LaunchScreen.storyboard */; };
 		2A56D8502098E836001A1352 /* AnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56D84F2098E836001A1352 /* AnimationsViewController.swift */; };
 		2A56D8532098E9FD001A1352 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A56D8522098E9FD001A1352 /* CustomView.swift */; };
+		2AA4C9AD2099708900E004CD /* ScrollView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4C9AC2099708900E004CD /* ScrollView.storyboard */; };
+		2AA4C9AF209970FF00E004CD /* TableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4C9AE209970FF00E004CD /* TableView.storyboard */; };
+		2AA4C9B12099714500E004CD /* CustomView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4C9B02099714500E004CD /* CustomView.storyboard */; };
+		2AA4C9B32099718500E004CD /* Segues.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4C9B22099718500E004CD /* Segues.storyboard */; };
+		2AA4C9B62099721900E004CD /* Multimedia.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4C9B52099721900E004CD /* Multimedia.storyboard */; };
+		2AA4C9B82099731700E004CD /* MultimediaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA4C9B72099731700E004CD /* MultimediaViewController.swift */; };
+		2AA4C9BA209975FA00E004CD /* Song.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2AA4C9B9209975FA00E004CD /* Song.mp3 */; };
+		2AD1108A209A2AA3002F4B3C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD11089209A2AA3002F4B3C /* VideoViewController.swift */; };
+		2AD1108D209A300C002F4B3C /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2AD1108C209A2ED1002F4B3C /* Video.mp4 */; };
 		2ADA09DE2099398600FDB60F /* BlueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA09DD2099398600FDB60F /* BlueViewController.swift */; };
 		2ADA09E02099399100FDB60F /* RedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA09DF2099399100FDB60F /* RedViewController.swift */; };
 		2ADA09E220993A0100FDB60F /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADA09E120993A0100FDB60F /* FirstViewController.swift */; };
@@ -34,6 +43,15 @@
 		2A3A094520956F6A0095F163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A56D84F2098E836001A1352 /* AnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationsViewController.swift; sourceTree = "<group>"; };
 		2A56D8522098E9FD001A1352 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		2AA4C9AC2099708900E004CD /* ScrollView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ScrollView.storyboard; sourceTree = "<group>"; };
+		2AA4C9AE209970FF00E004CD /* TableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableView.storyboard; sourceTree = "<group>"; };
+		2AA4C9B02099714500E004CD /* CustomView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomView.storyboard; sourceTree = "<group>"; };
+		2AA4C9B22099718500E004CD /* Segues.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Segues.storyboard; sourceTree = "<group>"; };
+		2AA4C9B52099721900E004CD /* Multimedia.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Multimedia.storyboard; sourceTree = "<group>"; };
+		2AA4C9B72099731700E004CD /* MultimediaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MultimediaViewController.swift; sourceTree = "<group>"; };
+		2AA4C9B9209975FA00E004CD /* Song.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Song.mp3; sourceTree = "<group>"; };
+		2AD11089209A2AA3002F4B3C /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
+		2AD1108C209A2ED1002F4B3C /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video.mp4; sourceTree = "<group>"; };
 		2ADA09DD2099398600FDB60F /* BlueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BlueViewController.swift; sourceTree = "<group>"; };
 		2ADA09DF2099399100FDB60F /* RedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RedViewController.swift; sourceTree = "<group>"; };
 		2ADA09E120993A0100FDB60F /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
@@ -56,6 +74,7 @@
 			children = (
 				2A053E74209820CB00928204 /* TableViewController.swift */,
 				2A053E78209821B100928204 /* Text.swift */,
+				2AA4C9AE209970FF00E004CD /* TableView.storyboard */,
 			);
 			path = "Working with tableViews";
 			sourceTree = "<group>";
@@ -64,6 +83,7 @@
 			isa = PBXGroup;
 			children = (
 				2A3A093B20956F690095F163 /* ViewController.swift */,
+				2AA4C9AC2099708900E004CD /* ScrollView.storyboard */,
 			);
 			path = "Working with interface builder";
 			sourceTree = "<group>";
@@ -93,6 +113,7 @@
 				2A053E762098213F00928204 /* Working with tableViews */,
 				2A56D8512098E83D001A1352 /* Animations and Graphics */,
 				2ADA09DC2099396D00FDB60F /* Segues */,
+				2AA4C9B4209971F800E004CD /* Multimedia */,
 				2A3A094020956F6A0095F163 /* Assets.xcassets */,
 				2A3A094220956F6A0095F163 /* LaunchScreen.storyboard */,
 				2A3A094520956F6A0095F163 /* Info.plist */,
@@ -105,8 +126,21 @@
 			children = (
 				2A56D84F2098E836001A1352 /* AnimationsViewController.swift */,
 				2A56D8522098E9FD001A1352 /* CustomView.swift */,
+				2AA4C9B02099714500E004CD /* CustomView.storyboard */,
 			);
 			path = "Animations and Graphics";
+			sourceTree = "<group>";
+		};
+		2AA4C9B4209971F800E004CD /* Multimedia */ = {
+			isa = PBXGroup;
+			children = (
+				2AA4C9B9209975FA00E004CD /* Song.mp3 */,
+				2AD1108C209A2ED1002F4B3C /* Video.mp4 */,
+				2AA4C9B52099721900E004CD /* Multimedia.storyboard */,
+				2AA4C9B72099731700E004CD /* MultimediaViewController.swift */,
+				2AD11089209A2AA3002F4B3C /* VideoViewController.swift */,
+			);
+			path = Multimedia;
 			sourceTree = "<group>";
 		};
 		2ADA09DC2099396D00FDB60F /* Segues */ = {
@@ -116,6 +150,7 @@
 				2ADA09DF2099399100FDB60F /* RedViewController.swift */,
 				2ADA09E120993A0100FDB60F /* FirstViewController.swift */,
 				2ADA09E420993C7600FDB60F /* CustomSegue.swift */,
+				2AA4C9B22099718500E004CD /* Segues.storyboard */,
 			);
 			path = Segues;
 			sourceTree = "<group>";
@@ -178,9 +213,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2AD1108D209A300C002F4B3C /* Video.mp4 in Resources */,
 				2A3A094420956F6A0095F163 /* LaunchScreen.storyboard in Resources */,
 				2A3A094120956F6A0095F163 /* Assets.xcassets in Resources */,
+				2AA4C9B32099718500E004CD /* Segues.storyboard in Resources */,
+				2AA4C9AF209970FF00E004CD /* TableView.storyboard in Resources */,
+				2AA4C9AD2099708900E004CD /* ScrollView.storyboard in Resources */,
+				2AA4C9BA209975FA00E004CD /* Song.mp3 in Resources */,
+				2AA4C9B12099714500E004CD /* CustomView.storyboard in Resources */,
 				2A3A093F20956F690095F163 /* Main.storyboard in Resources */,
+				2AA4C9B62099721900E004CD /* Multimedia.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -193,6 +235,8 @@
 			files = (
 				2ADA09E220993A0100FDB60F /* FirstViewController.swift in Sources */,
 				2A3A093C20956F690095F163 /* ViewController.swift in Sources */,
+				2AD1108A209A2AA3002F4B3C /* VideoViewController.swift in Sources */,
+				2AA4C9B82099731700E004CD /* MultimediaViewController.swift in Sources */,
 				2A053E75209820CB00928204 /* TableViewController.swift in Sources */,
 				2A053E79209821B100928204 /* Text.swift in Sources */,
 				2A56D8532098E9FD001A1352 /* CustomView.swift in Sources */,

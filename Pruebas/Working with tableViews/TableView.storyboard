@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M7g-0y-1SZ">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Navigation items with more than one left or right bar item" minToolsVersion="7.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Editing tableview-->
+        <scene sceneID="gks-07-hDu">
+            <objects>
+                <viewController id="M7g-0y-1SZ" customClass="TableViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ohc-Nw-uj4">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="uKn-Ye-cfC">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="autoresizingCell" textLabel="EnP-nT-CG6" rowHeight="45" style="IBUITableViewCellStyleDefault" id="d3L-31-QoN">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="45"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="d3L-31-QoN" id="VpO-xN-6rl">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="44.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" multipleTouchEnabled="YES" contentMode="left" insetsLayoutMarginsFromSafeArea="NO" text="Title" textAlignment="natural" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EnP-nT-CG6">
+                                                    <rect key="frame" x="15" y="0.0" width="345" height="44.5"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="M7g-0y-1SZ" id="vtj-A9-zn2"/>
+                                    <outlet property="delegate" destination="M7g-0y-1SZ" id="XLJ-AT-gei"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="uKn-Ye-cfC" firstAttribute="top" secondItem="Mwe-AS-wA9" secondAttribute="top" id="1oR-VN-cAV"/>
+                            <constraint firstItem="uKn-Ye-cfC" firstAttribute="leading" secondItem="Mwe-AS-wA9" secondAttribute="leading" id="Av9-ZI-49K"/>
+                            <constraint firstItem="Mwe-AS-wA9" firstAttribute="bottom" secondItem="uKn-Ye-cfC" secondAttribute="bottom" id="fba-iG-FDU"/>
+                            <constraint firstItem="Mwe-AS-wA9" firstAttribute="trailing" secondItem="uKn-Ye-cfC" secondAttribute="trailing" id="uL1-QY-Rh2"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Mwe-AS-wA9"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Editing tableview" id="fC8-L8-hMO">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="32X-wP-4HF">
+                                <connections>
+                                    <action selector="clickOnAddButton:" destination="M7g-0y-1SZ" id="p6g-8K-hqY"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="edit" id="8ZX-cc-BTo">
+                                <connections>
+                                    <action selector="clickOnEditButton:" destination="M7g-0y-1SZ" id="kRI-BB-tIU"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="tableView" destination="uKn-Ye-cfC" id="Gr6-T7-R92"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lu1-AU-Jwk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="383" y="-406"/>
+        </scene>
+    </scenes>
+</document>
