@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14109" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="PiZ-h1-tcG">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Location View Controller-->
+        <scene sceneID="NzS-tT-lvp">
+            <objects>
+                <viewController id="PiZ-h1-tcG" customClass="LocationViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="7ai-NM-RRs">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="14S-Ne-ZrS">
+                                <rect key="frame" x="0.0" y="623" width="375" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="GuP-3D-eic"/>
+                                </constraints>
+                                <items>
+                                    <barButtonItem title="Locate Me" id="qcj-nZ-1fs">
+                                        <connections>
+                                            <action selector="didClickOnLocateMe:" destination="PiZ-h1-tcG" id="cqw-iP-Kd1"/>
+                                        </connections>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="1KO-U8-nef">
+                                <rect key="frame" x="0.0" y="20" width="375" height="603"/>
+                            </mapView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l1C-vD-9Bu" firstAttribute="trailing" secondItem="1KO-U8-nef" secondAttribute="trailing" id="B2A-Cz-iuA"/>
+                            <constraint firstItem="1KO-U8-nef" firstAttribute="top" secondItem="l1C-vD-9Bu" secondAttribute="top" id="LhW-Gy-zyB"/>
+                            <constraint firstItem="14S-Ne-ZrS" firstAttribute="leading" secondItem="l1C-vD-9Bu" secondAttribute="leading" id="Ysd-J3-tta"/>
+                            <constraint firstItem="14S-Ne-ZrS" firstAttribute="top" secondItem="1KO-U8-nef" secondAttribute="bottom" id="ZRi-yH-nnP"/>
+                            <constraint firstItem="14S-Ne-ZrS" firstAttribute="bottom" secondItem="l1C-vD-9Bu" secondAttribute="bottom" id="aAT-SB-U4w"/>
+                            <constraint firstItem="1KO-U8-nef" firstAttribute="leading" secondItem="l1C-vD-9Bu" secondAttribute="leading" id="m6v-4f-XUO"/>
+                            <constraint firstItem="14S-Ne-ZrS" firstAttribute="trailing" secondItem="l1C-vD-9Bu" secondAttribute="trailing" id="rYc-zR-Dg3"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="l1C-vD-9Bu"/>
+                    </view>
+                    <connections>
+                        <outlet property="mapView" destination="1KO-U8-nef" id="aKG-ge-ZZi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="T5Q-ye-axf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="941.60000000000002" y="1362.3688155922041"/>
+        </scene>
+    </scenes>
+</document>
