@@ -13,6 +13,8 @@ class NetworkingViewController: UIViewController {
     @IBOutlet weak var connectButton: UIButton!
     @IBOutlet weak var contactsTableView: UITableView!
     
+    var selectedIndexPath = IndexPath(row: -1, section: 0)
+    
     var contacts = [User]()
     var currentPageIndex = 0
     let pageSize = 10
@@ -21,9 +23,6 @@ class NetworkingViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        contactsTableView.estimatedRowHeight = 44
-        contactsTableView.rowHeight = UITableViewAutomaticDimension
         
         loadNextPage()
         
@@ -89,6 +88,27 @@ extension NetworkingViewController: UITableViewDelegate {
         if indexPath.row == self.contacts.count - 1 {
             loadNextPage()
         }
+        
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        
+        selectedIndexPath = indexPath
+        
+        let cell = tableView.cellForRow(at: selectedIndexPath)
+        cell!.textLabel?.numberOfLines = 0
+        
+        contactsTableView.reloadData()
+        
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        
+        if indexPath.row == selectedIndexPath.row {
+            return UITableViewAutomaticDimension
+        }
+        
+        return contactsTableView.rowHeight
         
     }
     

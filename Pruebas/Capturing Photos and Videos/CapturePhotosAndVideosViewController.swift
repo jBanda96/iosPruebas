@@ -57,7 +57,7 @@ extension CapturePhotosAndVideosViewController: UIImagePickerControllerDelegate,
         
         if type == kUTTypeImage as String {
             print("Done picking image")
-            let image = info[UIImagePickerControllerOriginalImage] as! UIImage
+            let _ = info[UIImagePickerControllerOriginalImage] as! UIImage
         } else {
             print("Done picking a video")
             if let videoURL = info[UIImagePickerControllerMediaURL] {

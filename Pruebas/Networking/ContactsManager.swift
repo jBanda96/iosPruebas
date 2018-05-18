@@ -83,9 +83,6 @@ class ContactsManager: NSObject {
         
         let url =  URL(string: "https://randomuser.me/api/?page\(page)&result=\(pageSize)")
         let session = URLSession.shared.dataTask(with: url!) { (data, response, error) in
-            
-            print(String.init(data: data!, encoding: .utf8))
-            
             do {
                 completionHandler(true, try JSONDecoder().decode(Response.self, from: data!))
             } catch {
