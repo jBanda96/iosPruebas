@@ -11,19 +11,20 @@ import UIKit
 class PaginationViewController: UITableViewController {
     
     private var number: Int = 0
+    private var users: [User64]?
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        Connections.downloadPerPage(num: number) { (response) in
-            
+        Connections.decodeJSONIn64Base { (response64) in
+            self.users = response64.users
         }
         
     }
 
     // MARK: - Table view data source
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 0
+        return users?.count ?? 0
     }
 
     
@@ -31,6 +32,7 @@ class PaginationViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
 
         // Configure the cell...
+        cell.textLabel?.text = users![indexPath.row].nombre
         
         return cell
     }

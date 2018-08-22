@@ -57,7 +57,6 @@ class TableViewController: UIViewController {
         
         alertController.addTextField { (textfield) in
             textfield.placeholder = "Text"
-            //textfield.addTarget(self, action: #selector(ViewController.taskNameFieldDidChange(textfield:)), for: .editingChanged)
         }
         
         self.present(alertController, animated: true, completion: nil)
@@ -67,6 +66,20 @@ class TableViewController: UIViewController {
     @IBAction func clickOnEditButton(_ sender: UIBarButtonItem) {
         isEditingMode = !isEditingMode
         self.tableView.setEditing(isEditingMode, animated: true)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let indexPath = tableView.indexPathForSelectedRow {
+            (segue.destination as! DetailViewController).info = texts[indexPath.row]
+        }
+        
+    }
+    
+    @IBAction func unwindSegue(_ segue: UIStoryboardSegue) {
+        
+        
+        
     }
 
 }

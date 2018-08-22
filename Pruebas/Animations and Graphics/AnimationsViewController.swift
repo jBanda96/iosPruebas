@@ -23,7 +23,6 @@ class AnimationsViewController: UIViewController {
         
         fixedLayer = getShapeLayerForRect(rect: rect, strokeColor: UIColor.black.withAlphaComponent(0.5))
         
-        
         progressiveLayer = getShapeLayerForRect(rect: rect, strokeColor: .black)
         progressiveLayer.bounds = fixedLayer.bounds
         progressiveLayer.strokeEnd = 0

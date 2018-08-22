@@ -23,4 +23,25 @@ class Connections {
         
     }
     
+    class func decodeJSONIn64Base(completion: @escaping (UserResponse) -> Void) {
+        
+        if let path = Bundle.main.path(forResource: "base64json", ofType: nil) {
+            let data = NSData.init(contentsOfFile: path) as Data?
+            
+            let decodedData = Data(base64Encoded: data!)!
+            
+            let decoder = JSONDecoder()
+            decoder.dateDecodingStrategy = JSONDecoder.DateDecodingStrategy.millisecondsSince1970
+            print(decoder)
+            
+            do {
+                completion(try JSONDecoder().decode(UserResponse.self, from: decodedData))
+            } catch {
+                print(error.localizedDescription)
+            }
+            
+        }
+        
+    }
+    
 }
