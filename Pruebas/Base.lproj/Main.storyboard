@@ -437,7 +437,9 @@
         <!--CustomView-->
         <scene sceneID="nEs-1s-3Q0">
             <objects>
-                <viewControllerPlaceholder storyboardName="CustomView" id="C7u-uQ-8Jv" sceneMemberID="viewController"/>
+                <viewControllerPlaceholder storyboardName="CustomView" id="C7u-uQ-8Jv" sceneMemberID="viewController">
+                    <navigationItem key="navigationItem" id="Nhh-DW-bxt"/>
+                </viewControllerPlaceholder>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rBy-bD-RkJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-146" y="-674"/>

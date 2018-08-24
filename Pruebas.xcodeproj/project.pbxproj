@@ -18,6 +18,7 @@
 		2A140D8520ABC83000202E0F /* ButtonedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A140D8420ABC83000202E0F /* ButtonedTableViewController.swift */; };
 		2A17F19F209D667E009DF9DC /* 3DTouch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A17F19E209D667E009DF9DC /* 3DTouch.storyboard */; };
 		2A17F1A1209D670A009DF9DC /* 3DTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A17F1A0209D670A009DF9DC /* 3DTouchViewController.swift */; };
+		2A1AF2A6212E5B35002C8BFA /* FlyingSquaresViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1AF2A5212E5B35002C8BFA /* FlyingSquaresViewController.swift */; };
 		2A1E541E212890FB008EFEC6 /* EmojiCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1E541D212890FB008EFEC6 /* EmojiCell.swift */; };
 		2A2EAFB220C3A9BC00073860 /* Gestures.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A2EAFB120C3A9BC00073860 /* Gestures.storyboard */; };
 		2A2EAFB420C3AA3500073860 /* GesturesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EAFB320C3AA3500073860 /* GesturesViewController.swift */; };
@@ -103,6 +104,7 @@
 		2A140D8420ABC83000202E0F /* ButtonedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonedTableViewController.swift; sourceTree = "<group>"; };
 		2A17F19E209D667E009DF9DC /* 3DTouch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = 3DTouch.storyboard; sourceTree = "<group>"; };
 		2A17F1A0209D670A009DF9DC /* 3DTouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DTouchViewController.swift; sourceTree = "<group>"; };
+		2A1AF2A5212E5B35002C8BFA /* FlyingSquaresViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyingSquaresViewController.swift; sourceTree = "<group>"; };
 		2A1E541D212890FB008EFEC6 /* EmojiCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiCell.swift; sourceTree = "<group>"; };
 		2A2EAFB120C3A9BC00073860 /* Gestures.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Gestures.storyboard; sourceTree = "<group>"; };
 		2A2EAFB320C3AA3500073860 /* GesturesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GesturesViewController.swift; sourceTree = "<group>"; };
@@ -313,6 +315,7 @@
 				2A56D8522098E9FD001A1352 /* CustomView.swift */,
 				2A06061E20B6032B005BED85 /* NewWayViewController.swift */,
 				2A01BC3020E02237001B7476 /* CADisplayLinkViewController.swift */,
+				2A1AF2A5212E5B35002C8BFA /* FlyingSquaresViewController.swift */,
 				2AA4C9B02099714500E004CD /* CustomView.storyboard */,
 			);
 			path = "Animations and Graphics";
@@ -640,6 +643,7 @@
 				2AE2DA2920CB2B8400C3DD37 /* AndroidTableViewController.swift in Sources */,
 				2A04477420ADE71B00383D6F /* DBManager.swift in Sources */,
 				2A2EAFB420C3AA3500073860 /* GesturesViewController.swift in Sources */,
+				2A1AF2A6212E5B35002C8BFA /* FlyingSquaresViewController.swift in Sources */,
 				2ADAD1C720B5F8BA0080B03B /* PercentageView.swift in Sources */,
 				2AA4C9B82099731700E004CD /* MultimediaViewController.swift in Sources */,
 				2A053E75209820CB00928204 /* TableViewController.swift in Sources */,

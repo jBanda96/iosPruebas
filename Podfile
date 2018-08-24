@@ -8,5 +8,6 @@ target 'Pruebas' do
   pod 'KeychainAccess', '~> 3.1'
   pod 'RealmSwift'
   pod 'UILoadControl', '~> 2.1'
+  pod 'GoogleAnalytics'
 
 end
