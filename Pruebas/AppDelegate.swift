@@ -17,6 +17,24 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+        
+        guard let gai = GAI.sharedInstance() else {
+            assert(false, "Google Analytics not configured correctly")
+        }
+        gai.tracker(withTrackingId: "UA-124564844-1")
+        // Optional: automatically report uncaught exceptions.
+        gai.trackUncaughtExceptions = true
+        
+        // Optional: set Logger to VERBOSE for debug information.
+        // Remove before app release.
+        gai.logger.logLevel = .verbose;
+        
+        guard let tracker = GAI.sharedInstance().defaultTracker else { return false }
+        tracker.set(kGAIScreenName, value: "Financiamiento")
+        
+        guard let builder = GAIDictionaryBuilder.createScreenView() else { return false }
+        tracker.send(builder.build() as [NSObject : AnyObject])
+        
         return true
     }
 

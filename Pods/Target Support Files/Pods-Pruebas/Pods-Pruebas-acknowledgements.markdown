@@ -1,6 +1,10 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
+## GoogleAnalytics
+
+Copyright 2016 Google
+
 ## KeychainAccess
 
 The MIT License (MIT)
