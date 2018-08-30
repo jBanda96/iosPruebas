@@ -16,7 +16,7 @@ class WordViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.navigationController?.navigationBar.barTintColor = UIColor(named: "Primary")
+        self.navigationController?.navigationBar.barTintColor = .brown
         self.navigationController?.navigationBar.tintColor = .white
         
     }
