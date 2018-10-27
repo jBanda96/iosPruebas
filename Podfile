@@ -9,5 +9,6 @@ target 'Pruebas' do
   pod 'RealmSwift'
   pod 'UILoadControl', '~> 2.1'
   pod 'GoogleAnalytics'
+  pod "NSGIF", "~> 1.0"
 
 end

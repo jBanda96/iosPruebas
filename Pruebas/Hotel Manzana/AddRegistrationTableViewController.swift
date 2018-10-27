@@ -8,8 +8,8 @@
 
 import UIKit
 
-class AddRegistrationTableViewController: UITableViewController {
-
+class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeTableViewControllerDelegate {
+    
     @IBOutlet weak var firtsNameTextField: UITextField!
     @IBOutlet weak var lastNameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
@@ -18,6 +18,16 @@ class AddRegistrationTableViewController: UITableViewController {
     @IBOutlet weak var checkOutDateLabel: UILabel!
     @IBOutlet weak var checkInDatePicker: UIDatePicker!
     @IBOutlet weak var checkOutDatePicker: UIDatePicker!
+    
+    @IBOutlet weak var numberOfAdultsLabel: UILabel!
+    @IBOutlet weak var numberOfAdultsStepper: UIStepper!
+    @IBOutlet weak var numberOfChildrenLabel: UILabel!
+    @IBOutlet weak var numberOfChildrenStepper: UIStepper!
+    
+    @IBOutlet weak var wifiSwitch: UISwitch!
+    
+    @IBOutlet weak var roomTypeLabel: UILabel!
+    var roomType: RoomType?
     
     let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
     let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section: 1)
@@ -44,12 +54,25 @@ class AddRegistrationTableViewController: UITableViewController {
         checkInDatePicker.date = midnightToday
         
         updateDateViews()
+        updateNumberOfGuests()
+        updateRoomType()
     }
     
     @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem){
         let firstName = firtsNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
         let email = emailTextField.text ?? ""
+        
+        let checkInDate = checkInDatePicker.date
+        let checkOutDate = checkOutDatePicker.date
+        
+        let numberOfAdults = Int(numberOfAdultsStepper.value)
+        let numberOfChildren = Int(numberOfChildrenStepper.value)
+        
+        let hasWifi = wifiSwitch.isOn
+        
+        let roomType = self.roomType?.name ?? "Not Set"
+        
     }
     
     @IBAction func datePickerValueChanged(_ sender: UIDatePicker) {
@@ -58,6 +81,14 @@ class AddRegistrationTableViewController: UITableViewController {
     
     @IBAction func cancelBarButtonTapped(_ sender: UIBarButtonItem){
         self.dismiss(animated: true, completion: nil)
+    }
+    
+    @IBAction func stepperValueChanged(_ sender: UIStepper){
+        updateNumberOfGuests()
+    }
+    
+    @IBAction func wifiSwitchChanged(_ sender: UISwitch){
+        
     }
     
     func updateDateViews(){
@@ -71,7 +102,27 @@ class AddRegistrationTableViewController: UITableViewController {
         
     }
 
+    func updateNumberOfGuests(){
+        numberOfAdultsLabel.text = String(Int(numberOfAdultsStepper.value))
+        numberOfChildrenLabel.text = String(Int(numberOfChildrenStepper.value))
+    }
+    
+    func updateRoomType() {
+        if let roomType = roomType {
+            roomTypeLabel.text = roomType.name
+        } else {
+            roomTypeLabel.text = "Not Set"
+        }
+    }
+    
+    func didSelect(roomType: RoomType) {
+        self.roomType = roomType
+        updateRoomType()
+    }
+    
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+        
         switch (indexPath.section, indexPath.row) {
         case (checkInDatePickerCellIndexPath.section, checkInDatePickerCellIndexPath.row - 1):
             
@@ -121,6 +172,14 @@ class AddRegistrationTableViewController: UITableViewController {
             }
         default:
             return 44
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SelectRoomType" {
+            let destinationViewController = segue.destination as? SelectRoomTypeTableViewController
+            destinationViewController?.delegate = self
+            destinationViewController?.roomType = roomType
         }
     }
 }
