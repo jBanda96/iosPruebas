@@ -476,6 +476,7 @@ func countMax(upRight: [String]) -> Int {
 }
 countMax(upRight: countMaxArray)
 
+
 let palindrome:     String  =   "bab"
 func breakPalindrome(s: String) -> String {
     print("\n\n---------------- Breaking a Palindrome ----------------")
@@ -516,3 +517,22 @@ func canCreateTriangle(a: Int, b: Int, c: Int) -> Bool {
     
 }
 canCreateTriangle(a: 3, b: 4, c: 5)
+
+
+func maxSubsetSum(arr: [Int]) -> Int {
+    print("\n\n---------------- Max Subset Sum ----------------")
+    var max:    Int     =       0
+    
+    for (index, num) in arr.enumerated() {
+        
+        
+        for (index2, num2) in arr.enumerated() {
+            print("\(index2) - \(num2)")
+        }
+        
+    }
+    
+    return max
+}
+
+maxSubsetSum(arr: [1, 2, 3])
