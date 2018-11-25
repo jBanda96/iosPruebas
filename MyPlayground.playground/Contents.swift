@@ -9,8 +9,7 @@ let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=CErrxmo4ZWgSY
 
 let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
     if let data = data {
-        let string = String(data: data, encoding: .utf8)
-        print(string!)
+        let _ = String(data: data, encoding: .utf8)
     }
 }
 
@@ -71,7 +70,7 @@ let b = 7
 func bonAppetit(bill: [Int], k: Int, b: Int) -> Void {
     
     var cont = -1
-    let totalBill = bill.reduce(0) { (result, int) -> Int in
+    let _ = bill.reduce(0) { (result, int) -> Int in
         cont += 1
         if cont != k {
             return result + int
@@ -80,7 +79,7 @@ func bonAppetit(bill: [Int], k: Int, b: Int) -> Void {
         }
     }
     
-    let billDivided = totalBill.unsafeDivided(by: 2)
+    let billDivided = 1
     let amount = b - billDivided
     
     if amount == 0 {
@@ -182,3 +181,338 @@ func factorial(_ n: Int) -> String {
 }
 
 factorial(25)
+
+
+let pages: Int = 5
+let pageToGo: Int = 4
+func pageCount(n: Int, p: Int) -> Int {
+    var turns: Int = 0
+    
+    if (n / 2) >= p {
+        "Desde el inicio"
+        
+        for page in 1...p {
+            turns = page / 2
+        }
+        
+    } else {
+        "Desde el final"
+        
+        if n == p && p.remainderReportingOverflow(dividingBy: 2).partialValue == 0 {
+            return 0
+        } else {
+            turns += 1
+        }
+        
+        for page in (1...n).reversed(){
+            
+            if page.remainderReportingOverflow(dividingBy: 2).partialValue == 0 {
+                    turns += 1
+            }
+            
+            if page == p {
+                return turns
+            }
+        }
+    }
+    
+    return turns
+}
+
+print(pageCount(n: pages, p: pageToGo))
+
+func countingValleys(n: Int, s: String) -> Int {
+    
+    print("---------------- countingValleys ----------------")
+    let seaLevel = 0
+    var currentStep = 0
+    
+    var numberOfValleys = 0
+    var countValleys = true
+    
+    for string in s {
+        if string == "D" {
+            currentStep -= 1
+            
+            if currentStep < seaLevel && countValleys {
+                numberOfValleys += 1
+                countValleys = false
+            }
+            
+        } else if string == "U" {
+            currentStep += 1
+            
+            if currentStep >= 0 {
+                countValleys = true
+            }
+        }
+    }
+    
+    print("Number of valleys: \(numberOfValleys)\n\n")
+    return numberOfValleys
+}
+
+let s = "DUDUUUDUUUDDUDDUDUUDUDDUDDDUUUUUUDUDUDUDDUDDDUUUUUUDDUDUUUUUDUDU"
+let number = s.count
+countingValleys(n: number, s: s)
+
+func getMoneySpent(keyboards: [Int], drives: [Int], b: Int) -> Int {
+    print("---------------- Electronic shop ----------------\n\n")
+    
+    var total = -1
+    
+    for keyboard in keyboards {
+        for drive in drives {
+            
+            let posibleAmount = keyboard + drive
+            
+            if posibleAmount <= b {
+                if posibleAmount > total {
+                    total = posibleAmount
+                }
+            }
+            
+        }
+    }
+    
+    return total
+}
+
+let keyboards = [1]
+let drives = [4]
+let amount = 5
+getMoneySpent(keyboards: keyboards, drives: drives, b: amount)
+
+
+func catAndMouse(x: Int, y: Int, z: Int) -> String {
+    print("---------------- Cats and Mouse ----------------")
+    var answer = "Mouse C"
+    
+    let catA = retrieveNumberOfStepsFromCat(x, toMouse: z)
+    let catB = retrieveNumberOfStepsFromCat(y, toMouse: z)
+    
+    if catA < catB {
+        answer = "Cat A"
+    } else if catB < catA {
+        answer = "Cat B"
+    }
+    
+    print(answer)
+    return answer
+}
+
+func retrieveNumberOfStepsFromCat(_ cat: Int, toMouse mouse: Int) -> Int {
+    var steps = 0
+    
+    if cat <= mouse {
+        
+        for _ in cat...mouse {
+            steps += 1
+        }
+        
+    } else if mouse < cat {
+        for _ in (mouse...cat) {
+            steps += 1
+        }
+    }
+    
+    return steps
+}
+
+let catA = 3
+let catB = 5
+let mouse = 4
+
+catAndMouse(x: catA, y: catB, z: mouse)
+
+
+func pickingNumbers(a: [Int]) -> Int {
+    
+    var maximumLength = 0
+    
+    print("\n\n---------------- Picking Numbers ----------------")
+    for (index, number) in a.enumerated() {
+        if index < a.count {
+            print(number - a[index])
+            if number - a[index] <= 1 {
+                maximumLength += 1
+            }
+        }
+        
+    }
+    
+    return maximumLength
+}
+
+
+let numbers = [4, 6, 5, 3, 3, 1]
+pickingNumbers(a: numbers)
+
+print("\n\n---------------- Left Rotation NO TERMINADO ----------------")
+let numberOfNumbers = 5
+let rotations = 4
+let rotationArray = [1, 2, 3, 4, 5]
+
+let mod = rotations % numberOfNumbers
+    for rotation in 1...rotations {
+        
+    }
+print(mod)
+
+print("\n\n---------------- Is Balanced ----------------")
+let brackets = "[]{}"
+var x = (brackets.count / 2) - 1
+var isBalanced = false
+if brackets.count == 0 || brackets.count.quotientAndRemainder(dividingBy: 2).remainder != 0 {
+    
+} else {
+    for _ in 1...(brackets.count / 2) {
+    
+    let start = brackets.index(brackets.startIndex, offsetBy: x)
+    let end = brackets.index(brackets.endIndex, offsetBy: -x)
+    let range = start..<end
+    let substring = String(brackets[range])
+
+    let substringEnd = substring.index(substring.endIndex, offsetBy: -1)
+    let first = String(substring[substring.startIndex])
+    let last = String(substring[substringEnd])
+    
+    print("\(first) - \(last)")
+    
+    let oposite: String
+    switch first {
+    case "(":
+        oposite = ")"
+    case "{":
+        oposite = "}"
+    case "[":
+        oposite = "]"
+    default:
+        oposite = ""
+    }
+    
+    if last == oposite {
+        isBalanced = true
+    } else {
+        isBalanced = false
+        break
+    }
+    
+    x -= 1
+    
+}
+}
+print("\(isBalanced ? "YES" : "NO")")
+
+print("\n\n---------------- Candies ----------------")
+let candieArr = [1, 2, 2]
+let candieN = 3
+func candies(n: Int, arr: [Int]) -> Int {
+    var totalCandies = 0
+    
+    for (index, children) in arr.enumerated() {
+        
+        let indexToCompare = index + 1
+        print(indexToCompare)
+        
+    }
+    
+    return totalCandies
+}
+candies(n: candieN, arr: candieArr)
+
+let aaa: String = "jjjjjjjjjjjjjjjjjjj"
+let bbb: String = "kkkkkkkkkkkkkkkkkkk"
+func mergeString(a: String, b: String) -> String {
+    print("\n\n---------------- Merge String ----------------")
+    var mergedString = ""
+    
+    let arrayA      =       Array(aaa)
+    let arrayB      =       Array(bbb)
+    
+    let index       =       arrayA.count >= arrayB.count    ?   arrayA.count   :      arrayB.count
+    
+    for index in 0 ..< index {
+        
+        if index < arrayA.count {
+            mergedString += String(arrayA[index])
+        }
+        
+        if index < arrayB.count {
+            mergedString += String(arrayB[index])
+        }
+        
+    }
+    
+    return mergedString
+}
+mergeString(a: aaa, b: bbb)
+
+let countMaxArray: [String]         =       ["6 5", "6 5","5 5", "3 2", "2 1", "5 2"]
+func countMax(upRight: [String]) -> Int {
+    print("\n\n---------------- Count Max ----------------")
+    let convertedArray: [[Int]] = upRight.reduce([]) { (result, string) -> [[Int]] in
+        let split = string.split(separator: " ")
+        return result + [[Int(String(split[0]))!, Int(String(split[1]))!]]
+    }
+    
+    var lowerRow:       Int     =       convertedArray[0][0]
+    var lowerColumn:    Int     =       convertedArray[0][1]
+    
+    convertedArray.forEach {
+        if lowerRow > $0[0] {
+            lowerRow    =       $0[0]
+        }
+        
+        if lowerColumn > $0[1] {
+            lowerColumn     =       $0[1]
+        }
+    }
+    
+    print("   Lower Row: \(    lowerRow    )")
+    print("Lower Column: \(    lowerColumn )")
+    
+    return lowerRow * lowerColumn
+}
+countMax(upRight: countMaxArray)
+
+let palindrome:     String  =   "bab"
+func breakPalindrome(s: String) -> String {
+    print("\n\n---------------- Breaking a Palindrome ----------------")
+    var characters:     [Character]     =       Array(s)
+    let replacement:    [Character]     =       Array("abcdefghijklmnopqrstuvwxyz")
+    
+    for (index, _) in characters.enumerated() {
+        
+        characters = Array(s)
+        for (_, replace) in replacement.enumerated() {
+            
+            characters[index] = replace
+            
+            let newString:   String     =       characters.reduce("") { $0 + String($1) }
+            print("\(newString)")
+            
+            if (newString != String(newString.reversed())) && (newString.lexicographicallyPrecedes(s)) {
+                print("No es un palindromo y es menor lexicograficamente")
+                return newString
+            }
+            
+            print("---------------------------")
+        }
+    }
+    
+    return "IMPOSSIBLE"
+}
+breakPalindrome(s: palindrome)
+
+
+func canCreateTriangle(a: Int, b: Int, c: Int) -> Bool {
+    
+    if (a + b > c) && (a + c > b) && (b + c > a){
+        return true
+    } else {
+        return false
+    }
+    
+}
+canCreateTriangle(a: 3, b: 4, c: 5)
