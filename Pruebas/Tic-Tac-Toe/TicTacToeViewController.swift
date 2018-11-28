@@ -13,7 +13,9 @@ class TicTacToeViewController: UIViewController {
     let X: String = "X"
     let O: String = "O"
     
-    var ticTacToe: [[Int]] = [[0, 0], [0, 0], [0, 0], [1, 0], [1, 0], [1, 0], [2, 0], [2, 0], [2, 0]]
+    var game: [[String]]   =    [["", "", ""],
+                                 ["", "", ""],
+                                 ["", "", ""]]
     
     var isX: Bool = false
     var turn:   Int     =       0   {
@@ -27,29 +29,28 @@ class TicTacToeViewController: UIViewController {
     }
 
     @IBAction func touch(in button: UIButton){
-        print(button.tag)
-        
-        for (index, _) in ticTacToe.enumerated() {
-            if index == button.tag {
-                ticTacToe[index][1] = 1
-            }
-        }
-        
-        for row in ticTacToe {
-            for (index, column) in row.enumerated() {
-                print("\(index) - \(column)")
-            }
-        }
-        
+
         if button.titleLabel?.text == X || button.titleLabel?.text == O { return }
+        
+        let tag:    String       =       String(button.tag)
+        let row:    Int          =       Int(String(tag.first!))! - 1
+        let column: Int          =       Int(String(tag.last!))!  - 1
         
         turn += 1
         
         let boxValue: String    =   isX     ?   X     :       O
-        button.setTitle(boxValue, for: .normal)
         
-        if turn > 4 {
-            
+        button.setTitle(boxValue, for: .normal)
+        game[row][column] = boxValue
+        
+        if turn > 2 {
+            for row in 0 ..< game.count {
+                
+                if (game[row][1] == game[row][0]) && (game[row][1] == game[row][2]) {
+                    print("Alguien ganó")
+                }
+                
+            }
         }
         
     }

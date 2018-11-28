@@ -509,6 +509,7 @@ breakPalindrome(s: palindrome)
 
 func canCreateTriangle(a: Int, b: Int, c: Int) -> Bool {
     
+    print("\n\n---------------- Can create a triangle ----------------")
     if (a + b > c) && (a + c > b) && (b + c > a){
         return true
     } else {
@@ -516,23 +517,64 @@ func canCreateTriangle(a: Int, b: Int, c: Int) -> Bool {
     }
     
 }
-canCreateTriangle(a: 3, b: 4, c: 5)
+print(canCreateTriangle(a: 3, b: 4, c: 5))
+
+func hurdleRace(k: Int, height: [Int]) -> Int {
+    print("\n\n---------------- Hurdle Race ----------------")
+    return max(((height.max() ?? 0) - k), 0)
+}
+print(hurdleRace(k: 5, height: [1, 6, 3, 5, 2]))
 
 
-func maxSubsetSum(arr: [Int]) -> Int {
-    print("\n\n---------------- Max Subset Sum ----------------")
-    var max:    Int     =       0
+func designerPdfViewer(h: [Int], word: String) -> Int {
+    print("\n\n---------------- Designer PDF Viewer ----------------")
+    let alphabet: [Character]   =   Array("abcdefghijklmnopqrstuvwxyz")
     
-    for (index, num) in arr.enumerated() {
-        
-        
-        for (index2, num2) in arr.enumerated() {
-            print("\(index2) - \(num2)")
+    var biggerHeight: Int   =   1
+    for (index, a) in alphabet.enumerated() {
+        for b in word {
+            if a == b {
+                biggerHeight =  h[index] > biggerHeight     ?       h[index] : biggerHeight
+            }
         }
-        
     }
     
-    return max
+    print(biggerHeight * word.count)
+    return biggerHeight * word.count
 }
 
-maxSubsetSum(arr: [1, 2, 3])
+designerPdfViewer(h: [1, 3, 1, 3, 1, 4, 1, 3, 2, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 7], word: "abc")
+
+
+
+func sumFromOne(upTo n: Int) -> Int {
+    //return (0...upTo).reduce(0, +)
+    return (n + 1) * n / 2
+}
+sumFromOne(upTo: 3)
+
+public class Node<Value>: CustomStringConvertible {
+    public var value:   Value
+    public var next:    Node?
+    
+    public init(value: Value, next: Node? = nil) {
+        self.value = value
+        self.next = next
+    }
+    
+    public var description: String {
+        guard let next = next else {
+            return "\(self.value)"
+        }
+        return "\(self.value) -> \(String(describing: next))"
+    }
+}
+
+let node1 = Node(value: 1)
+let node2 = Node(value: 2)
+let node3 = Node(value: 3)
+
+node1.next = node2
+node2.next = node3
+
+print(node1)
