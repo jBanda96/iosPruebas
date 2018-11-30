@@ -334,51 +334,6 @@ let mod = rotations % numberOfNumbers
     }
 print(mod)
 
-print("\n\n---------------- Is Balanced ----------------")
-let brackets = "[]{}"
-var x = (brackets.count / 2) - 1
-var isBalanced = false
-if brackets.count == 0 || brackets.count.quotientAndRemainder(dividingBy: 2).remainder != 0 {
-    
-} else {
-    for _ in 1...(brackets.count / 2) {
-    
-    let start = brackets.index(brackets.startIndex, offsetBy: x)
-    let end = brackets.index(brackets.endIndex, offsetBy: -x)
-    let range = start..<end
-    let substring = String(brackets[range])
-
-    let substringEnd = substring.index(substring.endIndex, offsetBy: -1)
-    let first = String(substring[substring.startIndex])
-    let last = String(substring[substringEnd])
-    
-    print("\(first) - \(last)")
-    
-    let oposite: String
-    switch first {
-    case "(":
-        oposite = ")"
-    case "{":
-        oposite = "}"
-    case "[":
-        oposite = "]"
-    default:
-        oposite = ""
-    }
-    
-    if last == oposite {
-        isBalanced = true
-    } else {
-        isBalanced = false
-        break
-    }
-    
-    x -= 1
-    
-}
-}
-print("\(isBalanced ? "YES" : "NO")")
-
 print("\n\n---------------- Candies ----------------")
 let candieArr = [1, 2, 2]
 let candieN = 3
@@ -529,7 +484,7 @@ func sumFromOne(upTo n: Int) -> Int {
 sumFromOne(upTo: 3)
 
 print("\n\n---------------- Stack ----------------")
-struct Stack<Element>: CustomStringConvertible {
+struct Stack2<Element>: CustomStringConvertible {
     
     private var items = [Element]()
     
@@ -551,20 +506,20 @@ struct Stack<Element>: CustomStringConvertible {
     
 }
 
-extension Stack {
+extension Stack2 {
     var topItem: Element? {
         return items.isEmpty ? nil : items.last
     }
 }
 
-var stack = Stack<Int>()
-stack.push(1)
-stack.push(2)
-stack.push(3)
-stack.push(4)
-print("Popped: \(stack.pop())")
-stack
-print("Top item: \(String(describing: stack.topItem ?? 0))")
+var stack2 = Stack2<Int>()
+stack2.push(1)
+stack2.push(2)
+stack2.push(3)
+stack2.push(4)
+print("Popped: \(stack2.pop())")
+stack2
+print("Top item: \(String(describing: stack2.topItem ?? 0))")
 
 print("\n\n---------------- Nodos ----------------")
 public class Node<Value>: CustomStringConvertible {
@@ -720,3 +675,121 @@ let node = list.node(at: 0)!
 list.remove(after: node)
 print("Before removing at: \(list)")
 
+print("\n\n---------------- Stack ----------------")
+struct Stack<Element>: CustomStringConvertible {
+    
+    private var storage: [Element] = []
+    
+    public init(_ elements: [Element]){
+        storage = elements
+    }
+    
+    public mutating func push(_ element: Element) {
+        storage.append(element)
+    }
+    
+    public mutating func pop() -> Element? {
+        return storage.popLast()
+    }
+    
+    public func peek() -> Element? {
+        return storage.last
+    }
+    
+    public func isEmpty() -> Bool {
+        return peek() == nil
+    }
+    
+    var description: String {
+        
+        let topDivider:     String  =   "----top----\n"
+        let bottomDivider:  String  =   "\n--------"
+        
+        let stackElements = storage.map { "\($0)" }.reversed().joined(separator: "\n")
+        
+        return topDivider + stackElements + bottomDivider
+        
+    }
+    
+}
+
+extension Stack: ExpressibleByArrayLiteral {
+    public init(arrayLiteral elements: Element...) {
+        storage = elements
+    }
+}
+
+var stack: Stack = [1, 2]
+stack.push(3)
+stack.push(4)
+stack.push(3)
+stack.push(1)
+print(stack)
+
+public protocol Queue {
+    associatedtype Element
+    
+    mutating func enqueue (_ element: Element)  -> Bool
+    mutating func dequeue ()                    -> Element?
+    
+    var isEmpty:    Bool        { get }
+    var peek:       Element?    { get }
+}
+
+public struct QueueArray<T>: Queue, CustomStringConvertible, ExpressibleByArrayLiteral {
+    
+    public typealias Element = T
+    
+    private var array: [T] = []
+    
+    public var description: String {
+        return String(describing: array)
+    }
+    
+    public init(arrayLiteral elements: Element...) {
+        array = elements
+    }
+    
+    public mutating func dequeue() -> T? {
+        return isEmpty ? nil : array.removeFirst()
+    }
+    
+    public mutating func enqueue(_ element: T) -> Bool {
+        array.append(element)
+        return true
+    }
+    
+    public var isEmpty: Bool {
+        return array.isEmpty
+    }
+    
+    public var peek: T? {
+        return array.first
+    }
+}
+
+var a: QueueArray = [1, 2]
+a.peek
+a.enqueue(3)
+a
+a.dequeue()
+
+
+var bubble          =   [5, 4, 3, 2, 1]
+let orderedBubble   =   bubble.sorted(by: <)
+
+let startBubble = Date()
+let length = bubble.count
+
+for i in 0 ..< length {
+    for j in 0 ..< (length - i - 1) {
+        if bubble[j] > bubble[j + 1] {
+            let aux = bubble[j]
+            bubble[j] = bubble[j + 1]
+            bubble[j + 1] = aux
+        }
+    }
+}
+print(bubble)
+let endBubble = Date()
+endBubble.timeIntervalSince(startBubble)
