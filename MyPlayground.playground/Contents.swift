@@ -20,12 +20,6 @@ queries.compactMap({ (key, value) -> URLQueryItem in
     return URLQueryItem(name: key, value: value)
 })
 
-let array = [1, 2, 3, 4, 5]
-for _ in array {
-    //print(num)
-}
-
-
 func staircase(n: Int) -> Void {
     
     for space in (0..<n).reversed() {
@@ -40,28 +34,10 @@ func staircase(n: Int) -> Void {
 staircase(n: 4)
 
 func miniMaxSum(arr: [Int]) -> Void {
-    
-    var min = arr[0]
-    var max = arr[0]
-    
-    var total: Int = 0
-    
-    for num in arr {
-        if min > num {
-            min = num
-        }
-        
-        if max < num {
-            max = num
-        }
-        
-        total += num
-        
-    }
-    
-    print("\(total - max) \(total - min)")
+    let total = arr.reduce(0, +)
+    print("\(total - arr.max()!) - \(total - arr.min()!)")
 }
-
+miniMaxSum(arr: [1, 2])
 
 let bill = [3, 10, 2, 9]
 let k = 1
@@ -552,6 +528,45 @@ func sumFromOne(upTo n: Int) -> Int {
 }
 sumFromOne(upTo: 3)
 
+print("\n\n---------------- Stack ----------------")
+struct Stack<Element>: CustomStringConvertible {
+    
+    private var items = [Element]()
+    
+    public mutating func push(_ item: Element){
+        items.append(item)
+    }
+    
+    public mutating func pop() -> Element {
+        return items.removeLast()
+    }
+    
+    var description: String {
+        guard !items.isEmpty else {
+            return "Empty stack"
+        }
+        
+        return String(describing: items)
+    }
+    
+}
+
+extension Stack {
+    var topItem: Element? {
+        return items.isEmpty ? nil : items.last
+    }
+}
+
+var stack = Stack<Int>()
+stack.push(1)
+stack.push(2)
+stack.push(3)
+stack.push(4)
+print("Popped: \(stack.pop())")
+stack
+print("Top item: \(String(describing: stack.topItem ?? 0))")
+
+print("\n\n---------------- Nodos ----------------")
 public class Node<Value>: CustomStringConvertible {
     public var value:   Value
     public var next:    Node?
@@ -569,7 +584,6 @@ public class Node<Value>: CustomStringConvertible {
     }
 }
 
-print("\n\n---------------- Nodos ----------------")
 let node1 = Node(value: 1)
 let node2 = Node(value: 2)
 let node3 = Node(value: 3)
@@ -579,8 +593,7 @@ node2.next = node3
 
 print(node1)
 
-
-
+print("\n\n---------------- Linked List ----------------")
 public struct LinkedList<Value>: CustomStringConvertible {
     
     public var head: Node <Value>?
@@ -679,7 +692,6 @@ public struct LinkedList<Value>: CustomStringConvertible {
     
 }
 
-print("\n\n---------------- Linked List ----------------")
 var list = LinkedList<Int>()
 list.push(3)
 list.push(2)
