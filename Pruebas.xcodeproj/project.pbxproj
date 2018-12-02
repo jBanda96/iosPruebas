@@ -45,6 +45,8 @@
 		2A35D75A21A2808300FA6657 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35D75921A2808300FA6657 /* CardView.swift */; };
 		2A37888A21A5077B00AD1957 /* R2D2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A37888921A5077B00AD1957 /* R2D2.mp3 */; };
 		2A38BAC72100000800FC3022 /* StacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A38BAC62100000800FC3022 /* StacksViewController.swift */; };
+		2A38EBA621B444C60089883A /* BullsEyeGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A38EBA521B444C60089883A /* BullsEyeGame.storyboard */; };
+		2A38EBA821B447090089883A /* BullEyeGameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A38EBA721B447090089883A /* BullEyeGameViewController.swift */; };
 		2A3A093A20956F690095F163 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A093920956F690095F163 /* AppDelegate.swift */; };
 		2A3A093C20956F690095F163 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3A093B20956F690095F163 /* ViewController.swift */; };
 		2A3A093F20956F690095F163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3A093D20956F690095F163 /* Main.storyboard */; };
@@ -197,6 +199,8 @@
 		2A35D75921A2808300FA6657 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		2A37888921A5077B00AD1957 /* R2D2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = R2D2.mp3; sourceTree = "<group>"; };
 		2A38BAC62100000800FC3022 /* StacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksViewController.swift; sourceTree = "<group>"; };
+		2A38EBA521B444C60089883A /* BullsEyeGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BullsEyeGame.storyboard; sourceTree = "<group>"; };
+		2A38EBA721B447090089883A /* BullEyeGameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BullEyeGameViewController.swift; sourceTree = "<group>"; };
 		2A3A093620956F690095F163 /* Pruebas.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pruebas.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A3A093920956F690095F163 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2A3A093B20956F690095F163 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -440,6 +444,15 @@
 			path = Torch;
 			sourceTree = "<group>";
 		};
+		2A38EBA421B444AC0089883A /* BullsEyeGame */ = {
+			isa = PBXGroup;
+			children = (
+				2A38EBA521B444C60089883A /* BullsEyeGame.storyboard */,
+				2A38EBA721B447090089883A /* BullEyeGameViewController.swift */,
+			);
+			path = BullsEyeGame;
+			sourceTree = "<group>";
+		};
 		2A3A092D20956F690095F163 = {
 			isa = PBXGroup;
 			children = (
@@ -491,6 +504,7 @@
 				2A804816219544CF002F7081 /* Collapsable UITableView */,
 				2ABDF5BC219BB255004A4D9D /* Notifications */,
 				2A4301EB21A908FE00332CE0 /* Tic-Tac-Toe */,
+				2A38EBA421B444AC0089883A /* BullsEyeGame */,
 				2A3A094020956F6A0095F163 /* Assets.xcassets */,
 				2AFD910121A09A3100682B3A /* TimeAlert.gif */,
 				2AD2CD6121A09B9100F033EB /* LocationAlert.gif */,
@@ -860,6 +874,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A38EBA621B444C60089883A /* BullsEyeGame.storyboard in Resources */,
 				2AD1108D209A300C002F4B3C /* Video.mp4 in Resources */,
 				2A3A094420956F6A0095F163 /* LaunchScreen.storyboard in Resources */,
 				2AA4CFEE214189B00054EAC9 /* ObjcNet.storyboard in Resources */,
@@ -1028,6 +1043,7 @@
 				2AE46D0F219BDA8200A8FB69 /* AlertService.swift in Sources */,
 				2AA4CFE9214189430054EAC9 /* ObjcNetTableViewController.m in Sources */,
 				2AAC95C6209C1C7800255840 /* LocationViewController.swift in Sources */,
+				2A38EBA821B447090089883A /* BullEyeGameViewController.swift in Sources */,
 				2ADA09E02099399100FDB60F /* RedViewController.swift in Sources */,
 				2A38BAC72100000800FC3022 /* StacksViewController.swift in Sources */,
 				2A1E541E212890FB008EFEC6 /* EmojiCell.swift in Sources */,

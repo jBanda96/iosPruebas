@@ -2,27 +2,6 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
-	<string>Localización en uso</string>
-	<key>NSLocationUsageDescription</key>
-	<string>Localización requerida</string>
-	<key>UIAppFonts</key>
-	<array>
-		<string>IndieFlower.ttf</string>
-		<string>Lobster-Regular.ttf</string>
-	</array>
-	<key>NSLocationWhenInUseUsageDescription</key>
-	<string>Acéptalo</string>
-	<key>NSCameraUsageDescription</key>
-	<string>Acéptalo</string>
-	<key>NSMicrophoneUsageDescription</key>
-	<string>Acéptalo</string>
-	<key>NSPhotoLibraryUsageDescription</key>
-	<string>Acéptalo</string>
-	<key>NSPhotoLibraryAddUsageDescription</key>
-	<string>Acéptalo</string>
-	<key>LSApplicationCategoryType</key>
-	<string></string>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>
@@ -39,8 +18,29 @@
 	<string>1.0</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
+	<key>LSApplicationCategoryType</key>
+	<string></string>
 	<key>LSRequiresIPhoneOS</key>
 	<true/>
+	<key>NSCameraUsageDescription</key>
+	<string>Acéptalo</string>
+	<key>NSLocationAlwaysAndWhenInUseUsageDescription</key>
+	<string>Localización en uso</string>
+	<key>NSLocationUsageDescription</key>
+	<string>Localización requerida</string>
+	<key>NSLocationWhenInUseUsageDescription</key>
+	<string>Acéptalo</string>
+	<key>NSMicrophoneUsageDescription</key>
+	<string>Acéptalo</string>
+	<key>NSPhotoLibraryAddUsageDescription</key>
+	<string>Acéptalo</string>
+	<key>NSPhotoLibraryUsageDescription</key>
+	<string>Acéptalo</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>IndieFlower.ttf</string>
+		<string>Lobster-Regular.ttf</string>
+	</array>
 	<key>UILaunchStoryboardName</key>
 	<string>LaunchScreen</string>
 	<key>UIMainStoryboardFile</key>
@@ -51,9 +51,9 @@
 	</array>
 	<key>UISupportedInterfaceOrientations</key>
 	<array>
-		<string>UIInterfaceOrientationPortrait</string>
 		<string>UIInterfaceOrientationLandscapeLeft</string>
 		<string>UIInterfaceOrientationLandscapeRight</string>
+		<string>UIInterfaceOrientationPortrait</string>
 	</array>
 	<key>UISupportedInterfaceOrientations~ipad</key>
 	<array>

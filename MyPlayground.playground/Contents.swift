@@ -378,6 +378,7 @@ func mergeString(a: String, b: String) -> String {
 }
 mergeString(a: aaa, b: bbb)
 
+let startCountMax = Date()
 let countMaxArray: [String]         =       ["6 5", "6 5","5 5", "3 2", "2 1", "5 2"]
 func countMax(upRight: [String]) -> Int {
     print("\n\n---------------- Count Max ----------------")
@@ -405,6 +406,8 @@ func countMax(upRight: [String]) -> Int {
     return lowerRow * lowerColumn
 }
 countMax(upRight: countMaxArray)
+let endCountMax = Date()
+endCountMax.timeIntervalSince(startCountMax)
 
 
 let palindrome:     String  =   "bab"
