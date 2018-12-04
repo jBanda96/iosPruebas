@@ -5,6 +5,7 @@ import PlaygroundSupport
 
 PlaygroundPage.current.needsIndefiniteExecution = true
 
+//: ### Calling the NASA API
 let url = URL(string: "https://api.nasa.gov/planetary/apod?api_key=CErrxmo4ZWgSY0wH8AbSiRp37EvKXSx82qw7Q6PQ")!
 
 let task = URLSession.shared.dataTask(with: url) { (data, response, error) in
@@ -705,10 +706,10 @@ struct Stack<Element>: CustomStringConvertible {
     
     var description: String {
         
-        let topDivider:     String  =   "----top----\n"
-        let bottomDivider:  String  =   "\n--------"
+        let topDivider:     String  =   "----top---- "
+        let bottomDivider:  String  =   "--------"
         
-        let stackElements = storage.map { "\($0)" }.reversed().joined(separator: "\n")
+        let stackElements = storage.map { "\($0)" }.reversed().joined(separator: " ")
         
         return topDivider + stackElements + bottomDivider
         
@@ -778,8 +779,11 @@ a
 a.dequeue()
 
 
+let startSort = Date()
 var bubble          =   [5, 4, 3, 2, 1]
 let orderedBubble   =   bubble.sorted(by: <)
+let endSort = Date()
+endSort.timeIntervalSince(startSort)
 
 let startBubble = Date()
 let length = bubble.count
@@ -796,3 +800,180 @@ for i in 0 ..< length {
 print(bubble)
 let endBubble = Date()
 endBubble.timeIntervalSince(startBubble)
+
+func isBalanced(s: String) -> String {
+    print("\n\n---------------- Balanced Brackets ----------------")
+    
+    let brackets: [Character]   =   Array(s)
+    var isBalanced: Bool        =   true
+    var stack                   =   Stack<Character>()
+    
+    if s.count.quotientAndRemainder(dividingBy: 2).remainder != 0 {
+        return "NO"
+    }
+    
+    for bracket in brackets {
+        
+        if bracket == "(" || bracket == "[" || bracket == "{" {
+            stack.push(bracket)
+            
+        } else {
+            let popped: Character?  =   stack.pop()
+            isBalanced              =   compareBrackets(startingBracket: popped, endingBracket: bracket)
+            
+            if !isBalanced {
+                return "NO"
+            }
+        }
+        
+    }
+    
+    return "YES"
+}
+
+func compareBrackets(startingBracket: Character?, endingBracket: Character) -> Bool {
+    
+    guard let startingBracket = startingBracket else { return false }
+    
+    if startingBracket == "(" && endingBracket == ")" {
+        return true
+    } else if startingBracket == "{" && endingBracket == "}" {
+        return true
+    } else if startingBracket == "[" && endingBracket == "]" {
+        return true
+    } else {
+        return false
+    }
+    
+}
+
+var brackets: String = "{({}()[])[]}{}([[]])"
+isBalanced(s: brackets)
+
+//: ### My Own Implementation of Stack
+struct MyOwnStack <Element>: CustomStringConvertible, ExpressibleByArrayLiteral {
+    private var items: [Element] = [Element]()
+    
+    init(_ items: [Element]) {
+        self.items = items
+    }
+    
+    init(arrayLiteral elements: Element...) {
+        self.items = elements
+    }
+    
+    public mutating func push(_ element: Element) {
+        items.append(element)
+    }
+    
+    public mutating func pop() -> Element? {
+        return items.popLast()
+    }
+    
+    public mutating func peek() -> Element? {
+        return items.last
+    }
+    
+    public func isEmpty() -> Bool {
+        return items.isEmpty
+    }
+    
+    var description: String {
+        return "Stack: \(items.map{"\($0)"}.reversed().joined(separator: " - "))"
+    }
+}
+
+var myStack: MyOwnStack = [1, 2, 3]
+myStack.push(1)
+myStack.push(2)
+myStack.push(3)
+myStack.push(4)
+myStack.push(5)
+myStack.pop()
+print(myStack)
+
+myStack.isEmpty()
+
+//: ### Nodes
+
+class MyOwnNode<Value> : CustomStringConvertible {
+    
+    private var _value:  Value
+    private var _next:   MyOwnNode?
+    
+    public init(value: Value, next: MyOwnNode? = nil){
+        self._value = value
+        self._next = next
+    }
+    
+    public var value: Value {
+        get {
+            return _value
+        }
+        
+        set {
+            _value = newValue
+        }
+    }
+    
+    public var next: MyOwnNode? {
+        get {
+            return _next
+        }
+        
+        set {
+            _next = newValue
+        }
+    }
+    
+    var description: String {
+        guard let next = _next else {
+            return "\(self._value)"
+        }
+        
+        return "\(_value) -> \(String(describing: next))"
+    }
+    
+}
+
+let mon     =   MyOwnNode(value: 1)
+let mon1    =   MyOwnNode(value: 2)
+let mon2    =   MyOwnNode(value: 3)
+
+mon.value   =   6
+mon.next    =   mon1
+mon1.next   =   mon2
+
+
+//: ### My LinkedList
+
+struct MyLinkedList<Value>: CustomStringConvertible {
+    
+    public var head: MyOwnNode<Value>?
+    public var tail: MyOwnNode<Value>?
+    
+    public init(){}
+    
+    public mutating func push(_ value: Value) {
+        head = MyOwnNode(value: value, next: head)
+        
+        if tail == nil {
+            tail = head
+        }
+    }
+    
+    
+    
+    public var isEmpty: Bool {
+        return head == nil
+    }
+    
+    public var description: String {
+        guard let head = head else {
+            return "Empty LinkedList"
+        }
+        
+        return "\(head)"
+    }
+    
+}

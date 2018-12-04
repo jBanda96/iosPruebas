@@ -10,7 +10,7 @@ import UIKit
 
 class BullEyeGameViewController: UIViewController {
 
-    var orientation = UIInterfaceOrientation.landscapeLeft
+    var orientation = UIInterfaceOrientation.landscapeLeft.rawValue
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -19,7 +19,9 @@ class BullEyeGameViewController: UIViewController {
         
     }
     
-   
+    override var shouldAutorotate: Bool {
+        return false
+    }
     
     override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
         return .landscapeLeft
