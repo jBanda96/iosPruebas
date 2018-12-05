@@ -90,6 +90,9 @@
                             <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="7lu-G8-bib">
                                 <rect key="frame" x="83" y="159" width="500" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <connections>
+                                    <action selector="sliderMoves:" destination="LgN-bQ-q2i" eventType="valueChanged" id="xfI-ob-Qt1"/>
+                                </connections>
                             </slider>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bbM-ts-hMs">
                                 <rect key="frame" x="589" y="163" width="29" height="21"/>
@@ -102,6 +105,11 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <viewLayoutGuide key="safeArea" id="Hma-0L-xka"/>
                     </view>
+                    <connections>
+                        <outlet property="scoreLabel" destination="1gJ-ug-fFp" id="KhM-1j-5Wj"/>
+                        <outlet property="slider" destination="7lu-G8-bib" id="wtk-KA-fi2"/>
+                        <outlet property="targetLabel" destination="6sh-we-Fib" id="Cc3-Wo-E0l"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="d1c-Tg-vQ5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
