@@ -13,6 +13,7 @@ class BullEyeGameViewController: UIViewController {
     @IBOutlet weak var slider:      UISlider!
     @IBOutlet weak var scoreLabel:  UILabel!
     @IBOutlet weak var targetLabel: UILabel!
+    @IBOutlet weak var roundLabel:  UILabel!
     
     var orientation = UIInterfaceOrientation.landscapeLeft.rawValue
     
@@ -29,13 +30,16 @@ class BullEyeGameViewController: UIViewController {
             scoreLabel.text = String(describing: newValue)
         }
     }
+    var round: Int              =   0 {
+        willSet {
+            roundLabel.text = String(describing: newValue)
+        }
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
         UIDevice.current.setValue(orientation, forKey: "orientation")
-        
-        score = 0
-        startNewRound()
+        startNewGame()
     }
     
     @IBAction func sliderMoves (_ slider: UISlider) {
@@ -48,17 +52,33 @@ class BullEyeGameViewController: UIViewController {
     @IBAction func showAlert(_ sender: UIButton) {
         
         let difference: Int =   abs(targetValue - currentValue)
-        let points: Int      =   100 - difference
-        score += points
+        var points: Int      =   100 - difference
         
-        let message: String = "You scored: \(points) points \nscore: \(score)"
+        let title: String
+        if difference == 0 {
+            title = "Perfect!"
+            points += 100
+        } else if difference < 5 {
+            title = "You almost had it!"
+            
+            if difference == 1 {
+                points += 50
+            }
+        } else if difference < 10 {
+            title = "Pretty good!"
+        } else {
+            title = "Not even close"
+        }
         
-        let alert: UIAlertController    =   UIAlertController(title: "",
+        let message: String = "You scored: \(points) points."
+        
+        let alert: UIAlertController    =   UIAlertController(title: title,
                                                               message: message,
                                                               preferredStyle: .alert)
         
         let action: UIAlertAction       =   UIAlertAction(title: "Ok",
                                                           style: .default) { (_) in
+                                                                self.score += points
                                                                 self.startNewRound()
                                                             }
         
@@ -67,8 +87,15 @@ class BullEyeGameViewController: UIViewController {
         
     }
     
+    @IBAction func startOver(_ sender: UIButton) {
+        startNewGame()
+    }
+    
     func startNewRound(){
+        round += 1
+        
         targetValue     =   makeNewTargetValue()
+        
         currentValue    =   50
         slider.value    =   50.0
     }
@@ -77,13 +104,21 @@ class BullEyeGameViewController: UIViewController {
         return Int.random(in: 0...100)
     }
     
+    func startNewGame(){
+        self.score = 0
+        self.round = 0
+        
+        self.startNewRound()
+    }
+
+    
     //MARK: - View Orientation
     override var shouldAutorotate: Bool {
         return false
     }
     
     override var preferredInterfaceOrientationForPresentation: UIInterfaceOrientation {
-        return .landscapeLeft
+        return .landscapeRight
     }
     
     override var supportedInterfaceOrientations: UIInterfaceOrientationMask {

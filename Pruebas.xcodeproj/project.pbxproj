@@ -68,6 +68,7 @@
 		2A64B34E217C2B48006CAB08 /* bancomer.cer in Resources */ = {isa = PBXBuildFile; fileRef = 2A64B34D217C2B48006CAB08 /* bancomer.cer */; };
 		2A7231532130ABB1004EC266 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7231522130ABB1004EC266 /* MusicViewController.swift */; };
 		2A7231552130AF8A004EC266 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7231542130AF8A004EC266 /* ButtonStyle.swift */; };
+		2A726CD621BA279A006E8679 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A726CD521BA279A006E8679 /* AboutViewController.swift */; };
 		2A80481821954541002F7081 /* CollapsableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80481721954541002F7081 /* CollapsableTableViewController.swift */; };
 		2A80481A2195458E002F7081 /* CollapsableTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8048192195458E002F7081 /* CollapsableTableView.storyboard */; };
 		2A98A76E209FF5C1004A39A0 /* CoreData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A98A76D209FF5C1004A39A0 /* CoreData.storyboard */; };
@@ -229,6 +230,7 @@
 		2A64B34D217C2B48006CAB08 /* bancomer.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = bancomer.cer; sourceTree = "<group>"; };
 		2A7231522130ABB1004EC266 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		2A7231542130AF8A004EC266 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
+		2A726CD521BA279A006E8679 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2A80481721954541002F7081 /* CollapsableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableTableViewController.swift; sourceTree = "<group>"; };
 		2A8048192195458E002F7081 /* CollapsableTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollapsableTableView.storyboard; sourceTree = "<group>"; };
 		2A98A76D209FF5C1004A39A0 /* CoreData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreData.storyboard; sourceTree = "<group>"; };
@@ -449,6 +451,7 @@
 			children = (
 				2A38EBA521B444C60089883A /* BullsEyeGame.storyboard */,
 				2A38EBA721B447090089883A /* BullEyeGameViewController.swift */,
+				2A726CD521BA279A006E8679 /* AboutViewController.swift */,
 			);
 			path = BullsEyeGame;
 			sourceTree = "<group>";
@@ -1059,6 +1062,7 @@
 				2ADCEE57211DFFC70073CB1D /* DetailViewController.swift in Sources */,
 				2AA249F72126799600874A60 /* Emoji.swift in Sources */,
 				2AEDC60220A8EA310066170F /* Model.swift in Sources */,
+				2A726CD621BA279A006E8679 /* AboutViewController.swift in Sources */,
 				2A56D8502098E836001A1352 /* AnimationsViewController.swift in Sources */,
 				2ABA9C932165C1BE0054BFD8 /* xibViewController.m in Sources */,
 				2A23243321547CAA00E929D4 /* Gif.m in Sources */,
