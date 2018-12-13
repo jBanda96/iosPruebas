@@ -1075,23 +1075,24 @@ struct MyLinkedList<Value>: CustomStringConvertible {
 
 
 func readQr(){
-    let image = UIImage(named: "qr.JPG")!
-    
-    //let img = UIImage(data: image)
-    let imageView = UIImageView()
-    imageView.image = image
-    
-    let context = CIContext()
-    let options = [CIDetectorAccuracy : CIDetectorAccuracyHigh]
-    
-    let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: context, options: options)
-    let imageQRCode = CIImage(cgImage: image.cgImage!)
-    
-    let features = detector!.features(in: imageQRCode, options: [CIDetectorImageOrientation: 1])
-    
-    guard let feature = features.first as? CIQRCodeFeature else { return }
-    
-    print(feature.messageString)
+    print("\n\n---------------- QR Reader ----------------")
+    if let image = UIImage(named: "qr.JPG") {
+        //let img = UIImage(data: image)
+        let imageView = UIImageView()
+        imageView.image = image
+        
+        let context = CIContext()
+        let options = [CIDetectorAccuracy : CIDetectorAccuracyHigh]
+        
+        let detector = CIDetector(ofType: CIDetectorTypeQRCode, context: context, options: options)
+        let imageQRCode = CIImage(cgImage: image.cgImage!)
+        
+        let features = detector!.features(in: imageQRCode, options: [CIDetectorImageOrientation: CGImagePropertyOrientation.upMirrored])
+        
+        guard let feature = features.first as? CIQRCodeFeature else { return }
+        
+        print(feature.messageString ?? "Error en QR")
+    }
     
 }
 

@@ -36,10 +36,20 @@ class BullEyeGameViewController: UIViewController {
         }
     }
     
+    //MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.navigationController?.navigationBar.barStyle = .blackTranslucent
+        
+        customizeSlider()
+        
         UIDevice.current.setValue(orientation, forKey: "orientation")
         startNewGame()
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        super.viewWillDisappear(animated)
+        self.navigationController?.navigationBar.barStyle = .default
     }
     
     @IBAction func sliderMoves (_ slider: UISlider) {
@@ -111,6 +121,24 @@ class BullEyeGameViewController: UIViewController {
         self.startNewRound()
     }
 
+    //MARK: - Customization
+    func customizeSlider() {
+        let thumbImageNormal:       UIImage     =       #imageLiteral(resourceName: "SliderThumb-Normal")
+        let thumbImageHightlighted: UIImage     =       #imageLiteral(resourceName: "SliderThumb-Highlighted")
+        
+        let insets:                 UIEdgeInsets    =       UIEdgeInsets(top: 0, left: 14, bottom: 0, right: 14)
+        let trackLeftImage:         UIImage         =       #imageLiteral(resourceName: "SliderTrackLeft")
+        let trackLeftResizable                      =       trackLeftImage.resizableImage(withCapInsets: insets)
+        
+        let trackRightImage:         UIImage         =       #imageLiteral(resourceName: "SmallButton")
+        let trackRightResizable                      =       trackRightImage.resizableImage(withCapInsets: insets)
+        
+        slider.setThumbImage(thumbImageNormal,          for: .normal)
+        slider.setThumbImage(thumbImageHightlighted,    for: .highlighted)
+        slider.setMinimumTrackImage(trackLeftResizable,         for: .normal)
+        slider.setMaximumTrackImage(trackRightResizable,        for: .normal)
+        
+    }
     
     //MARK: - View Orientation
     override var shouldAutorotate: Bool {
