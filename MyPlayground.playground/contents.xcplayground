@@ -4,5 +4,6 @@
         <page name='Untitled Page'/>
         <page name='Network operations'/>
         <page name='CIImage'/>
+        <page name='Files and Data'/>
     </pages>
 </playground>
