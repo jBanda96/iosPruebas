@@ -84,6 +84,7 @@
 		2A726CD621BA279A006E8679 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A726CD521BA279A006E8679 /* AboutViewController.swift */; };
 		2A80481821954541002F7081 /* CollapsableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80481721954541002F7081 /* CollapsableTableViewController.swift */; };
 		2A80481A2195458E002F7081 /* CollapsableTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8048192195458E002F7081 /* CollapsableTableView.storyboard */; };
+		2A87650221FE98C1009AF124 /* PetsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A87650121FE98C1009AF124 /* PetsCell.swift */; };
 		2A98A76E209FF5C1004A39A0 /* CoreData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A98A76D209FF5C1004A39A0 /* CoreData.storyboard */; };
 		2A98A770209FF5E1004A39A0 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98A76F209FF5E1004A39A0 /* CoreDataViewController.swift */; };
 		2A98A773209FF837004A39A0 /* TodoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A98A771209FF837004A39A0 /* TodoApp.xcdatamodeld */; };
@@ -118,6 +119,7 @@
 		2ABA9C932165C1BE0054BFD8 /* xibViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA9C922165C1BE0054BFD8 /* xibViewController.m */; };
 		2ABA9C9A2165C5B60054BFD8 /* xibs.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2ABA9C982165C5B60054BFD8 /* xibs.xib */; };
 		2ABA9C9D2165C6A70054BFD8 /* xibs.m in Sources */ = {isa = PBXBuildFile; fileRef = 2ABA9C9C2165C6A70054BFD8 /* xibs.m */; };
+		2ABB146D21FE4CD100BA1B65 /* DetailSegueViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABB146C21FE4CD100BA1B65 /* DetailSegueViewController.swift */; };
 		2ABDF5BE219BB2B9004A4D9D /* Notifications.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ABDF5BD219BB2B9004A4D9D /* Notifications.storyboard */; };
 		2ABDF5C0219BB2F9004A4D9D /* NotificationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDF5BF219BB2F9004A4D9D /* NotificationsViewController.swift */; };
 		2ABDF5C6219BB448004A4D9D /* ShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ABDF5C5219BB448004A4D9D /* ShadowView.swift */; };
@@ -126,6 +128,8 @@
 		2AC3DE892119606E0077A57E /* LongPressViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AC3DE882119606E0077A57E /* LongPressViewController.swift */; };
 		2AC4978320ABC2BA00E222BD /* UIButtonsInUITableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AC4978220ABC2BA00E222BD /* UIButtonsInUITableView.storyboard */; };
 		2AC7285D209D5C1A00631E93 /* car.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AC7285C209D5C1A00631E93 /* car.png */; };
+		2ACE4D2D21FD6E0700E53219 /* CollectionView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ACE4D2C21FD6E0700E53219 /* CollectionView.storyboard */; };
+		2ACE4D2F21FD6E4200E53219 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ACE4D2E21FD6E4200E53219 /* CollectionViewController.swift */; };
 		2AD1108A209A2AA3002F4B3C /* VideoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AD11089209A2AA3002F4B3C /* VideoViewController.swift */; };
 		2AD1108D209A300C002F4B3C /* Video.mp4 in Resources */ = {isa = PBXBuildFile; fileRef = 2AD1108C209A2ED1002F4B3C /* Video.mp4 */; };
 		2AD11090209A3463002F4B3C /* PhotosAndVideos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AD1108F209A3463002F4B3C /* PhotosAndVideos.storyboard */; };
@@ -158,6 +162,7 @@
 		2AEDC60620A8EE3E0066170F /* Info.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDC60520A8EE3E0066170F /* Info.swift */; };
 		2AEDC60820A8EEF90066170F /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDC60720A8EEF90066170F /* Picture.swift */; };
 		2AEDC60A20A8EF5E0066170F /* Connections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDC60920A8EF5E0066170F /* Connections.swift */; };
+		2AEE0A1922014AFD00E44454 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE0A1822014AFD00E44454 /* FlowLayout.swift */; };
 		2AFC4221209D6429000C1E42 /* deathStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC4220209D6429000C1E42 /* deathStar.png */; };
 		2AFD910221A09A3100682B3A /* TimeAlert.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AFD910121A09A3100682B3A /* TimeAlert.gif */; };
 		2AFF8253214B70F500A742FF /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF8252214B70F500A742FF /* FontsViewController.swift */; };
@@ -259,6 +264,7 @@
 		2A726CD521BA279A006E8679 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2A80481721954541002F7081 /* CollapsableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableTableViewController.swift; sourceTree = "<group>"; };
 		2A8048192195458E002F7081 /* CollapsableTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollapsableTableView.storyboard; sourceTree = "<group>"; };
+		2A87650121FE98C1009AF124 /* PetsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsCell.swift; sourceTree = "<group>"; };
 		2A98A76D209FF5C1004A39A0 /* CoreData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreData.storyboard; sourceTree = "<group>"; };
 		2A98A76F209FF5E1004A39A0 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
 		2A98A772209FF837004A39A0 /* TodoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoApp.xcdatamodel; sourceTree = "<group>"; };
@@ -299,6 +305,7 @@
 		2ABA9C982165C5B60054BFD8 /* xibs.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = xibs.xib; sourceTree = "<group>"; };
 		2ABA9C9B2165C6A70054BFD8 /* xibs.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = xibs.h; sourceTree = "<group>"; };
 		2ABA9C9C2165C6A70054BFD8 /* xibs.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = xibs.m; sourceTree = "<group>"; };
+		2ABB146C21FE4CD100BA1B65 /* DetailSegueViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailSegueViewController.swift; sourceTree = "<group>"; };
 		2ABDF5BD219BB2B9004A4D9D /* Notifications.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Notifications.storyboard; sourceTree = "<group>"; };
 		2ABDF5BF219BB2F9004A4D9D /* NotificationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationsViewController.swift; sourceTree = "<group>"; };
 		2ABDF5C5219BB448004A4D9D /* ShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShadowView.swift; sourceTree = "<group>"; };
@@ -307,6 +314,8 @@
 		2AC3DE882119606E0077A57E /* LongPressViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LongPressViewController.swift; sourceTree = "<group>"; };
 		2AC4978220ABC2BA00E222BD /* UIButtonsInUITableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = UIButtonsInUITableView.storyboard; sourceTree = "<group>"; };
 		2AC7285C209D5C1A00631E93 /* car.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = car.png; sourceTree = "<group>"; };
+		2ACE4D2C21FD6E0700E53219 /* CollectionView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollectionView.storyboard; sourceTree = "<group>"; };
+		2ACE4D2E21FD6E4200E53219 /* CollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		2AD11089209A2AA3002F4B3C /* VideoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoViewController.swift; sourceTree = "<group>"; };
 		2AD1108C209A2ED1002F4B3C /* Video.mp4 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Video.mp4; sourceTree = "<group>"; };
 		2AD1108F209A3463002F4B3C /* PhotosAndVideos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = PhotosAndVideos.storyboard; sourceTree = "<group>"; };
@@ -340,6 +349,7 @@
 		2AEDC60520A8EE3E0066170F /* Info.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Info.swift; sourceTree = "<group>"; };
 		2AEDC60720A8EEF90066170F /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		2AEDC60920A8EF5E0066170F /* Connections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connections.swift; sourceTree = "<group>"; };
+		2AEE0A1822014AFD00E44454 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
 		2AFC4220209D6429000C1E42 /* deathStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathStar.png; sourceTree = "<group>"; };
 		2AFD910121A09A3100682B3A /* TimeAlert.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TimeAlert.gif; sourceTree = "<group>"; };
 		2AFEDACD2130572300052FEE /* Pruebas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pruebas-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -579,6 +589,7 @@
 				2A4301EB21A908FE00332CE0 /* Tic-Tac-Toe */,
 				2A38EBA421B444AC0089883A /* BullsEyeGame */,
 				2A07BB0021DC340B00513EFB /* To Do List */,
+				2ACE4D2B21FD6DEB00E53219 /* CollectionViews */,
 				2A3A094020956F6A0095F163 /* Assets.xcassets */,
 				2AFD910121A09A3100682B3A /* TimeAlert.gif */,
 				2AD2CD6121A09B9100F033EB /* LocationAlert.gif */,
@@ -796,6 +807,18 @@
 			path = "UIButtons in UITableView";
 			sourceTree = "<group>";
 		};
+		2ACE4D2B21FD6DEB00E53219 /* CollectionViews */ = {
+			isa = PBXGroup;
+			children = (
+				2AEE0A1722014ADD00E44454 /* Layout */,
+				2ACE4D2C21FD6E0700E53219 /* CollectionView.storyboard */,
+				2ACE4D2E21FD6E4200E53219 /* CollectionViewController.swift */,
+				2ABB146C21FE4CD100BA1B65 /* DetailSegueViewController.swift */,
+				2A87650121FE98C1009AF124 /* PetsCell.swift */,
+			);
+			path = CollectionViews;
+			sourceTree = "<group>";
+		};
 		2AD1108E209A3440002F4B3C /* Capturing Photos and Videos */ = {
 			isa = PBXGroup;
 			children = (
@@ -862,6 +885,14 @@
 				2AB2523320AE928F00D5C33E /* base64json */,
 			);
 			path = Pagination;
+			sourceTree = "<group>";
+		};
+		2AEE0A1722014ADD00E44454 /* Layout */ = {
+			isa = PBXGroup;
+			children = (
+				2AEE0A1822014AFD00E44454 /* FlowLayout.swift */,
+			);
+			path = Layout;
 			sourceTree = "<group>";
 		};
 		7BE645D48D9B59BBA8416E16 /* Frameworks */ = {
@@ -965,6 +996,7 @@
 				2A63FC82215329EA009E03D2 /* Picker.storyboard in Resources */,
 				2A64B34E217C2B48006CAB08 /* bancomer.cer in Resources */,
 				2AC4978320ABC2BA00E222BD /* UIButtonsInUITableView.storyboard in Resources */,
+				2ACE4D2D21FD6E0700E53219 /* CollectionView.storyboard in Resources */,
 				2AAC95C4209C1C6900255840 /* Location.storyboard in Resources */,
 				2A98A76E209FF5C1004A39A0 /* CoreData.storyboard in Resources */,
 				2AA249F52126790400874A60 /* Emojis.storyboard in Resources */,
@@ -1072,6 +1104,7 @@
 				2ABA9C9D2165C6A70054BFD8 /* xibs.m in Sources */,
 				2AE46D0D219BBC8D00A8FB69 /* UNService.swift in Sources */,
 				2A295ABB21DC727600134F71 /* ChecklistItem.swift in Sources */,
+				2A87650221FE98C1009AF124 /* PetsCell.swift in Sources */,
 				2A09380821A3C1C600A1EBFE /* StatusPill.swift in Sources */,
 				2A218BF3213750CC005AC2B2 /* Registration.swift in Sources */,
 				2A98A770209FF5E1004A39A0 /* CoreDataViewController.swift in Sources */,
@@ -1093,6 +1126,7 @@
 				2A04477420ADE71B00383D6F /* DBManager.swift in Sources */,
 				2A2EAFB420C3AA3500073860 /* GesturesViewController.swift in Sources */,
 				2A35D74B21A27CD700FA6657 /* CardStack.swift in Sources */,
+				2ACE4D2F21FD6E4200E53219 /* CollectionViewController.swift in Sources */,
 				2A2F715E214EF5B700348C2A /* Bedroom.m in Sources */,
 				2A1AF2A6212E5B35002C8BFA /* FlyingSquaresViewController.swift in Sources */,
 				2ADAD1C720B5F8BA0080B03B /* PercentageView.swift in Sources */,
@@ -1101,7 +1135,9 @@
 				2A35D75A21A2808300FA6657 /* CardView.swift in Sources */,
 				2AD2CD6821A09D2E00F033EB /* NotificationActionID.swift in Sources */,
 				2AE2DA2720CB2B4D00C3DD37 /* Word.swift in Sources */,
+				2AEE0A1922014AFD00E44454 /* FlowLayout.swift in Sources */,
 				2A2F715B214EEFE300348C2A /* House.m in Sources */,
+				2ABB146D21FE4CD100BA1B65 /* DetailSegueViewController.swift in Sources */,
 				2A4A2EE921A0932600ED199C /* NotificationAttachmentID.swift in Sources */,
 				2A17F1A1209D670A009DF9DC /* 3DTouchViewController.swift in Sources */,
 				2A053E79209821B100928204 /* Text.swift in Sources */,

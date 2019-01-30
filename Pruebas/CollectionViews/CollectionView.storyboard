@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="iUY-pE-Wpg">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collection View Controller-->
+        <scene sceneID="jKj-ja-jcx">
+            <objects>
+                <collectionViewController id="iUY-pE-Wpg" customClass="CollectionViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="Gus-lc-1Ty">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="0.0" minimumInteritemSpacing="0.0" id="oTZ-hk-Hye" customClass="FlowLayout" customModule="Pruebas" customModuleProvider="target">
+                            <size key="itemSize" width="99" height="99"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="collectionCell" id="gGJ-wU-KPY" customClass="PetsCell" customModule="Pruebas" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                    <rect key="frame" x="0.0" y="0.0" width="99" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gxk-hc-Vax">
+                                            <rect key="frame" x="28.5" y="39" width="42" height="21"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Unchecked" translatesAutoresizingMaskIntoConstraints="NO" id="Rj3-Qi-1ih">
+                                            <rect key="frame" x="71" y="71" width="20" height="20"/>
+                                        </imageView>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" red="0.1949561072592822" green="0.46869051395939088" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="Rj3-Qi-1ih" secondAttribute="trailing" constant="8" id="1Bw-Iu-4LM"/>
+                                    <constraint firstItem="Rj3-Qi-1ih" firstAttribute="height" secondItem="gGJ-wU-KPY" secondAttribute="height" multiplier="0.2" id="1lR-E4-5Y9"/>
+                                    <constraint firstItem="Gxk-hc-Vax" firstAttribute="centerX" secondItem="gGJ-wU-KPY" secondAttribute="centerX" id="DXI-0s-iOK"/>
+                                    <constraint firstAttribute="bottom" secondItem="Rj3-Qi-1ih" secondAttribute="bottom" constant="8" id="TUI-WW-VdP"/>
+                                    <constraint firstItem="Rj3-Qi-1ih" firstAttribute="width" secondItem="gGJ-wU-KPY" secondAttribute="width" multiplier="0.2" id="TiC-On-IK4"/>
+                                    <constraint firstItem="Gxk-hc-Vax" firstAttribute="centerY" secondItem="gGJ-wU-KPY" secondAttribute="centerY" id="mqJ-sQ-Y0C"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="selectionImage" destination="Rj3-Qi-1ih" id="L63-Fn-foV"/>
+                                    <outlet property="titleLabel" destination="Gxk-hc-Vax" id="tWg-LO-Kcl"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="iUY-pE-Wpg" id="9gJ-Oj-r9A"/>
+                            <outlet property="delegate" destination="iUY-pE-Wpg" id="aHR-Zo-m3X"/>
+                        </connections>
+                    </collectionView>
+                    <navigationItem key="navigationItem" id="cEz-2Q-fxg">
+                        <rightBarButtonItems>
+                            <barButtonItem systemItem="add" id="XPU-pB-CMB">
+                                <connections>
+                                    <action selector="addItem:" destination="iUY-pE-Wpg" id="YZq-OY-YWc"/>
+                                </connections>
+                            </barButtonItem>
+                            <barButtonItem systemItem="trash" id="m1t-xp-VXL">
+                                <connections>
+                                    <action selector="deleteItem:" destination="iUY-pE-Wpg" id="YE2-yp-HP3"/>
+                                </connections>
+                            </barButtonItem>
+                        </rightBarButtonItems>
+                    </navigationItem>
+                    <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" prompted="NO"/>
+                    <connections>
+                        <outlet property="addButton" destination="XPU-pB-CMB" id="mc7-1E-d0t"/>
+                        <outlet property="deleteButton" destination="m1t-xp-VXL" id="4OB-XB-vYh"/>
+                        <segue destination="muf-p3-nsI" kind="show" identifier="detailSegue" id="aqe-qr-E5p"/>
+                    </connections>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2Qy-o9-S0Y" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2264.8000000000002" y="72.413793103448285"/>
+        </scene>
+        <!--Detail Segue View Controller-->
+        <scene sceneID="4MF-Kn-ABJ">
+            <objects>
+                <viewController id="muf-p3-nsI" customClass="DetailSegueViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="6Rw-rQ-5K1">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Emoji" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IB3-7S-LCp">
+                                <rect key="frame" x="166.5" y="323" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="IB3-7S-LCp" firstAttribute="centerX" secondItem="6Rw-rQ-5K1" secondAttribute="centerX" id="DXC-2t-RIT"/>
+                            <constraint firstItem="IB3-7S-LCp" firstAttribute="centerY" secondItem="6Rw-rQ-5K1" secondAttribute="centerY" id="DfO-yM-x2W"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="J8W-wp-XuL"/>
+                    </view>
+                    <connections>
+                        <outlet property="detailEmoji" destination="IB3-7S-LCp" id="GJh-bY-q5U"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="2p2-KD-Z97" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3383.1999999999998" y="73.313343328335833"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="Unchecked" width="22" height="22"/>
+    </resources>
+</document>
