@@ -184,6 +184,8 @@
 		2AEDC60820A8EEF90066170F /* Picture.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDC60720A8EEF90066170F /* Picture.swift */; };
 		2AEDC60A20A8EF5E0066170F /* Connections.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEDC60920A8EF5E0066170F /* Connections.swift */; };
 		2AEE0A1922014AFD00E44454 /* FlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AEE0A1822014AFD00E44454 /* FlowLayout.swift */; };
+		2AF90C362217BA2F00444D16 /* DIYScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF90C352217BA2F00444D16 /* DIYScrollView.swift */; };
+		2AF90C382217C00400444D16 /* SpaceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AF90C372217C00400444D16 /* SpaceViewController.swift */; };
 		2AFC4221209D6429000C1E42 /* deathStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC4220209D6429000C1E42 /* deathStar.png */; };
 		2AFD910221A09A3100682B3A /* TimeAlert.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AFD910121A09A3100682B3A /* TimeAlert.gif */; };
 		2AFF8253214B70F500A742FF /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF8252214B70F500A742FF /* FontsViewController.swift */; };
@@ -392,6 +394,8 @@
 		2AEDC60720A8EEF90066170F /* Picture.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Picture.swift; sourceTree = "<group>"; };
 		2AEDC60920A8EF5E0066170F /* Connections.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Connections.swift; sourceTree = "<group>"; };
 		2AEE0A1822014AFD00E44454 /* FlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlowLayout.swift; sourceTree = "<group>"; };
+		2AF90C352217BA2F00444D16 /* DIYScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DIYScrollView.swift; sourceTree = "<group>"; };
+		2AF90C372217C00400444D16 /* SpaceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceViewController.swift; sourceTree = "<group>"; };
 		2AFC4220209D6429000C1E42 /* deathStar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = deathStar.png; sourceTree = "<group>"; };
 		2AFD910121A09A3100682B3A /* TimeAlert.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TimeAlert.gif; sourceTree = "<group>"; };
 		2AFEDACD2130572300052FEE /* Pruebas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pruebas-Bridging-Header.h"; sourceTree = "<group>"; };
@@ -450,6 +454,8 @@
 				2AB98D8021264B220000D768 /* ScrollViewController.swift */,
 				2A697DC521F5486B001E473A /* PiratesViewController.swift */,
 				2A46D74521F6CD79000C2FCE /* PopOverViewController.swift */,
+				2AF90C352217BA2F00444D16 /* DIYScrollView.swift */,
+				2AF90C372217C00400444D16 /* SpaceViewController.swift */,
 			);
 			path = "Working with interface builder";
 			sourceTree = "<group>";
@@ -1206,6 +1212,7 @@
 				2A36F5D4220E5DFB00E2F873 /* Card.swift in Sources */,
 				2A218BF3213750CC005AC2B2 /* Registration.swift in Sources */,
 				2A98A770209FF5E1004A39A0 /* CoreDataViewController.swift in Sources */,
+				2AF90C382217C00400444D16 /* SpaceViewController.swift in Sources */,
 				2A59DC9C21DFE7E700C80E1C /* CheckListCell.swift in Sources */,
 				2A3020D9220E105800DE70E3 /* HerbViewController.swift in Sources */,
 				2A3A093C20956F690095F163 /* ViewController.swift in Sources */,
@@ -1287,6 +1294,7 @@
 				2A726CD621BA279A006E8679 /* AboutViewController.swift in Sources */,
 				2A56D8502098E836001A1352 /* AnimationsViewController.swift in Sources */,
 				2ABA9C932165C1BE0054BFD8 /* xibViewController.m in Sources */,
+				2AF90C362217BA2F00444D16 /* DIYScrollView.swift in Sources */,
 				2A23243321547CAA00E929D4 /* Gif.m in Sources */,
 				2A445755220A97FA0024F658 /* FlightData.swift in Sources */,
 				2ADA09E520993C7600FDB60F /* CustomSegue.swift in Sources */,

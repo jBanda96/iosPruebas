@@ -82,9 +82,12 @@
                                             <constraint firstAttribute="height" constant="42" id="0R3-PN-N8g"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
-                                        <state key="normal" title="Treasure Map" backgroundImage="button">
+                                        <state key="normal" title="Image" backgroundImage="button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="3UJ-AE-3D7" kind="show" id="dUj-rl-aXN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yus-0D-NSl">
                                         <rect key="frame" x="0.0" y="54" width="250" height="42"/>
@@ -92,7 +95,7 @@
                                             <constraint firstAttribute="height" constant="42" id="whO-6w-1Kj"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
-                                        <state key="normal" title="Weather Forecast" backgroundImage="button">
+                                        <state key="normal" title="Stacks" backgroundImage="button">
                                             <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         </state>
                                         <connections>
@@ -105,9 +108,12 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="k8W-0A-zvm">
                                                 <rect key="frame" x="0.0" y="0.0" width="250" height="40"/>
                                                 <fontDescription key="fontDescription" name="MarkerFelt-Wide" family="Marker Felt" pointSize="17"/>
-                                                <state key="normal" title="Privacy Policy" backgroundImage="button">
+                                                <state key="normal" title="ScrollView" backgroundImage="button">
                                                     <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 </state>
+                                                <connections>
+                                                    <segue destination="mcy-Za-p1E" kind="show" id="bRJ-mF-69v"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UkK-YQ-P8K">
                                                 <rect key="frame" x="0.0" y="52" width="250" height="40"/>
@@ -234,11 +240,11 @@
                         <viewLayoutGuide key="safeArea" id="QLx-h4-QCo"/>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="k0l-MW-Zgi"/>
                                 <exclude reference="2q6-TC-cO5"/>
                                 <exclude reference="M5Q-Ng-GFn"/>
                                 <exclude reference="ady-HR-Dzp"/>
                                 <exclude reference="jsA-kC-zbx"/>
-                                <exclude reference="k0l-MW-Zgi"/>
                             </mask>
                         </variation>
                         <variation key="widthClass=compact">
@@ -249,9 +255,9 @@
                         </variation>
                         <variation key="widthClass=regular">
                             <mask key="constraints">
+                                <include reference="k0l-MW-Zgi"/>
                                 <include reference="ady-HR-Dzp"/>
                                 <include reference="jsA-kC-zbx"/>
-                                <include reference="k0l-MW-Zgi"/>
                             </mask>
                         </variation>
                     </view>
@@ -260,8 +266,38 @@
             </objects>
             <point key="canvasLocation" x="1520.8" y="-362.06896551724139"/>
         </scene>
+        <!--Space View Controller-->
+        <scene sceneID="SUs-Un-V5Y">
+            <objects>
+                <viewController id="mcy-Za-p1E" customClass="SpaceViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tGN-3p-eoU">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AED-Np-HyE">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="battle" translatesAutoresizingMaskIntoConstraints="NO" id="K30-Bd-OK4">
+                                        <rect key="frame" x="0.0" y="-44" width="375" height="812"/>
+                                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    </imageView>
+                                </subviews>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <viewLayoutGuide key="safeArea" id="gxh-dx-O8B"/>
+                    </view>
+                    <nil key="simulatedTopBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aBj-eW-8tm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <panGestureRecognizer minimumNumberOfTouches="1" id="3s5-ck-UbO"/>
+            </objects>
+            <point key="canvasLocation" x="1520.8" y="384.97536945812811"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="battle" width="3840" height="2160"/>
         <image name="bg" width="2732" height="2732"/>
         <image name="button" width="44.666667938232422" height="40"/>
         <image name="yo_merenges" width="1056" height="592"/>
