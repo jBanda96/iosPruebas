@@ -53,6 +53,7 @@
 		2A35D74B21A27CD700FA6657 /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35D74A21A27CD700FA6657 /* CardStack.swift */; };
 		2A35D75821A27EA400FA6657 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35D75721A27EA400FA6657 /* Person.swift */; };
 		2A35D75A21A2808300FA6657 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35D75921A2808300FA6657 /* CardView.swift */; };
+		2A367480221A5E71000E7B25 /* MoreAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36747F221A5E71000E7B25 /* MoreAppsViewController.swift */; };
 		2A36F5D0220E5C6900E2F873 /* Demistifying.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A36F5CF220E5C6900E2F873 /* Demistifying.storyboard */; };
 		2A36F5D2220E5DCD00E2F873 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5D1220E5DCC00E2F873 /* LessonViewController.swift */; };
 		2A36F5D4220E5DFB00E2F873 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5D3220E5DFB00E2F873 /* Card.swift */; };
@@ -99,6 +100,7 @@
 		2A7231532130ABB1004EC266 /* MusicViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7231522130ABB1004EC266 /* MusicViewController.swift */; };
 		2A7231552130AF8A004EC266 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7231542130AF8A004EC266 /* ButtonStyle.swift */; };
 		2A726CD621BA279A006E8679 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A726CD521BA279A006E8679 /* AboutViewController.swift */; };
+		2A7DB310221A279E00155D33 /* LargerScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7DB30F221A279D00155D33 /* LargerScrollViewController.swift */; };
 		2A80481821954541002F7081 /* CollapsableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80481721954541002F7081 /* CollapsableTableViewController.swift */; };
 		2A80481A2195458E002F7081 /* CollapsableTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8048192195458E002F7081 /* CollapsableTableView.storyboard */; };
 		2A87650221FE98C1009AF124 /* PetsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A87650121FE98C1009AF124 /* PetsCell.swift */; };
@@ -249,6 +251,7 @@
 		2A35D74A21A27CD700FA6657 /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
 		2A35D75721A27EA400FA6657 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		2A35D75921A2808300FA6657 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2A36747F221A5E71000E7B25 /* MoreAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreAppsViewController.swift; sourceTree = "<group>"; };
 		2A36F5CF220E5C6900E2F873 /* Demistifying.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Demistifying.storyboard; sourceTree = "<group>"; };
 		2A36F5D1220E5DCC00E2F873 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
 		2A36F5D3220E5DFB00E2F873 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
@@ -302,6 +305,7 @@
 		2A7231522130ABB1004EC266 /* MusicViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicViewController.swift; sourceTree = "<group>"; };
 		2A7231542130AF8A004EC266 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		2A726CD521BA279A006E8679 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
+		2A7DB30F221A279D00155D33 /* LargerScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargerScrollViewController.swift; sourceTree = "<group>"; };
 		2A80481721954541002F7081 /* CollapsableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableTableViewController.swift; sourceTree = "<group>"; };
 		2A8048192195458E002F7081 /* CollapsableTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollapsableTableView.storyboard; sourceTree = "<group>"; };
 		2A87650121FE98C1009AF124 /* PetsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsCell.swift; sourceTree = "<group>"; };
@@ -452,10 +456,12 @@
 				2A3A093B20956F690095F163 /* ViewController.swift */,
 				2AA4C9AC2099708900E004CD /* ScrollView.storyboard */,
 				2AB98D8021264B220000D768 /* ScrollViewController.swift */,
+				2A7DB30F221A279D00155D33 /* LargerScrollViewController.swift */,
 				2A697DC521F5486B001E473A /* PiratesViewController.swift */,
 				2A46D74521F6CD79000C2FCE /* PopOverViewController.swift */,
 				2AF90C352217BA2F00444D16 /* DIYScrollView.swift */,
 				2AF90C372217C00400444D16 /* SpaceViewController.swift */,
+				2A36747F221A5E71000E7B25 /* MoreAppsViewController.swift */,
 			);
 			path = "Working with interface builder";
 			sourceTree = "<group>";
@@ -1195,6 +1201,7 @@
 				2AAA9DE4209F84A10034D1BF /* Contact.swift in Sources */,
 				2A46D74621F6CD79000C2FCE /* PopOverViewController.swift in Sources */,
 				2A3020DB220E105800DE70E3 /* PopAnimator.swift in Sources */,
+				2A7DB310221A279E00155D33 /* LargerScrollViewController.swift in Sources */,
 				2A218BF521375349005AC2B2 /* AddRegistrationTableViewController.swift in Sources */,
 				2AE2DA2520CB28E900C3DD37 /* WordViewController.swift in Sources */,
 				2AA4CFF421418EF30054EAC9 /* NetUtils.m in Sources */,
@@ -1257,6 +1264,7 @@
 				2AFF8253214B70F500A742FF /* FontsViewController.swift in Sources */,
 				2AAA9DE2209F7BC60034D1BF /* ContactsManager.swift in Sources */,
 				2A07BB0421DC349A00513EFB /* ToDoListController.swift in Sources */,
+				2A367480221A5E71000E7B25 /* MoreAppsViewController.swift in Sources */,
 				2ABDF5C0219BB2F9004A4D9D /* NotificationsViewController.swift in Sources */,
 				2A35D74921A27C9A00FA6657 /* TorchViewController.swift in Sources */,
 				2A52BACC2138694300183ABF /* SelectRoomTypeTableViewController.swift in Sources */,
