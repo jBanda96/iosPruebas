@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A013596221BB0A900F76857 /* PetPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A013594221BB0A900F76857 /* PetPal.xcdatamodeld */; };
+		2A0135A1221BB20C00F76857 /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A01359F221BB20C00F76857 /* Friend+CoreDataClass.swift */; };
+		2A0135A2221BB20C00F76857 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0135A0221BB20C00F76857 /* Friend+CoreDataProperties.swift */; };
 		2A01BC3120E02237001B7476 /* CADisplayLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A01BC3020E02237001B7476 /* CADisplayLinkViewController.swift */; };
 		2A04476E20ADE10100383D6F /* Realm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A04476D20ADE10100383D6F /* Realm.storyboard */; };
 		2A04477020ADE14300383D6F /* RealmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A04476F20ADE14300383D6F /* RealmTableViewController.swift */; };
@@ -196,6 +199,9 @@
 
 /* Begin PBXFileReference section */
 		15DD33399FEB9CB59178C48D /* Pods-Pruebas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pruebas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pruebas/Pods-Pruebas.debug.xcconfig"; sourceTree = "<group>"; };
+		2A013595221BB0A900F76857 /* PetPal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetPal.xcdatamodel; sourceTree = "<group>"; };
+		2A01359F221BB20C00F76857 /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
+		2A0135A0221BB20C00F76857 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		2A01BC3020E02237001B7476 /* CADisplayLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CADisplayLinkViewController.swift; sourceTree = "<group>"; };
 		2A04476D20ADE10100383D6F /* Realm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Realm.storyboard; sourceTree = "<group>"; };
 		2A04476F20ADE14300383D6F /* RealmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTableViewController.swift; sourceTree = "<group>"; };
@@ -756,6 +762,9 @@
 				2A98A76D209FF5C1004A39A0 /* CoreData.storyboard */,
 				2A98A76F209FF5E1004A39A0 /* CoreDataViewController.swift */,
 				2A98A771209FF837004A39A0 /* TodoApp.xcdatamodeld */,
+				2A013594221BB0A900F76857 /* PetPal.xcdatamodeld */,
+				2A01359F221BB20C00F76857 /* Friend+CoreDataClass.swift */,
+				2A0135A0221BB20C00F76857 /* Friend+CoreDataProperties.swift */,
 				2A98A774209FFA0E004A39A0 /* Model */,
 			);
 			path = "Core Data";
@@ -1210,6 +1219,7 @@
 				2A98A799209FFC0A004A39A0 /* TaskListManager.swift in Sources */,
 				2ADA09E220993A0100FDB60F /* FirstViewController.swift in Sources */,
 				2ABA9C9D2165C6A70054BFD8 /* xibs.m in Sources */,
+				2A013596221BB0A900F76857 /* PetPal.xcdatamodeld in Sources */,
 				2AE46D0D219BBC8D00A8FB69 /* UNService.swift in Sources */,
 				2A295ABB21DC727600134F71 /* ChecklistItem.swift in Sources */,
 				2A87650221FE98C1009AF124 /* PetsCell.swift in Sources */,
@@ -1272,6 +1282,7 @@
 				2A98A776209FFA2E004A39A0 /* AbstractManager.swift in Sources */,
 				2AEDC60820A8EEF90066170F /* Picture.swift in Sources */,
 				2ADF8C8A21A233A0003244F4 /* SpringAnimationsViewController.swift in Sources */,
+				2A0135A1221BB20C00F76857 /* Friend+CoreDataClass.swift in Sources */,
 				2A12B25121796BCA00CA551A /* SSLPinningViewController.swift in Sources */,
 				2A218BF1213750CC005AC2B2 /* RoomType.swift in Sources */,
 				2A63FFF820DA0F7C0093382D /* ContactDetailViewController.swift in Sources */,
@@ -1288,6 +1299,7 @@
 				2AB98D8121264B220000D768 /* ScrollViewController.swift in Sources */,
 				2A08BBCE219FD2820083683B /* CLService.swift in Sources */,
 				2A3020DA220E105800DE70E3 /* HerbModel.swift in Sources */,
+				2A0135A2221BB20C00F76857 /* Friend+CoreDataProperties.swift in Sources */,
 				2A28B156214F1FE5004D7153 /* RPSTurn.m in Sources */,
 				2A36F5E0220E659100E2F873 /* CardSuperview.swift in Sources */,
 				2AC3DE892119606E0077A57E /* LongPressViewController.swift in Sources */,
@@ -1528,6 +1540,16 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
+		2A013594221BB0A900F76857 /* PetPal.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				2A013595221BB0A900F76857 /* PetPal.xcdatamodel */,
+			);
+			currentVersion = 2A013595221BB0A900F76857 /* PetPal.xcdatamodel */;
+			path = PetPal.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
 		2A98A771209FF837004A39A0 /* TodoApp.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
