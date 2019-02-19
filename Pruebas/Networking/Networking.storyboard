@@ -73,10 +73,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--NetworkingRW View Controller-->
         <scene sceneID="crf-wX-MCR">
             <objects>
-                <viewController id="1Ug-Fa-CPR" sceneMemberID="viewController">
+                <viewController id="1Ug-Fa-CPR" customClass="NetworkingRWViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uLs-sO-jyN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

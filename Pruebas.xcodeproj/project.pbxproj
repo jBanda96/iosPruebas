@@ -10,6 +10,7 @@
 		2A013596221BB0A900F76857 /* PetPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A013594221BB0A900F76857 /* PetPal.xcdatamodeld */; };
 		2A0135A1221BB20C00F76857 /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A01359F221BB20C00F76857 /* Friend+CoreDataClass.swift */; };
 		2A0135A2221BB20C00F76857 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0135A0221BB20C00F76857 /* Friend+CoreDataProperties.swift */; };
+		2A0135A4221BBA1C00F76857 /* NetworkingRWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0135A3221BBA1C00F76857 /* NetworkingRWViewController.swift */; };
 		2A01BC3120E02237001B7476 /* CADisplayLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A01BC3020E02237001B7476 /* CADisplayLinkViewController.swift */; };
 		2A04476E20ADE10100383D6F /* Realm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A04476D20ADE10100383D6F /* Realm.storyboard */; };
 		2A04477020ADE14300383D6F /* RealmTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A04476F20ADE14300383D6F /* RealmTableViewController.swift */; };
@@ -202,6 +203,7 @@
 		2A013595221BB0A900F76857 /* PetPal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetPal.xcdatamodel; sourceTree = "<group>"; };
 		2A01359F221BB20C00F76857 /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
 		2A0135A0221BB20C00F76857 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2A0135A3221BBA1C00F76857 /* NetworkingRWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingRWViewController.swift; sourceTree = "<group>"; };
 		2A01BC3020E02237001B7476 /* CADisplayLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CADisplayLinkViewController.swift; sourceTree = "<group>"; };
 		2A04476D20ADE10100383D6F /* Realm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Realm.storyboard; sourceTree = "<group>"; };
 		2A04476F20ADE14300383D6F /* RealmTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealmTableViewController.swift; sourceTree = "<group>"; };
@@ -716,6 +718,7 @@
 				2AABA4BF209FB2C8008CB7FC /* User.swift */,
 				2AABA4C1209FB333008CB7FC /* Response.swift */,
 				2A63FFF720DA0F7C0093382D /* ContactDetailViewController.swift */,
+				2A0135A3221BBA1C00F76857 /* NetworkingRWViewController.swift */,
 			);
 			path = Networking;
 			sourceTree = "<group>";
@@ -1310,6 +1313,7 @@
 				2A35D75821A27EA400FA6657 /* Person.swift in Sources */,
 				2ADCEE57211DFFC70073CB1D /* DetailViewController.swift in Sources */,
 				2AA249F72126799600874A60 /* Emoji.swift in Sources */,
+				2A0135A4221BBA1C00F76857 /* NetworkingRWViewController.swift in Sources */,
 				2AEDC60220A8EA310066170F /* Model.swift in Sources */,
 				2A726CD621BA279A006E8679 /* AboutViewController.swift in Sources */,
 				2A56D8502098E836001A1352 /* AnimationsViewController.swift in Sources */,
