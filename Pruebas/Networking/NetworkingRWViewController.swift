@@ -8,32 +8,41 @@
 
 import UIKit
 
-class NetworkingRWViewController: UIViewController {
+class NetworkingRWViewController: UIViewController, URLSessionDataDelegate {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let configuration = URLSessionConfiguration.default
-        configuration.waitsForConnectivity = true
+        let json = """
+            {
+                "hello": "world"
+            }
+        """
         
-        let session = URLSession(configuration: configuration)
+        let url = URL(string: "https://httpbin.org/post")!
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = "POST"
+        urlRequest.httpBody = json.data(using: .utf8)
         
-        let url = URL(string: "https://jsonplaceholder.typicode.com/users")!
-        let task = session.dataTask(with: url) {data, response, error in
+        let session = URLSession(configuration: .default, delegate: self, delegateQueue: OperationQueue.current)
+        session.dataTask(with: urlRequest) { (data, response, error) in
             
             if error != nil {
-                print("An error has occured \(error?.localizedDescription ?? "Error")")
-                return
+                print(error?.localizedDescription)
             }
             
-            guard let httpResponse = response as? HTTPURLResponse, httpResponse.statusCode == 200 else { return }
-            guard let data = data, let textData = String(data: data, encoding: .utf8) else { return }
+            if let data = data, let stringData = String(data: data, encoding: .utf8) {
+                print(stringData)
+            }
             
-            print(textData)
-        }
+        }.resume()
         
-        task.resume()
         
+    }
+    
+    func urlSession(_ session: URLSession, task: URLSessionTask, didSendBodyData bytesSent: Int64, totalBytesSent: Int64, totalBytesExpectedToSend: Int64) {
+        let progess = round(Float(totalBytesSent) / Float(totalBytesExpectedToSend)) * 100
+        print(progess)
     }
 
 }
