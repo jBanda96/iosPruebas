@@ -1,4 +1,3 @@
 # Hola
-### I did a new commit 
+### I did a new commit
 
-[ x ] One
