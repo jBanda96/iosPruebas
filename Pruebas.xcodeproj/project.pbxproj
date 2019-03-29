@@ -83,6 +83,9 @@
 		2A445755220A97FA0024F658 /* FlightData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A445752220A97F90024F658 /* FlightData.swift */; };
 		2A445756220A97FA0024F658 /* SnowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A445753220A97F90024F658 /* SnowView.swift */; };
 		2A46D74621F6CD79000C2FCE /* PopOverViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A46D74521F6CD79000C2FCE /* PopOverViewController.swift */; };
+		2A49D2022249D78F00E82287 /* StrettchyHeaderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49D2012249D78F00E82287 /* StrettchyHeaderViewController.swift */; };
+		2A49D2072249DFD700E82287 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49D2052249DFD700E82287 /* HeaderView.swift */; };
+		2A49D20A2249E74800E82287 /* StretchyHeaderLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A49D2092249E74800E82287 /* StretchyHeaderLayout.swift */; };
 		2A4A2EE921A0932600ED199C /* NotificationAttachmentID.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4A2EE821A0932600ED199C /* NotificationAttachmentID.swift */; };
 		2A4D4C98209EC1D700D498F0 /* Networking.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4D4C97209EC1D700D498F0 /* Networking.storyboard */; };
 		2A4D4C9A209EC1E400D498F0 /* NetworkingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4D4C99209EC1E400D498F0 /* NetworkingViewController.swift */; };
@@ -105,7 +108,6 @@
 		2A7231552130AF8A004EC266 /* ButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7231542130AF8A004EC266 /* ButtonStyle.swift */; };
 		2A726CD621BA279A006E8679 /* AboutViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A726CD521BA279A006E8679 /* AboutViewController.swift */; };
 		2A7DB310221A279E00155D33 /* LargerScrollViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A7DB30F221A279D00155D33 /* LargerScrollViewController.swift */; };
-		2A80481821954541002F7081 /* CollapsableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A80481721954541002F7081 /* CollapsableTableViewController.swift */; };
 		2A80481A2195458E002F7081 /* CollapsableTableView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A8048192195458E002F7081 /* CollapsableTableView.storyboard */; };
 		2A87650221FE98C1009AF124 /* PetsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A87650121FE98C1009AF124 /* PetsCell.swift */; };
 		2A98A76E209FF5C1004A39A0 /* CoreData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A98A76D209FF5C1004A39A0 /* CoreData.storyboard */; };
@@ -289,6 +291,9 @@
 		2A445752220A97F90024F658 /* FlightData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FlightData.swift; sourceTree = "<group>"; };
 		2A445753220A97F90024F658 /* SnowView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SnowView.swift; sourceTree = "<group>"; };
 		2A46D74521F6CD79000C2FCE /* PopOverViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopOverViewController.swift; sourceTree = "<group>"; };
+		2A49D2012249D78F00E82287 /* StrettchyHeaderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrettchyHeaderViewController.swift; sourceTree = "<group>"; };
+		2A49D2052249DFD700E82287 /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		2A49D2092249E74800E82287 /* StretchyHeaderLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StretchyHeaderLayout.swift; sourceTree = "<group>"; };
 		2A4A2EE821A0932600ED199C /* NotificationAttachmentID.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationAttachmentID.swift; sourceTree = "<group>"; };
 		2A4D4C95209EBA0200D498F0 /* Pruebas.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Pruebas.entitlements; sourceTree = "<group>"; };
 		2A4D4C97209EC1D700D498F0 /* Networking.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Networking.storyboard; sourceTree = "<group>"; };
@@ -314,7 +319,6 @@
 		2A7231542130AF8A004EC266 /* ButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonStyle.swift; sourceTree = "<group>"; };
 		2A726CD521BA279A006E8679 /* AboutViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutViewController.swift; sourceTree = "<group>"; };
 		2A7DB30F221A279D00155D33 /* LargerScrollViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LargerScrollViewController.swift; sourceTree = "<group>"; };
-		2A80481721954541002F7081 /* CollapsableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CollapsableTableViewController.swift; sourceTree = "<group>"; };
 		2A8048192195458E002F7081 /* CollapsableTableView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CollapsableTableView.storyboard; sourceTree = "<group>"; };
 		2A87650121FE98C1009AF124 /* PetsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsCell.swift; sourceTree = "<group>"; };
 		2A98A76D209FF5C1004A39A0 /* CoreData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreData.storyboard; sourceTree = "<group>"; };
@@ -753,8 +757,10 @@
 		2A804816219544CF002F7081 /* Collapsable UITableView */ = {
 			isa = PBXGroup;
 			children = (
-				2A80481721954541002F7081 /* CollapsableTableViewController.swift */,
 				2A8048192195458E002F7081 /* CollapsableTableView.storyboard */,
+				2A49D2012249D78F00E82287 /* StrettchyHeaderViewController.swift */,
+				2A49D2052249DFD700E82287 /* HeaderView.swift */,
+				2A49D2092249E74800E82287 /* StretchyHeaderLayout.swift */,
 			);
 			path = "Collapsable UITableView";
 			sourceTree = "<group>";
@@ -1271,7 +1277,6 @@
 				2A17F1A1209D670A009DF9DC /* 3DTouchViewController.swift in Sources */,
 				2A445756220A97FA0024F658 /* SnowView.swift in Sources */,
 				2A053E79209821B100928204 /* Text.swift in Sources */,
-				2A80481821954541002F7081 /* CollapsableTableViewController.swift in Sources */,
 				2AEDC60620A8EE3E0066170F /* Info.swift in Sources */,
 				2AEDC60420A8EDF00066170F /* Responser.swift in Sources */,
 				2AFF8253214B70F500A742FF /* FontsViewController.swift in Sources */,
@@ -1283,6 +1288,7 @@
 				2A52BACC2138694300183ABF /* SelectRoomTypeTableViewController.swift in Sources */,
 				2A04477020ADE14300383D6F /* RealmTableViewController.swift in Sources */,
 				2A98A776209FFA2E004A39A0 /* AbstractManager.swift in Sources */,
+				2A49D2072249DFD700E82287 /* HeaderView.swift in Sources */,
 				2AEDC60820A8EEF90066170F /* Picture.swift in Sources */,
 				2ADF8C8A21A233A0003244F4 /* SpringAnimationsViewController.swift in Sources */,
 				2A0135A1221BB20C00F76857 /* Friend+CoreDataClass.swift in Sources */,
@@ -1294,6 +1300,7 @@
 				2A56D8532098E9FD001A1352 /* CustomView.swift in Sources */,
 				2AE46D0F219BDA8200A8FB69 /* AlertService.swift in Sources */,
 				2AA4CFE9214189430054EAC9 /* ObjcNetTableViewController.m in Sources */,
+				2A49D20A2249E74800E82287 /* StretchyHeaderLayout.swift in Sources */,
 				2AAC95C6209C1C7800255840 /* LocationViewController.swift in Sources */,
 				2A38EBA821B447090089883A /* BullEyeGameViewController.swift in Sources */,
 				2ADA09E02099399100FDB60F /* RedViewController.swift in Sources */,
@@ -1319,6 +1326,7 @@
 				2A56D8502098E836001A1352 /* AnimationsViewController.swift in Sources */,
 				2ABA9C932165C1BE0054BFD8 /* xibViewController.m in Sources */,
 				2AF90C362217BA2F00444D16 /* DIYScrollView.swift in Sources */,
+				2A49D2022249D78F00E82287 /* StrettchyHeaderViewController.swift in Sources */,
 				2A23243321547CAA00E929D4 /* Gif.m in Sources */,
 				2A445755220A97FA0024F658 /* FlightData.swift in Sources */,
 				2ADA09E520993C7600FDB60F /* CustomSegue.swift in Sources */,
