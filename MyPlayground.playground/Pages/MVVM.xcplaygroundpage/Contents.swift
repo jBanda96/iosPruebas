@@ -3,7 +3,7 @@
 import PlaygroundSupport
 import UIKit
 
-
+PlaygroundPage.current.needsIndefiniteExecution = true
 //: Model
 public class Pet {
     
@@ -144,7 +144,188 @@ let view = PetView(frame: frame)
 petViewModel.configure(view)
 
 
-PlaygroundPage.current.liveView = view
+
+
+//: ### Another Example
+
+struct Person {
+    let name:       String
+    let nickname:   String
+    let age:        Int
+    let amount:     NSNumber
+    
+    static let persons = [
+        Person(name: "Julio Banda Castillo",                nickname: "jBanda96",   age: 23,    amount: 1_348_736),
+        Person(name: "Irais Krystell Velazquez Cruz",       nickname: "lletsyrk",   age: 21,    amount: 1_200_000.43),
+        Person(name: "Mario Banda Avila",                   nickname: "bandcastle", age: 47,    amount: 9_945_454.98),
+        Person(name: "Ericka",                              nickname: "erickacr",   age: 45,    amount: 834_873.98),
+        Person(name: "Oswin",                               nickname: "oswin",      age: 24,    amount: 0.3),
+        Person(name: "Mag",                                 nickname: "mag",        age: 28,    amount: 5)
+    ]
+}
+
+
+struct PersonViewModel: CustomStringConvertible {
+    
+    private let person: Person
+    private let formatter: NumberFormatter
+
+    init(person: Person) {
+        self.person = person
+        self.formatter = NumberFormatter()
+    }
+    
+    public var name: String {
+        return person.name
+    }
+    
+    public var nickname: String {
+        return person.nickname
+    }
+    
+    public var age: Int {
+        return person.age
+    }
+    
+    public var amount: String {
+        formatter.numberStyle   =   .currency
+        formatter.locale        =   Locale(identifier: "es_MX")
+        formatter.usesGroupingSeparator = true
+        
+        return formatter.string(from: person.amount) ?? "$0.00"
+    }
+    
+    public var description: String {
+        return "Person(name: \(name), nickname: \(nickname), age: \(age), amount: \(amount ?? "$0.00"))"
+    }
+    
+}
+
+class PersonView: UITableViewController {
+    
+    let persons = Person.persons
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        tableView.register(PersonCell.self, forCellReuseIdentifier: "cell")
+        
+        tableView.rowHeight = UITableView.automaticDimension
+        tableView.estimatedRowHeight = 44
+    }
+    
+    override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return persons.count
+    }
+    
+    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PersonCell
+        cell.configure(person: PersonViewModel(person: persons[indexPath.row]))
+        
+        return cell
+    }
+    
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        print(PersonViewModel(person: persons[indexPath.row]).description)
+    }
+    
+}
+
+class PersonCell: UITableViewCell {
+    
+    lazy var stack: UIStackView = {
+        let stack = UIStackView(arrangedSubviews: [firstStack, secondStack])
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .horizontal
+        stack.alignment = .center
+        stack.distribution = .fillProportionally
+        stack.spacing = 4
+        
+        return stack
+    }()
+    
+    lazy var firstStack: UIStackView = {
+        let stack = UIStackView(arrangedSubviews: [nameLabel, nicknameLabel])
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .vertical
+        stack.alignment = .leading
+        stack.distribution = .fillProportionally
+        stack.spacing = 4
+
+        return stack
+    }()
+    
+    lazy var secondStack: UIStackView = {
+        let stack = UIStackView(arrangedSubviews: [ageLabel, amountLabel])
+        stack.translatesAutoresizingMaskIntoConstraints = false
+        stack.axis = .vertical
+        stack.alignment = .trailing
+        stack.distribution = .fillProportionally
+        stack.spacing = 4
+        
+        return stack
+    }()
+    
+    let nameLabel: UILabel = {
+        let name = UILabel()
+        name.numberOfLines = 0
+        name.font = .boldSystemFont(ofSize: 12)
+        
+        return name
+    }()
+    
+    let nicknameLabel: UILabel = {
+        let nickname = UILabel()
+        nickname.font = .systemFont(ofSize: 12, weight: .light)
+        
+        return nickname
+    }()
+    
+    let ageLabel: UILabel = {
+        let age = UILabel()
+        age.font = .systemFont(ofSize: 12, weight: .light)
+        
+        return age
+    }()
+    
+    let amountLabel: UILabel = {
+        let amount = UILabel()
+        amount.font = .systemFont(ofSize: 12, weight: .light)
+        
+        return amount
+    }()
+    
+    override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
+        super.init(style: style, reuseIdentifier: reuseIdentifier)
+        
+        addSubview(stack)
+        
+        
+        NSLayoutConstraint.activate(
+            [
+                stack.topAnchor.constraint      (equalTo: topAnchor,        constant: 8     ),
+                stack.leadingAnchor.constraint  (equalTo: leadingAnchor,    constant: 16    ),
+                stack.trailingAnchor.constraint (equalTo: trailingAnchor,   constant: -16   ),
+                stack.bottomAnchor.constraint   (equalTo: bottomAnchor,     constant: -8    )
+            ]
+        )
+        
+    }
+    
+    required init?(coder aDecoder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
+    
+    func configure(person: PersonViewModel) {
+        nameLabel.text          =       "Nombre: \(person.name)"
+        nicknameLabel.text      =       "Nickname: \(person.nickname)"
+        ageLabel.text           =       "Edad: \(person.age)"
+        amountLabel.text        =       "Dinero: \(person.amount)"
+    }
+    
+}
+
+let vc = PersonView()
+PlaygroundPage.current.liveView = vc
 
 //: [Next](@next)
 
