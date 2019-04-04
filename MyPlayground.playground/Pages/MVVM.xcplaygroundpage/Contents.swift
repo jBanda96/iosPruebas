@@ -221,7 +221,7 @@ class PersonView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! PersonCell
-        cell.configure(person: PersonViewModel(person: persons[indexPath.row]))
+        cell.personViewModel = PersonViewModel(person: persons[indexPath.row])
         
         return cell
     }
@@ -296,12 +296,16 @@ class PersonCell: UITableViewCell {
         return amount
     }()
     
+    var personViewModel: PersonViewModel! {
+        didSet {
+            configure()
+        }
+    }
+    
     override init(style: UITableViewCell.CellStyle, reuseIdentifier: String?) {
         super.init(style: style, reuseIdentifier: reuseIdentifier)
         
         addSubview(stack)
-        
-        
         NSLayoutConstraint.activate(
             [
                 stack.topAnchor.constraint      (equalTo: topAnchor,        constant: 8     ),
@@ -317,17 +321,17 @@ class PersonCell: UITableViewCell {
         fatalError("init(coder:) has not been implemented")
     }
     
-    func configure(person: PersonViewModel) {
-        nameLabel.text          =       "Nombre: \(person.name)"
-        nicknameLabel.text      =       person.nickname
-        ageLabel.text           =       "Edad: \(person.age)"
-        amountLabel.text        =       "Dinero: \(person.amount)"
+    func configure() {
+        nameLabel.text          =       "Nombre: \(personViewModel.name)"
+        nicknameLabel.text      =       personViewModel.nickname
+        ageLabel.text           =       "Edad: \(personViewModel.age)"
+        amountLabel.text        =       "Dinero: \(personViewModel.amount)"
     }
     
 }
 
 let vc = PersonView()
-PlaygroundPage.current.liveView = view
+PlaygroundPage.current.liveView = vc
 
 //: [Next](@next)
 
