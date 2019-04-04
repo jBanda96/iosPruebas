@@ -133,15 +133,26 @@ class PetView: UIView {
     
 }
 
-let birthday = Date(timeIntervalSinceNow: (-2 * 86400 * 366))
-let roger = Pet(name: "Roger", rarity: .uncommon, birthday: birthday, image: #imageLiteral(resourceName: "roger.jpeg"))
-
-let petViewModel = PetViewModel(pet: roger)
-
-let frame = CGRect(x: 0, y: 0, width: 300, height: 420)
-let view = PetView(frame: frame)
-
-petViewModel.configure(view)
+class ViewController: UIViewController {
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let birthday = Date(timeIntervalSinceNow: (-2 * 86400 * 366))
+        let roger = Pet(name: "Roger", rarity: .uncommon, birthday: birthday, image: #imageLiteral(resourceName: "roger.jpeg"))
+        
+        let petViewModel = PetViewModel(pet: roger)
+        
+        let frame = CGRect(x: 0, y: 0, width: 300, height: 420)
+        let view = PetView(frame: frame)
+        
+        self.view.addSubview(view)
+        
+        petViewModel.configure(view)
+        
+    }
+    
+}
 
 
 
@@ -331,7 +342,8 @@ class PersonCell: UITableViewCell {
 }
 
 let vc = PersonView()
-PlaygroundPage.current.liveView = vc
+let vc2 = ViewController()
+PlaygroundPage.current.liveView = vc2
 
 //: [Next](@next)
 
