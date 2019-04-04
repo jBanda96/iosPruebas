@@ -155,12 +155,14 @@ struct Person {
     let amount:     NSNumber
     
     static let persons = [
-        Person(name: "Julio Banda Castillo",                nickname: "jBanda96",   age: 23,    amount: 1_348_736),
-        Person(name: "Irais Krystell Velazquez Cruz",       nickname: "lletsyrk",   age: 21,    amount: 1_200_000.43),
-        Person(name: "Mario Banda Avila",                   nickname: "bandcastle", age: 47,    amount: 9_945_454.98),
-        Person(name: "Ericka",                              nickname: "erickacr",   age: 45,    amount: 834_873.98),
-        Person(name: "Oswin",                               nickname: "oswin",      age: 24,    amount: 0.3),
-        Person(name: "Mag",                                 nickname: "mag",        age: 28,    amount: 5)
+        Person(name: "T'Challa",                            nickname: "Black Panter",   age: 34,    amount: 500_000_000_000),
+        Person(name: "Anthony Edward Stark",                nickname: "Iron Man",       age: 40,    amount: 100_000_000_000),
+        Person(name: "Bruno Díaz",                          nickname: "Batman",         age: 40,    amount: 80_000_000_000),
+        Person(name: "Alexander Joseph Luthor",             nickname: "Lex Luthor",     age: 45,    amount: 75_000_000_000),
+        Person(name: "Victor von Muerte",                   nickname: "Dr. Doom",       age: 45,    amount: 35_000_000_000),
+        Person(name: "Oliver Jonas Queen",                  nickname: "Green Arrow",    age: 32,    amount: 7_000_000_000),
+        Person(name: "Charles Francis Xavie",               nickname: "Professor X",    age: 60,    amount: 3_500_000_000),
+        Person(name: "Erik Lehnsher",                       nickname: "Magneto",        age: 61,    amount: 500_000_000)
     ]
 }
 
@@ -196,7 +198,7 @@ struct PersonViewModel: CustomStringConvertible {
     }
     
     public var description: String {
-        return "Person(name: \(name), nickname: \(nickname), age: \(age), amount: \(amount ?? "$0.00"))"
+        return "Person(name: \(name), nickname: \(nickname), age: \(age), amount: \(amount))"
     }
     
 }
@@ -317,7 +319,7 @@ class PersonCell: UITableViewCell {
     
     func configure(person: PersonViewModel) {
         nameLabel.text          =       "Nombre: \(person.name)"
-        nicknameLabel.text      =       "Nickname: \(person.nickname)"
+        nicknameLabel.text      =       person.nickname
         ageLabel.text           =       "Edad: \(person.age)"
         amountLabel.text        =       "Dinero: \(person.amount)"
     }
@@ -325,7 +327,7 @@ class PersonCell: UITableViewCell {
 }
 
 let vc = PersonView()
-PlaygroundPage.current.liveView = vc
+PlaygroundPage.current.liveView = view
 
 //: [Next](@next)
 
