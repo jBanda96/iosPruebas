@@ -19,6 +19,10 @@
 		2A053E75209820CB00928204 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A053E74209820CB00928204 /* TableViewController.swift */; };
 		2A053E79209821B100928204 /* Text.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A053E78209821B100928204 /* Text.swift */; };
 		2A06061F20B6032C005BED85 /* NewWayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06061E20B6032B005BED85 /* NewWayViewController.swift */; };
+		2A06E5BF2257CD110069270E /* MVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A06E5BE2257CD110069270E /* MVC.storyboard */; };
+		2A06E5C12257CD420069270E /* MVCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06E5C02257CD420069270E /* MVCViewController.swift */; };
+		2A06E5C32257CD4C0069270E /* ModelMVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06E5C22257CD4C0069270E /* ModelMVC.swift */; };
+		2A06E5C52257CE9D0069270E /* MainTableTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A06E5C42257CE9D0069270E /* MainTableTableViewController.swift */; };
 		2A07BB0221DC343200513EFB /* ToDoList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A07BB0121DC343200513EFB /* ToDoList.storyboard */; };
 		2A07BB0421DC349A00513EFB /* ToDoListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A07BB0321DC349A00513EFB /* ToDoListController.swift */; };
 		2A08BBCE219FD2820083683B /* CLService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A08BBCD219FD2820083683B /* CLService.swift */; };
@@ -75,6 +79,10 @@
 		2A3A093F20956F690095F163 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3A093D20956F690095F163 /* Main.storyboard */; };
 		2A3A094120956F6A0095F163 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A3A094020956F6A0095F163 /* Assets.xcassets */; };
 		2A3A094420956F6A0095F163 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3A094220956F6A0095F163 /* LaunchScreen.storyboard */; };
+		2A3FAA0122570DC700FF12C3 /* MVVM.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A3FAA0022570DC700FF12C3 /* MVVM.storyboard */; };
+		2A3FAA0822570E5500FF12C3 /* MVVMViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FAA0722570E5500FF12C3 /* MVVMViewController.swift */; };
+		2A3FAA0A22570E6300FF12C3 /* Person3.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FAA0922570E6300FF12C3 /* Person3.swift */; };
+		2A3FAA0C22570EC100FF12C3 /* GreetingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A3FAA0B22570EC100FF12C3 /* GreetingViewModel.swift */; };
 		2A407D2B2155FECD001FCFC3 /* CollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A407D2A2155FECD001FCFC3 /* CollectionViewCell.m */; };
 		2A407D2E2155FF15001FCFC3 /* GifCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A407D2D2155FF15001FCFC3 /* GifCollectionViewController.m */; };
 		2A4301ED21A9093300332CE0 /* TicTacToe.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4301EC21A9093300332CE0 /* TicTacToe.storyboard */; };
@@ -214,6 +222,10 @@
 		2A053E74209820CB00928204 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		2A053E78209821B100928204 /* Text.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Text.swift; sourceTree = "<group>"; };
 		2A06061E20B6032B005BED85 /* NewWayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewWayViewController.swift; sourceTree = "<group>"; };
+		2A06E5BE2257CD110069270E /* MVC.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVC.storyboard; sourceTree = "<group>"; };
+		2A06E5C02257CD420069270E /* MVCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVCViewController.swift; sourceTree = "<group>"; };
+		2A06E5C22257CD4C0069270E /* ModelMVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ModelMVC.swift; sourceTree = "<group>"; };
+		2A06E5C42257CE9D0069270E /* MainTableTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTableTableViewController.swift; sourceTree = "<group>"; };
 		2A07BB0121DC343200513EFB /* ToDoList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = ToDoList.storyboard; sourceTree = "<group>"; };
 		2A07BB0321DC349A00513EFB /* ToDoListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToDoListController.swift; sourceTree = "<group>"; };
 		2A08BBCD219FD2820083683B /* CLService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CLService.swift; sourceTree = "<group>"; };
@@ -281,6 +293,10 @@
 		2A3A094020956F6A0095F163 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A3A094320956F6A0095F163 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A3A094520956F6A0095F163 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A3FAA0022570DC700FF12C3 /* MVVM.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MVVM.storyboard; sourceTree = "<group>"; };
+		2A3FAA0722570E5500FF12C3 /* MVVMViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MVVMViewController.swift; sourceTree = "<group>"; };
+		2A3FAA0922570E6300FF12C3 /* Person3.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person3.swift; sourceTree = "<group>"; };
+		2A3FAA0B22570EC100FF12C3 /* GreetingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GreetingViewModel.swift; sourceTree = "<group>"; };
 		2A407D292155FECD001FCFC3 /* CollectionViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CollectionViewCell.h; sourceTree = "<group>"; };
 		2A407D2A2155FECD001FCFC3 /* CollectionViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CollectionViewCell.m; sourceTree = "<group>"; };
 		2A407D2C2155FF15001FCFC3 /* GifCollectionViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GifCollectionViewController.h; sourceTree = "<group>"; };
@@ -476,6 +492,16 @@
 				2A36747F221A5E71000E7B25 /* MoreAppsViewController.swift */,
 			);
 			path = "Working with interface builder";
+			sourceTree = "<group>";
+		};
+		2A06E5BD2257CCD30069270E /* MVC */ = {
+			isa = PBXGroup;
+			children = (
+				2A06E5BE2257CD110069270E /* MVC.storyboard */,
+				2A06E5C02257CD420069270E /* MVCViewController.swift */,
+				2A06E5C22257CD4C0069270E /* ModelMVC.swift */,
+			);
+			path = MVC;
 			sourceTree = "<group>";
 		};
 		2A07BB0021DC340B00513EFB /* To Do List */ = {
@@ -691,6 +717,8 @@
 				2A07BB0021DC340B00513EFB /* To Do List */,
 				2ACE4D2B21FD6DEB00E53219 /* CollectionViews */,
 				2A36F5CE220E5C4800E2F873 /* Demistifying views */,
+				2A3FA9FF22570AF100FF12C3 /* MVVM */,
+				2A06E5BD2257CCD30069270E /* MVC */,
 				2A3A094020956F6A0095F163 /* Assets.xcassets */,
 				2AFD910121A09A3100682B3A /* TimeAlert.gif */,
 				2AD2CD6121A09B9100F033EB /* LocationAlert.gif */,
@@ -699,8 +727,60 @@
 				2A3A094520956F6A0095F163 /* Info.plist */,
 				2AFEDACD2130572300052FEE /* Pruebas-Bridging-Header.h */,
 				2AA8069F221619030009B070 /* NoNavigationBarViewController.swift */,
+				2A06E5C42257CE9D0069270E /* MainTableTableViewController.swift */,
 			);
 			path = Pruebas;
+			sourceTree = "<group>";
+		};
+		2A3FA9FF22570AF100FF12C3 /* MVVM */ = {
+			isa = PBXGroup;
+			children = (
+				2A3FAA0222570E1600FF12C3 /* Model */,
+				2A3FAA0322570E1D00FF12C3 /* View */,
+				2A3FAA0422570E2100FF12C3 /* ViewModel */,
+			);
+			path = MVVM;
+			sourceTree = "<group>";
+		};
+		2A3FAA0222570E1600FF12C3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				2A3FAA0922570E6300FF12C3 /* Person3.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		2A3FAA0322570E1D00FF12C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				2A3FAA0622570E3F00FF12C3 /* Controllers */,
+				2A3FAA0522570E3300FF12C3 /* Storyboards */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		2A3FAA0422570E2100FF12C3 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				2A3FAA0B22570EC100FF12C3 /* GreetingViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		2A3FAA0522570E3300FF12C3 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				2A3FAA0022570DC700FF12C3 /* MVVM.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		2A3FAA0622570E3F00FF12C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A3FAA0722570E5500FF12C3 /* MVVMViewController.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		2A4301EB21A908FE00332CE0 /* Tic-Tac-Toe */ = {
@@ -1101,6 +1181,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A3FAA0122570DC700FF12C3 /* MVVM.storyboard in Resources */,
 				2A38EBA621B444C60089883A /* BullsEyeGame.storyboard in Resources */,
 				2AD1108D209A300C002F4B3C /* Video.mp4 in Resources */,
 				2A3A094420956F6A0095F163 /* LaunchScreen.storyboard in Resources */,
@@ -1125,6 +1206,7 @@
 				2AD2CD6621A09CC400F033EB /* DateAlert.gif in Resources */,
 				2AFC4221209D6429000C1E42 /* deathStar.png in Resources */,
 				2AFD910221A09A3100682B3A /* TimeAlert.gif in Resources */,
+				2A06E5BF2257CD110069270E /* MVC.storyboard in Resources */,
 				2A3A094120956F6A0095F163 /* Assets.xcassets in Resources */,
 				2A12B24F21796BB300CA551A /* SSLPinning.storyboard in Resources */,
 				2AA806A322162CEC0009B070 /* hehehe.caf in Resources */,
@@ -1216,6 +1298,7 @@
 				2A7231552130AF8A004EC266 /* ButtonStyle.swift in Sources */,
 				2A7231532130ABB1004EC266 /* MusicViewController.swift in Sources */,
 				2ABDF5C6219BB448004A4D9D /* ShadowView.swift in Sources */,
+				2A06E5C12257CD420069270E /* MVCViewController.swift in Sources */,
 				2AAA9DE4209F84A10034D1BF /* Contact.swift in Sources */,
 				2A46D74621F6CD79000C2FCE /* PopOverViewController.swift in Sources */,
 				2A3020DB220E105800DE70E3 /* PopAnimator.swift in Sources */,
@@ -1230,6 +1313,7 @@
 				2ABA9C9D2165C6A70054BFD8 /* xibs.m in Sources */,
 				2A013596221BB0A900F76857 /* PetPal.xcdatamodeld in Sources */,
 				2AE46D0D219BBC8D00A8FB69 /* UNService.swift in Sources */,
+				2A06E5C32257CD4C0069270E /* ModelMVC.swift in Sources */,
 				2A295ABB21DC727600134F71 /* ChecklistItem.swift in Sources */,
 				2A87650221FE98C1009AF124 /* PetsCell.swift in Sources */,
 				2AA806A0221619030009B070 /* NoNavigationBarViewController.swift in Sources */,
@@ -1279,6 +1363,7 @@
 				2A053E79209821B100928204 /* Text.swift in Sources */,
 				2AEDC60620A8EE3E0066170F /* Info.swift in Sources */,
 				2AEDC60420A8EDF00066170F /* Responser.swift in Sources */,
+				2A06E5C52257CE9D0069270E /* MainTableTableViewController.swift in Sources */,
 				2AFF8253214B70F500A742FF /* FontsViewController.swift in Sources */,
 				2AAA9DE2209F7BC60034D1BF /* ContactsManager.swift in Sources */,
 				2A07BB0421DC349A00513EFB /* ToDoListController.swift in Sources */,
@@ -1303,6 +1388,7 @@
 				2A49D20A2249E74800E82287 /* StretchyHeaderLayout.swift in Sources */,
 				2AAC95C6209C1C7800255840 /* LocationViewController.swift in Sources */,
 				2A38EBA821B447090089883A /* BullEyeGameViewController.swift in Sources */,
+				2A3FAA0822570E5500FF12C3 /* MVVMViewController.swift in Sources */,
 				2ADA09E02099399100FDB60F /* RedViewController.swift in Sources */,
 				2A38BAC72100000800FC3022 /* StacksViewController.swift in Sources */,
 				2A1E541E212890FB008EFEC6 /* EmojiCell.swift in Sources */,
@@ -1327,11 +1413,13 @@
 				2ABA9C932165C1BE0054BFD8 /* xibViewController.m in Sources */,
 				2AF90C362217BA2F00444D16 /* DIYScrollView.swift in Sources */,
 				2A49D2022249D78F00E82287 /* StrettchyHeaderViewController.swift in Sources */,
+				2A3FAA0C22570EC100FF12C3 /* GreetingViewModel.swift in Sources */,
 				2A23243321547CAA00E929D4 /* Gif.m in Sources */,
 				2A445755220A97FA0024F658 /* FlightData.swift in Sources */,
 				2ADA09E520993C7600FDB60F /* CustomSegue.swift in Sources */,
 				2A19D1AF22091103007E08AC /* ViewControllerAnimation.swift in Sources */,
 				2AD11092209A3528002F4B3C /* CapturePhotosAndVideosViewController.swift in Sources */,
+				2A3FAA0A22570E6300FF12C3 /* Person3.swift in Sources */,
 				2ADA09DE2099398600FDB60F /* BlueViewController.swift in Sources */,
 				2AEDC60020A8E88C0066170F /* PaginationViewController.swift in Sources */,
 				2A295ABD21DC7E2600134F71 /* TodoList.swift in Sources */,
