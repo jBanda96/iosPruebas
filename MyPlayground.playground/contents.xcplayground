@@ -6,5 +6,7 @@
         <page name='CIImage'/>
         <page name='Files and Data'/>
         <page name='MVVM'/>
+        <page name='MVC'/>
+        <page name='MVP'/>
     </pages>
 </playground>
