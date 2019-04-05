@@ -343,7 +343,7 @@ class PersonCell: UITableViewCell {
 
 let vc = PersonView()
 let vc2 = ViewController()
-PlaygroundPage.current.liveView = vc2
+PlaygroundPage.current.liveView = vc
 
 //: [Next](@next)
 
