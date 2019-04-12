@@ -34,6 +34,20 @@ class MVVMViewController: UIViewController {
     @objc func tapAction(_ sender: UITapGestureRecognizer) {
         viewModel.name = "Luis"
         greetingLabel.text = viewModel.greet()
+        
+        performSegue(withIdentifier: "segue", sender: nil)
+        
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "segue" {
+            
+            let gameLibrary = InMemoryGameLibrary()
+            
+            let vc = segue.destination as! HomeViewController
+            vc.gameLibrary = gameLibrary
+            
+        }
     }
     
 }

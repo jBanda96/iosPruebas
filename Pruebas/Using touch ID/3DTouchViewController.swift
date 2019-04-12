@@ -11,59 +11,39 @@ import KeychainAccess
 
 import LocalAuthentication
 
-class _DTouchViewController: UIViewController {
+class AuthenticationViewController: UIViewController {
+    
+    var context = LAContext()
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let keyChain = Keychain(service: "com.myPersonalTeam.Pruebas.Pruebas")
-        print("keys: \(keyChain.allKeys())")
-        keyChain["session"] = "Julio Banda"
-        
-        if let session = keyChain["session"] {
-            print(session)
-            print(keyChain.allKeys())
-        }
+        context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil)
         
     }
-
-    @IBAction func didClickOnAuthenticate(_ sender: UIButton) {
+    
+    @IBAction func authenticate(_ button: UIButton) {
         
-        let context = LAContext()
-        var error: NSError? = nil
+        context.localizedCancelTitle = "Enter password"
         
-        if context.canEvaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, error: &error) {
+        context = LAContext()
+        if context.canEvaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, error: nil) {
             
-            context.evaluatePolicy(LAPolicy.deviceOwnerAuthenticationWithBiometrics, localizedReason: "Please authenticate to proceed using the app") { (success, error) in
+            let reason = "Log into your account"
+            context.evaluatePolicy(.deviceOwnerAuthenticationWithBiometrics, localizedReason: reason) { success, error in
                 
-                if let error = error {
-                    print(error)
-                    self.showAlertWithMessage(msg: "A problem has occured while verification.")
+                if success {
+                    print("Success")
                 } else {
-                    
-                    if success {
-                        self.showAlertWithMessage(msg: "Thanks! \nYou're the device owner and we can proceed now")
-                    } else {
-                        self.showAlertWithMessage(msg: "Authentication has been failed as you're not the device owner")
-                    }
-                    
+                    print("Error")
                 }
                 
             }
             
         } else {
-            showAlertWithMessage(msg: "Touch ID is not available in your device")
+            print("Error 2")
         }
         
-    }
-    
-    func showAlertWithMessage(msg: String) {
-        let alertController = UIAlertController(title: "Message", message: msg, preferredStyle: .alert)
-        let okAction = UIAlertAction(title: "OK", style: .default, handler: nil)
-        
-        alertController.addAction(okAction)
-        
-        self.present(alertController, animated: true, completion: nil)
     }
 
 }
