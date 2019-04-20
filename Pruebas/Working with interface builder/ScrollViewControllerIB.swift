@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ScrollViewController: UIViewController {
+class ScrollViewControllerIB: UIViewController {
     
     @IBOutlet weak var scrollView: UIScrollView!
 

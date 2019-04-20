@@ -18,38 +18,30 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pED-3G-qil">
-                                <rect key="frame" x="168" y="621" width="39" height="30"/>
-                                <state key="normal" title="Greet"/>
-                                <connections>
-                                    <action selector="greet:" destination="S5g-pJ-D3t" eventType="touchUpInside" id="tew-ih-32O"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PHU-gV-IlQ">
-                                <rect key="frame" x="0.0" y="323" width="375" height="21"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sNG-sm-Ha6">
+                                <rect key="frame" x="0.0" y="20" width="375" height="566"/>
+                            </containerView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dUW-3e-i9H">
+                                <rect key="frame" x="0.0" y="586" width="375" height="81"/>
+                            </containerView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="PHU-gV-IlQ" firstAttribute="leading" secondItem="9x6-kY-MPT" secondAttribute="leading" id="A5G-0r-yE9"/>
-                            <constraint firstItem="9x6-kY-MPT" firstAttribute="bottom" secondItem="pED-3G-qil" secondAttribute="bottom" constant="16" id="Eag-Jr-gGT"/>
-                            <constraint firstItem="PHU-gV-IlQ" firstAttribute="centerY" secondItem="9K3-lP-pzx" secondAttribute="centerY" id="H0j-n0-593"/>
-                            <constraint firstItem="9x6-kY-MPT" firstAttribute="trailing" secondItem="PHU-gV-IlQ" secondAttribute="trailing" id="TTu-bL-Gge"/>
-                            <constraint firstItem="PHU-gV-IlQ" firstAttribute="centerX" secondItem="9K3-lP-pzx" secondAttribute="centerX" id="ZlC-qs-k2m"/>
-                            <constraint firstItem="pED-3G-qil" firstAttribute="centerX" secondItem="9K3-lP-pzx" secondAttribute="centerX" id="bv2-K8-F9e"/>
+                            <constraint firstItem="sNG-sm-Ha6" firstAttribute="leading" secondItem="9x6-kY-MPT" secondAttribute="leading" id="13v-oE-OaB"/>
+                            <constraint firstItem="sNG-sm-Ha6" firstAttribute="top" secondItem="9x6-kY-MPT" secondAttribute="top" id="4BU-DC-fuv"/>
+                            <constraint firstItem="dUW-3e-i9H" firstAttribute="leading" secondItem="9x6-kY-MPT" secondAttribute="leading" id="8ag-rc-1pv"/>
+                            <constraint firstItem="dUW-3e-i9H" firstAttribute="bottom" secondItem="9x6-kY-MPT" secondAttribute="bottom" id="BBo-AD-8lj"/>
+                            <constraint firstItem="dUW-3e-i9H" firstAttribute="trailing" secondItem="9x6-kY-MPT" secondAttribute="trailing" id="ONq-IJ-5Hx"/>
+                            <constraint firstItem="dUW-3e-i9H" firstAttribute="top" secondItem="sNG-sm-Ha6" secondAttribute="bottom" id="Ori-bJ-Pem"/>
+                            <constraint firstItem="sNG-sm-Ha6" firstAttribute="trailing" secondItem="9x6-kY-MPT" secondAttribute="trailing" id="lVJ-uT-HGT"/>
+                            <constraint firstItem="sNG-sm-Ha6" firstAttribute="height" secondItem="9x6-kY-MPT" secondAttribute="height" multiplier="7:8" id="ybG-Xh-jYH"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9x6-kY-MPT"/>
                     </view>
-                    <connections>
-                        <outlet property="label" destination="PHU-gV-IlQ" id="b8B-r3-WRQ"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlG-9e-yuc" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="74"/>
+            <point key="canvasLocation" x="104.8" y="73.313343328335833"/>
         </scene>
     </scenes>
 </document>

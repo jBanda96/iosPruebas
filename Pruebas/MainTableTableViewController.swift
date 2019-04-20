@@ -13,10 +13,8 @@ class MainTableTableViewController: UITableViewController {
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mvcSegue" {
             let vc = segue.destination as! MVCViewController
-            vc.person = ModelMVC(firstName: "Julio", surName: "Banda")
         } else if segue.identifier == "mvpSegue" {
             let vc = segue.destination as! MVPViewController
-            vc.presenter = Presenter()
         }
     }
 

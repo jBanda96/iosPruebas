@@ -8,5 +8,6 @@
         <page name='MVVM'/>
         <page name='MVC'/>
         <page name='MVP'/>
+        <page name='Algorithms'/>
     </pages>
 </playground>

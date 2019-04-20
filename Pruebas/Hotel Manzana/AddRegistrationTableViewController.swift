@@ -8,20 +8,21 @@
 
 import UIKit
 
-class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeTableViewControllerDelegate {
+class AddRegistrationTableViewController: UITableViewController {
     
-    @IBOutlet weak var firtsNameTextField: UITextField!
-    @IBOutlet weak var lastNameTextField: UITextField!
-    @IBOutlet weak var emailTextField: UITextField!
+    // MARK: - Outlets and stored properties
+    @IBOutlet weak var firtsNameTextField:  UITextField!
+    @IBOutlet weak var lastNameTextField:   UITextField!
+    @IBOutlet weak var emailTextField:      UITextField!
     
-    @IBOutlet weak var checkInDateLabel: UILabel!
-    @IBOutlet weak var checkOutDateLabel: UILabel!
-    @IBOutlet weak var checkInDatePicker: UIDatePicker!
-    @IBOutlet weak var checkOutDatePicker: UIDatePicker!
+    @IBOutlet weak var checkInDateLabel:    UILabel!
+    @IBOutlet weak var checkOutDateLabel:   UILabel!
+    @IBOutlet weak var checkInDatePicker:   UIDatePicker!
+    @IBOutlet weak var checkOutDatePicker:  UIDatePicker!
     
-    @IBOutlet weak var numberOfAdultsLabel: UILabel!
-    @IBOutlet weak var numberOfAdultsStepper: UIStepper!
-    @IBOutlet weak var numberOfChildrenLabel: UILabel!
+    @IBOutlet weak var numberOfAdultsLabel:     UILabel!
+    @IBOutlet weak var numberOfAdultsStepper:   UIStepper!
+    @IBOutlet weak var numberOfChildrenLabel:   UILabel!
     @IBOutlet weak var numberOfChildrenStepper: UIStepper!
     
     @IBOutlet weak var wifiSwitch: UISwitch!
@@ -29,9 +30,15 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
     @IBOutlet weak var roomTypeLabel: UILabel!
     var roomType: RoomType?
     
-    let checkInDatePickerCellIndexPath = IndexPath(row: 1, section: 1)
-    let checkOutDatePickerCellIndexPath = IndexPath(row: 3, section: 1)
+    @IBOutlet weak var birthdateDate:   UITextField!
+    @IBOutlet weak var doneToolbar:     UIToolbar!
+    @IBOutlet weak var datePicker:      UIDatePicker!
     
+    let checkInDatePickerCellIndexPath      =   IndexPath(row: 1, section: 1)
+    let checkOutDatePickerCellIndexPath     =   IndexPath(row: 3, section: 1)
+    let birthdateDatePickerCellIndexPath    =   IndexPath(row: 0, section: 5)
+    
+    // MARK: - Computed properties
     var isCheckInDatePickerShown: Bool = false {
         didSet {
             UIView.animate(withDuration: 0.3) {
@@ -46,6 +53,7 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         }
     }
     
+    // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -56,8 +64,11 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         updateDateViews()
         updateNumberOfGuests()
         updateRoomType()
+        setInputs()
     }
     
+    
+    // MARK: - IBActions
     @IBAction func doneBarButtonTapped(_ sender: UIBarButtonItem){
         let firstName = firtsNameTextField.text ?? ""
         let lastName = lastNameTextField.text ?? ""
@@ -87,11 +98,21 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         updateNumberOfGuests()
     }
     
-    @IBAction func wifiSwitchChanged(_ sender: UISwitch){
+    @IBAction func wifiSwitchChanged(_ sender: UISwitch){ }
+    
+    @IBAction func birthdayChanged(_ picker: UIDatePicker) {
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd / MM / yyyy"
         
+        birthdateDate.text = formatter.string(from: picker.date)
     }
     
-    func updateDateViews(){
+    @IBAction func done(_ button: UIBarButtonItem) {
+        self.view.endEditing(true)
+    }
+    
+    // MARK: - Private functions
+    private func updateDateViews(){
         let dateFormatter = DateFormatter()
         dateFormatter.dateStyle = .long
         
@@ -99,15 +120,14 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         checkOutDateLabel.text = dateFormatter.string(from: checkOutDatePicker.date)
         
         checkOutDatePicker.minimumDate = checkInDatePicker.minimumDate?.addingTimeInterval(86400)
-        
     }
 
-    func updateNumberOfGuests(){
+    private func updateNumberOfGuests(){
         numberOfAdultsLabel.text = String(Int(numberOfAdultsStepper.value))
         numberOfChildrenLabel.text = String(Int(numberOfChildrenStepper.value))
     }
     
-    func updateRoomType() {
+    private func updateRoomType() {
         if let roomType = roomType {
             roomTypeLabel.text = roomType.name
         } else {
@@ -115,10 +135,25 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
         }
     }
     
-    func didSelect(roomType: RoomType) {
-        self.roomType = roomType
-        updateRoomType()
+    private func setInputs() {
+        self.birthdateDate.inputView = datePicker
+        self.birthdateDate.inputAccessoryView = doneToolbar
     }
+    
+    // MARK: - Navigation
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "SelectRoomType" {
+            let destinationViewController = segue.destination as? SelectRoomTypeTableViewController
+            destinationViewController?.delegate = self
+            destinationViewController?.roomType = roomType
+        }
+    }
+    
+}
+
+
+// MARK: - UITableView Delegate and Data source
+extension AddRegistrationTableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         tableView.deselectRow(at: indexPath, animated: true)
@@ -170,16 +205,20 @@ class AddRegistrationTableViewController: UITableViewController, SelectRoomTypeT
             } else {
                 return 0
             }
+            
+        case (birthdateDatePickerCellIndexPath.section, birthdateDatePickerCellIndexPath.row):
+            return 80
+            
         default:
             return 44
         }
     }
-    
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        if segue.identifier == "SelectRoomType" {
-            let destinationViewController = segue.destination as? SelectRoomTypeTableViewController
-            destinationViewController?.delegate = self
-            destinationViewController?.roomType = roomType
-        }
+}
+
+// MARK: - SelectRoomType Conformation
+extension AddRegistrationTableViewController: SelectRoomTypeTableViewControllerDelegate {
+    internal func didSelect(roomType: RoomType) {
+        self.roomType = roomType
+        updateRoomType()
     }
 }

@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import PDFKit
 
 class MVCViewController: UIViewController {
     
-    @IBOutlet weak var label: UILabel!
+    let pdf: PDFView = {
+        let pdf = PDFView(frame: CGRect(x: 0, y: 0, width: 50, height: 50))
+        return pdf
+    }()
     
-    var person: ModelMVC!
-    
-    @IBAction func greet(_ button: UIButton){
-        self.label.text = "Hello \(person.firstName) \(person.surName)"
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        
+        
     }
-
+    
 }
+
