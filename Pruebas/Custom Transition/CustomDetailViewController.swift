@@ -13,6 +13,9 @@ class CustomDetailViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var textTitle: UILabel!
     
+    @IBOutlet weak var centerHorizontalyConstraint: NSLayoutConstraint!
+    @IBOutlet weak var topToImageConstraint: NSLayoutConstraint!
+    
     var pet: Pet?
     
     override func viewDidLoad() {
