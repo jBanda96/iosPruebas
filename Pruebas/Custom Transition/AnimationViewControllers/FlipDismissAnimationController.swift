@@ -11,9 +11,11 @@ import UIKit
 class FlipDismissAnimationController: NSObject, UIViewControllerAnimatedTransitioning {
     
     let destinationFrame: CGRect
+    let interactionController: SwipeInteractionController
     
-    init(destinationFrame: CGRect) {
+    init(destinationFrame: CGRect, interactionController: SwipeInteractionController) {
         self.destinationFrame = destinationFrame
+        self.interactionController = interactionController
     }
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
@@ -33,9 +35,11 @@ class FlipDismissAnimationController: NSObject, UIViewControllerAnimatedTransiti
         containerView.addSubview(snapshot)
         fromVC.view.isHidden = true
         
-        AnimationHelper.perspectiveTransform(for: containerView)
-        toVC.view.layer.transform = AnimationHelper.yRotation(-.pi / 2)
+//        AnimationHelper.perspectiveTransform(for: containerView)
+//        toVC.view.layer.transform = AnimationHelper.yRotation(-.pi / 2)
 
+        toVC.view.alpha = 0.0
+        
         let duration = transitionDuration(using: transitionContext)
 
         UIView.animateKeyframes(
@@ -47,13 +51,15 @@ class FlipDismissAnimationController: NSObject, UIViewControllerAnimatedTransiti
                     snapshot.frame = self.destinationFrame
                 }
 
-                UIView.addKeyframe(withRelativeStartTime: 1/3, relativeDuration: 1/3) {
-                    snapshot.layer.transform = AnimationHelper.yRotation(.pi / 2)
+                UIView.addKeyframe(withRelativeStartTime: 1/3, relativeDuration: 2/3) {
+                    //snapshot.layer.transform = AnimationHelper.yRotation(.pi / 2)
+                    snapshot.alpha = 0.0
+                    toVC.view.alpha = 1.0
                 }
 
-                UIView.addKeyframe(withRelativeStartTime: 2/3, relativeDuration: 1/3) {
-                    toVC.view.layer.transform = AnimationHelper.yRotation(0.0)
-                }
+//                UIView.addKeyframe(withRelativeStartTime: 2/3, relativeDuration: 1/3) {
+//                    toVC.view.layer.transform = AnimationHelper.yRotation(0.0)
+//                }
         },
             completion: { _ in
                 fromVC.view.isHidden = false

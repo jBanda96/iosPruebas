@@ -7,9 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		2A013596221BB0A900F76857 /* PetPal.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A013594221BB0A900F76857 /* PetPal.xcdatamodeld */; };
-		2A0135A1221BB20C00F76857 /* Friend+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A01359F221BB20C00F76857 /* Friend+CoreDataClass.swift */; };
-		2A0135A2221BB20C00F76857 /* Friend+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0135A0221BB20C00F76857 /* Friend+CoreDataProperties.swift */; };
+		2A004F04226D5D0200B3496F /* List.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A004F02226D5D0200B3496F /* List.xcdatamodeld */; };
 		2A0135A4221BBA1C00F76857 /* NetworkingRWViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A0135A3221BBA1C00F76857 /* NetworkingRWViewController.swift */; };
 		2A01BC3120E02237001B7476 /* CADisplayLinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A01BC3020E02237001B7476 /* CADisplayLinkViewController.swift */; };
 		2A04476E20ADE10100383D6F /* Realm.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A04476D20ADE10100383D6F /* Realm.storyboard */; };
@@ -34,6 +32,7 @@
 		2A12B24F21796BB300CA551A /* SSLPinning.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A12B24E21796BB300CA551A /* SSLPinning.storyboard */; };
 		2A12B25121796BCA00CA551A /* SSLPinningViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A12B25021796BCA00CA551A /* SSLPinningViewController.swift */; };
 		2A140D8520ABC83000202E0F /* ButtonedTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A140D8420ABC83000202E0F /* ButtonedTableViewController.swift */; };
+		2A16D0A5226C1A1600EC7BEF /* SwipeInteractionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A16D0A4226C1A1600EC7BEF /* SwipeInteractionController.swift */; };
 		2A17F19F209D667E009DF9DC /* 3DTouch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A17F19E209D667E009DF9DC /* 3DTouch.storyboard */; };
 		2A17F1A1209D670A009DF9DC /* 3DTouchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A17F1A0209D670A009DF9DC /* 3DTouchViewController.swift */; };
 		2A19D1AF22091103007E08AC /* ViewControllerAnimation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A19D1AD22091102007E08AC /* ViewControllerAnimation.swift */; };
@@ -147,9 +146,6 @@
 		2A87650221FE98C1009AF124 /* PetsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A87650121FE98C1009AF124 /* PetsCell.swift */; };
 		2A98A76E209FF5C1004A39A0 /* CoreData.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A98A76D209FF5C1004A39A0 /* CoreData.storyboard */; };
 		2A98A770209FF5E1004A39A0 /* CoreDataViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98A76F209FF5E1004A39A0 /* CoreDataViewController.swift */; };
-		2A98A773209FF837004A39A0 /* TodoApp.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 2A98A771209FF837004A39A0 /* TodoApp.xcdatamodeld */; };
-		2A98A776209FFA2E004A39A0 /* AbstractManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98A775209FFA2E004A39A0 /* AbstractManager.swift */; };
-		2A98A799209FFC0A004A39A0 /* TaskListManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A98A798209FFC0A004A39A0 /* TaskListManager.swift */; };
 		2AA249F52126790400874A60 /* Emojis.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AA249F42126790400874A60 /* Emojis.storyboard */; };
 		2AA249F72126799600874A60 /* Emoji.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA249F62126799600874A60 /* Emoji.swift */; };
 		2AA249F921267E7A00874A60 /* EmojiTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA249F821267E7A00874A60 /* EmojiTableViewController.swift */; };
@@ -258,9 +254,7 @@
 
 /* Begin PBXFileReference section */
 		15DD33399FEB9CB59178C48D /* Pods-Pruebas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pruebas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pruebas/Pods-Pruebas.debug.xcconfig"; sourceTree = "<group>"; };
-		2A013595221BB0A900F76857 /* PetPal.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PetPal.xcdatamodel; sourceTree = "<group>"; };
-		2A01359F221BB20C00F76857 /* Friend+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataClass.swift"; sourceTree = "<group>"; };
-		2A0135A0221BB20C00F76857 /* Friend+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Friend+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		2A004F03226D5D0200B3496F /* List.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = List.xcdatamodel; sourceTree = "<group>"; };
 		2A0135A3221BBA1C00F76857 /* NetworkingRWViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkingRWViewController.swift; sourceTree = "<group>"; };
 		2A01BC3020E02237001B7476 /* CADisplayLinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CADisplayLinkViewController.swift; sourceTree = "<group>"; };
 		2A04476D20ADE10100383D6F /* Realm.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Realm.storyboard; sourceTree = "<group>"; };
@@ -285,6 +279,7 @@
 		2A12B24E21796BB300CA551A /* SSLPinning.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SSLPinning.storyboard; sourceTree = "<group>"; };
 		2A12B25021796BCA00CA551A /* SSLPinningViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SSLPinningViewController.swift; sourceTree = "<group>"; };
 		2A140D8420ABC83000202E0F /* ButtonedTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ButtonedTableViewController.swift; sourceTree = "<group>"; };
+		2A16D0A4226C1A1600EC7BEF /* SwipeInteractionController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeInteractionController.swift; sourceTree = "<group>"; };
 		2A17F19E209D667E009DF9DC /* 3DTouch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = 3DTouch.storyboard; sourceTree = "<group>"; };
 		2A17F1A0209D670A009DF9DC /* 3DTouchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = 3DTouchViewController.swift; sourceTree = "<group>"; };
 		2A19D1AD22091102007E08AC /* ViewControllerAnimation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewControllerAnimation.swift; sourceTree = "<group>"; };
@@ -414,9 +409,6 @@
 		2A87650121FE98C1009AF124 /* PetsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetsCell.swift; sourceTree = "<group>"; };
 		2A98A76D209FF5C1004A39A0 /* CoreData.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreData.storyboard; sourceTree = "<group>"; };
 		2A98A76F209FF5E1004A39A0 /* CoreDataViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreDataViewController.swift; sourceTree = "<group>"; };
-		2A98A772209FF837004A39A0 /* TodoApp.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TodoApp.xcdatamodel; sourceTree = "<group>"; };
-		2A98A775209FFA2E004A39A0 /* AbstractManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractManager.swift; sourceTree = "<group>"; };
-		2A98A798209FFC0A004A39A0 /* TaskListManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TaskListManager.swift; sourceTree = "<group>"; };
 		2AA249F42126790400874A60 /* Emojis.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Emojis.storyboard; sourceTree = "<group>"; };
 		2AA249F62126799600874A60 /* Emoji.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emoji.swift; sourceTree = "<group>"; };
 		2AA249F821267E7A00874A60 /* EmojiTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmojiTableViewController.swift; sourceTree = "<group>"; };
@@ -910,6 +902,7 @@
 			children = (
 				2A3BCB7F226A87220029F114 /* FlipPresentAnimationController.swift */,
 				2AC41CF9226AD55B00A49137 /* FlipDismissAnimationController.swift */,
+				2A16D0A4226C1A1600EC7BEF /* SwipeInteractionController.swift */,
 			);
 			path = AnimationViewControllers;
 			sourceTree = "<group>";
@@ -1056,22 +1049,9 @@
 			children = (
 				2A98A76D209FF5C1004A39A0 /* CoreData.storyboard */,
 				2A98A76F209FF5E1004A39A0 /* CoreDataViewController.swift */,
-				2A98A771209FF837004A39A0 /* TodoApp.xcdatamodeld */,
-				2A013594221BB0A900F76857 /* PetPal.xcdatamodeld */,
-				2A01359F221BB20C00F76857 /* Friend+CoreDataClass.swift */,
-				2A0135A0221BB20C00F76857 /* Friend+CoreDataProperties.swift */,
-				2A98A774209FFA0E004A39A0 /* Model */,
+				2A004F02226D5D0200B3496F /* List.xcdatamodeld */,
 			);
 			path = "Core Data";
-			sourceTree = "<group>";
-		};
-		2A98A774209FFA0E004A39A0 /* Model */ = {
-			isa = PBXGroup;
-			children = (
-				2A98A775209FFA2E004A39A0 /* AbstractManager.swift */,
-				2A98A798209FFC0A004A39A0 /* TaskListManager.swift */,
-			);
-			path = Model;
 			sourceTree = "<group>";
 		};
 		2AA249F3212678E200874A60 /* EmojiDictionary */ = {
@@ -1598,10 +1578,9 @@
 				2A445754220A97FA0024F658 /* FlightsViewController.swift in Sources */,
 				2AEA95CB22679F67002E782D /* NavigationView.swift in Sources */,
 				2A4D4C9A209EC1E400D498F0 /* NetworkingViewController.swift in Sources */,
-				2A98A799209FFC0A004A39A0 /* TaskListManager.swift in Sources */,
 				2ADA09E220993A0100FDB60F /* FirstViewController.swift in Sources */,
+				2A16D0A5226C1A1600EC7BEF /* SwipeInteractionController.swift in Sources */,
 				2ABA9C9D2165C6A70054BFD8 /* xibs.m in Sources */,
-				2A013596221BB0A900F76857 /* PetPal.xcdatamodeld in Sources */,
 				2A06E5CC2257D39B0069270E /* Presenter.swift in Sources */,
 				2AE46D0D219BBC8D00A8FB69 /* UNService.swift in Sources */,
 				2A4B0D9D226985A3007D02D1 /* CustomDetailViewController.swift in Sources */,
@@ -1638,7 +1617,6 @@
 				2A01BC3120E02237001B7476 /* CADisplayLinkViewController.swift in Sources */,
 				2AA4CFF121418DE20054EAC9 /* Model.m in Sources */,
 				2A63FC80215328F8009E03D2 /* PickerViewController.m in Sources */,
-				2A98A773209FF837004A39A0 /* TodoApp.xcdatamodeld in Sources */,
 				2AE2DA2920CB2B8400C3DD37 /* AndroidTableViewController.swift in Sources */,
 				2A04477420ADE71B00383D6F /* DBManager.swift in Sources */,
 				2A36F5D9220E614200E2F873 /* FrontCardView.swift in Sources */,
@@ -1677,14 +1655,13 @@
 				2A367480221A5E71000E7B25 /* MoreAppsViewController.swift in Sources */,
 				2AEA95DA22679F7D002E782D /* LensViewController.swift in Sources */,
 				2ABDF5C0219BB2F9004A4D9D /* NotificationsViewController.swift in Sources */,
+				2A004F04226D5D0200B3496F /* List.xcdatamodeld in Sources */,
 				2A35D74921A27C9A00FA6657 /* TorchViewController.swift in Sources */,
 				2A52BACC2138694300183ABF /* SelectRoomTypeTableViewController.swift in Sources */,
 				2A04477020ADE14300383D6F /* RealmTableViewController.swift in Sources */,
-				2A98A776209FFA2E004A39A0 /* AbstractManager.swift in Sources */,
 				2A49D2072249DFD700E82287 /* HeaderView.swift in Sources */,
 				2AEDC60820A8EEF90066170F /* Picture.swift in Sources */,
 				2ADF8C8A21A233A0003244F4 /* SpringAnimationsViewController.swift in Sources */,
-				2A0135A1221BB20C00F76857 /* Friend+CoreDataClass.swift in Sources */,
 				2A12B25121796BCA00CA551A /* SSLPinningViewController.swift in Sources */,
 				2A218BF1213750CC005AC2B2 /* RoomType.swift in Sources */,
 				2A63FFF820DA0F7C0093382D /* ContactDetailViewController.swift in Sources */,
@@ -1708,7 +1685,6 @@
 				2AB98D8121264B220000D768 /* ScrollViewControllerIB.swift in Sources */,
 				2A08BBCE219FD2820083683B /* CLService.swift in Sources */,
 				2A3020DA220E105800DE70E3 /* HerbModel.swift in Sources */,
-				2A0135A2221BB20C00F76857 /* Friend+CoreDataProperties.swift in Sources */,
 				2A4B0DA322699001007D02D1 /* Pets.swift in Sources */,
 				2A28B156214F1FE5004D7153 /* RPSTurn.m in Sources */,
 				2AEA95D622679F7D002E782D /* MainViewController.swift in Sources */,
@@ -1969,23 +1945,13 @@
 /* End XCConfigurationList section */
 
 /* Begin XCVersionGroup section */
-		2A013594221BB0A900F76857 /* PetPal.xcdatamodeld */ = {
+		2A004F02226D5D0200B3496F /* List.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
-				2A013595221BB0A900F76857 /* PetPal.xcdatamodel */,
+				2A004F03226D5D0200B3496F /* List.xcdatamodel */,
 			);
-			currentVersion = 2A013595221BB0A900F76857 /* PetPal.xcdatamodel */;
-			path = PetPal.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-		2A98A771209FF837004A39A0 /* TodoApp.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				2A98A772209FF837004A39A0 /* TodoApp.xcdatamodel */,
-			);
-			currentVersion = 2A98A772209FF837004A39A0 /* TodoApp.xcdatamodel */;
-			path = TodoApp.xcdatamodeld;
+			currentVersion = 2A004F03226D5D0200B3496F /* List.xcdatamodel */;
+			path = List.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;
 		};

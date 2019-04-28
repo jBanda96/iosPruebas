@@ -17,7 +17,7 @@ class FlipPresentAnimationController: NSObject, UIViewControllerAnimatedTransiti
     }
     
     func transitionDuration(using transitionContext: UIViewControllerContextTransitioning?) -> TimeInterval {
-        return 1.0
+        return 0.6
     }
     
     func animateTransition(using transitionContext: UIViewControllerContextTransitioning) {

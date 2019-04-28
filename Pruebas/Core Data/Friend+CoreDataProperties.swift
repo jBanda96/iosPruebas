@@ -2,7 +2,7 @@
 //  Friend+CoreDataProperties.swift
 //  
 //
-//  Created by Julio Banda on 2/18/19.
+//  Created by Julio Banda on 4/27/19.
 //
 //
 

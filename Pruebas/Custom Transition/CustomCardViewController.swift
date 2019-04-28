@@ -48,7 +48,18 @@ extension CustomCardViewController: UIViewControllerTransitioningDelegate {
     }
     
     func animationController(forDismissed dismissed: UIViewController) -> UIViewControllerAnimatedTransitioning? {
-        return FlipDismissAnimationController(destinationFrame: cardView.frame)
+        guard let detailVC = dismissed as? CustomDetailViewController else { return nil }
+        
+        return FlipDismissAnimationController(destinationFrame: cardView.frame, interactionController: detailVC.swipeInteractionController!)
+    }
+    
+    func interactionControllerForDismissal(using animator: UIViewControllerAnimatedTransitioning) -> UIViewControllerInteractiveTransitioning? {
+            guard let animator = animator as? FlipDismissAnimationController,
+                animator.interactionController.interactionInProgress
+                else {
+                    return nil
+            }
+            return animator.interactionController
     }
     
 }

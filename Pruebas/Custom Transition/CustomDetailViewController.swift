@@ -13,6 +13,8 @@ class CustomDetailViewController: UIViewController {
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var textTitle: UILabel!
     
+    var swipeInteractionController: SwipeInteractionController?
+    
     @IBOutlet weak var centerHorizontalyConstraint: NSLayoutConstraint!
     @IBOutlet weak var topToImageConstraint: NSLayoutConstraint!
     
@@ -23,6 +25,8 @@ class CustomDetailViewController: UIViewController {
 
         image.image = pet?.image
         textTitle.text = pet?.name
+        
+        swipeInteractionController = SwipeInteractionController(viewController: self)
     }
 
     @IBAction func dismiss(_ button: UIButton) {
