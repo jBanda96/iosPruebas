@@ -164,6 +164,7 @@
 		2AA806A0221619030009B070 /* NoNavigationBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA8069F221619030009B070 /* NoNavigationBarViewController.swift */; };
 		2AA806A322162CEC0009B070 /* hehehe.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2AA806A122162CEC0009B070 /* hehehe.caf */; };
 		2AA806A422162CEC0009B070 /* chomp.caf in Resources */ = {isa = PBXBuildFile; fileRef = 2AA806A222162CEC0009B070 /* chomp.caf */; };
+		2AA83BBD227664C800949FC6 /* Location.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AA83BBC227664C800949FC6 /* Location.swift */; };
 		2AAA9DE2209F7BC60034D1BF /* ContactsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA9DE1209F7BC60034D1BF /* ContactsManager.swift */; };
 		2AAA9DE4209F84A10034D1BF /* Contact.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AAA9DE3209F84A10034D1BF /* Contact.swift */; };
 		2AABA4C0209FB2C8008CB7FC /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AABA4BF209FB2C8008CB7FC /* User.swift */; };
@@ -217,6 +218,8 @@
 		2ADE62EA225AE09500B31D8D /* PlayerScoreBoardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE62E9225AE09500B31D8D /* PlayerScoreBoardViewModel.swift */; };
 		2ADE62EC225AE18900B31D8D /* PlayerScoreBoardMoveEditorViewModelFromPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADE62EB225AE18900B31D8D /* PlayerScoreBoardMoveEditorViewModelFromPlayer.swift */; };
 		2ADF8C8A21A233A0003244F4 /* SpringAnimationsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADF8C8921A233A0003244F4 /* SpringAnimationsViewController.swift */; };
+		2ADFC932227628DA003BAE00 /* CoreLocation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2ADFC931227628DA003BAE00 /* CoreLocation.storyboard */; };
+		2ADFC93722762A03003BAE00 /* CoreLocationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2ADFC93622762A03003BAE00 /* CoreLocationViewController.swift */; };
 		2AE2DA2320CB245D00C3DD37 /* SameAsAndroid.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2AE2DA2220CB245D00C3DD37 /* SameAsAndroid.storyboard */; };
 		2AE2DA2520CB28E900C3DD37 /* WordViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2DA2420CB28E900C3DD37 /* WordViewController.swift */; };
 		2AE2DA2720CB2B4D00C3DD37 /* Word.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AE2DA2620CB2B4D00C3DD37 /* Word.swift */; };
@@ -431,6 +434,7 @@
 		2AA8069F221619030009B070 /* NoNavigationBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoNavigationBarViewController.swift; sourceTree = "<group>"; };
 		2AA806A122162CEC0009B070 /* hehehe.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = hehehe.caf; sourceTree = "<group>"; };
 		2AA806A222162CEC0009B070 /* chomp.caf */ = {isa = PBXFileReference; lastKnownFileType = file; path = chomp.caf; sourceTree = "<group>"; };
+		2AA83BBC227664C800949FC6 /* Location.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Location.swift; sourceTree = "<group>"; };
 		2AAA9DE1209F7BC60034D1BF /* ContactsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactsManager.swift; sourceTree = "<group>"; };
 		2AAA9DE3209F84A10034D1BF /* Contact.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Contact.swift; sourceTree = "<group>"; };
 		2AABA4BF209FB2C8008CB7FC /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
@@ -487,6 +491,8 @@
 		2ADE62E9225AE09500B31D8D /* PlayerScoreBoardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreBoardViewModel.swift; sourceTree = "<group>"; };
 		2ADE62EB225AE18900B31D8D /* PlayerScoreBoardMoveEditorViewModelFromPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerScoreBoardMoveEditorViewModelFromPlayer.swift; sourceTree = "<group>"; };
 		2ADF8C8921A233A0003244F4 /* SpringAnimationsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpringAnimationsViewController.swift; sourceTree = "<group>"; };
+		2ADFC931227628DA003BAE00 /* CoreLocation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CoreLocation.storyboard; sourceTree = "<group>"; };
+		2ADFC93622762A03003BAE00 /* CoreLocationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreLocationViewController.swift; sourceTree = "<group>"; };
 		2AE2DA2220CB245D00C3DD37 /* SameAsAndroid.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = SameAsAndroid.storyboard; sourceTree = "<group>"; };
 		2AE2DA2420CB28E900C3DD37 /* WordViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WordViewController.swift; sourceTree = "<group>"; };
 		2AE2DA2620CB2B4D00C3DD37 /* Word.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Word.swift; sourceTree = "<group>"; };
@@ -884,6 +890,7 @@
 				2A0ED7C7225EE3F7007B901A /* VIPER */,
 				2AEA95C222679DBE002E782D /* Snap */,
 				2AE64F8922698234008FB349 /* Custom Transition */,
+				2ADFC93022762876003BAE00 /* CoreLocation */,
 				2A3A094020956F6A0095F163 /* Assets.xcassets */,
 				2AFD910121A09A3100682B3A /* TimeAlert.gif */,
 				2AD2CD6121A09B9100F033EB /* LocationAlert.gif */,
@@ -1259,6 +1266,16 @@
 			path = PlayerScoreBoard;
 			sourceTree = "<group>";
 		};
+		2ADFC93022762876003BAE00 /* CoreLocation */ = {
+			isa = PBXGroup;
+			children = (
+				2ADFC931227628DA003BAE00 /* CoreLocation.storyboard */,
+				2ADFC93622762A03003BAE00 /* CoreLocationViewController.swift */,
+				2AA83BBC227664C800949FC6 /* Location.swift */,
+			);
+			path = CoreLocation;
+			sourceTree = "<group>";
+		};
 		2AE2DA2120CB244300C3DD37 /* Same as Android */ = {
 			isa = PBXGroup;
 			children = (
@@ -1411,6 +1428,9 @@
 						CreatedOnToolsVersion = 9.3;
 						LastSwiftMigration = 0940;
 						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
 							com.apple.Keychain = {
 								enabled = 1;
 							};
@@ -1441,6 +1461,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2ADFC932227628DA003BAE00 /* CoreLocation.storyboard in Resources */,
 				2A3FAA0122570DC700FF12C3 /* MVVM.storyboard in Resources */,
 				2A38EBA621B444C60089883A /* BullsEyeGame.storyboard in Resources */,
 				2AD1108D209A300C002F4B3C /* Video.mp4 in Resources */,
@@ -1560,6 +1581,7 @@
 				2A31269C2153427600960871 /* UIImage+Gif.m in Sources */,
 				2A36F5DC220E624D00E2F873 /* UIView.swift in Sources */,
 				2A3020D8220E105800DE70E3 /* HerbDetailsViewController.swift in Sources */,
+				2AA83BBD227664C800949FC6 /* Location.swift in Sources */,
 				2AC1B41820AE851800CA0858 /* User64.swift in Sources */,
 				2A04477220ADE62A00383D6F /* SecondViewController.swift in Sources */,
 				2A7231552130AF8A004EC266 /* ButtonStyle.swift in Sources */,
@@ -1635,6 +1657,7 @@
 				2A053E75209820CB00928204 /* TableViewController.swift in Sources */,
 				2A35D75A21A2808300FA6657 /* CardView.swift in Sources */,
 				2AC78102225EF1C000AA6294 /* NoticeRouter.swift in Sources */,
+				2ADFC93722762A03003BAE00 /* CoreLocationViewController.swift in Sources */,
 				2AD2CD6821A09D2E00F033EB /* NotificationActionID.swift in Sources */,
 				2AEA95CA22679F67002E782D /* NavigationViewAnimation.swift in Sources */,
 				2AE2DA2720CB2B4D00C3DD37 /* Word.swift in Sources */,

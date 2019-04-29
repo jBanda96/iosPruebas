@@ -15,7 +15,9 @@ class CoreDataViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
-    var friends: [Friend] = []
+    var fetchRC: NSFetchedResultsController<Friend>!
+    
+    var query: String = ""
     
     lazy var searchController: UISearchController = {
         let search = UISearchController(searchResultsController: nil)
@@ -77,9 +79,7 @@ class CoreDataViewController: UIViewController {
         
         appDelegate.saveContext()
         
-        friends.append(friend)
-        let index = IndexPath(row: friends.count - 1, section: 0)
-        tableView.insertRows(at: [index], with: .automatic)
+        readFromCoreData()
     }
     
     fileprivate func readFromCoreData() {
@@ -87,10 +87,16 @@ class CoreDataViewController: UIViewController {
         let request =   Friend.fetchRequest() as NSFetchRequest
         let sort    =   NSSortDescriptor(key: "name", ascending: true)
         
+        if !query.isEmpty {
+            request.predicate = NSPredicate(format: "name CONTAINS[cd] %@", searchController.searchBar.text!)
+        }
+        
         request.sortDescriptors = [sort]
         
         do {
-            friends = try context.fetch(request)
+            fetchRC = NSFetchedResultsController(fetchRequest: request, managedObjectContext: context, sectionNameKeyPath: nil, cacheName: nil)
+            try fetchRC.performFetch()
+            tableView.reloadData()
         } catch {
             print(error.localizedDescription)
         }
@@ -101,12 +107,12 @@ class CoreDataViewController: UIViewController {
 
 extension CoreDataViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return friends.count
+        return fetchRC.fetchedObjects?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        cell.textLabel?.text = friends[indexPath.row].name
+        cell.textLabel?.text = fetchRC.object(at: indexPath).name
         
         return cell
     }
@@ -116,15 +122,8 @@ extension CoreDataViewController: UITableViewDataSource {
 
 extension CoreDataViewController: UISearchResultsUpdating {
     func updateSearchResults(for searchController: UISearchController) {
-        let predicate = Friend.fetchRequest() as NSFetchRequest
-        predicate.predicate = NSPredicate(format: "name CONTAINS[cd] %@", searchController.searchBar.text!)
-        
-        do {
-            friends = try context.fetch(predicate)
-            tableView.reloadData()
-        } catch {
-            print(error.localizedDescription)
-        }
+        query = searchController.searchBar.text ?? ""
+        readFromCoreData()
     }
 }
 
