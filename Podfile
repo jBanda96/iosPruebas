@@ -6,9 +6,10 @@ target 'Pruebas' do
   use_frameworks!
 
   pod 'KeychainAccess', '~> 3.1'
-  pod 'RealmSwift'
   pod 'UILoadControl', '~> 2.1'
   pod 'GoogleAnalytics'
   pod "NSGIF", "~> 1.0"
+  pod 'CocoaAsyncSocket'
+  pod 'Socket.IO-Client-Swift'
 
 end

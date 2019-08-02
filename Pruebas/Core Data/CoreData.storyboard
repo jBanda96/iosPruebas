@@ -33,6 +33,7 @@
                                 </prototypes>
                                 <connections>
                                     <outlet property="dataSource" destination="vwd-gq-s65" id="unD-jH-xIM"/>
+                                    <outlet property="delegate" destination="vwd-gq-s65" id="7ES-Sw-LeP"/>
                                 </connections>
                             </tableView>
                         </subviews>

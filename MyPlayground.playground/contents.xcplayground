@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='rendered'>
+<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='true'>
     <pages>
         <page name='Untitled Page'/>
         <page name='Network operations'/>
         <page name='CIImage'/>
         <page name='Files and Data'/>
         <page name='MVVM'/>
-        <page name='MVC'/>
         <page name='MVP'/>
         <page name='Algorithms'/>
+        <page name='CALayer'/>
     </pages>
 </playground>

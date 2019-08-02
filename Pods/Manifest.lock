@@ -1,38 +1,40 @@
 PODS:
+  - CocoaAsyncSocket (7.6.3)
   - GoogleAnalytics (3.17.0)
   - KeychainAccess (3.1.1)
   - NSGIF (1.2.4)
-  - Realm (3.10.0):
-    - Realm/Headers (= 3.10.0)
-  - Realm/Headers (3.10.0)
-  - RealmSwift (3.10.0):
-    - Realm (= 3.10.0)
+  - Socket.IO-Client-Swift (15.0.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.0)
   - UILoadControl (2.1.0)
 
 DEPENDENCIES:
+  - CocoaAsyncSocket
   - GoogleAnalytics
   - KeychainAccess (~> 3.1)
   - NSGIF (~> 1.0)
-  - RealmSwift
+  - Socket.IO-Client-Swift
   - UILoadControl (~> 2.1)
 
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
+    - CocoaAsyncSocket
     - GoogleAnalytics
     - KeychainAccess
     - NSGIF
-    - Realm
-    - RealmSwift
+    - Socket.IO-Client-Swift
+    - Starscream
     - UILoadControl
 
 SPEC CHECKSUMS:
+  CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
   NSGIF: 442808fd1667ebac3d09046c3f6d4bdd6720cded
-  Realm: 85ab9e4f779d66f6e9ffeb118dc25b7f130c96ac
-  RealmSwift: 69121c8b86d0ae005fb779efdb10e606732e1c74
+  Socket.IO-Client-Swift: c039a808195d22a7192962841b8c035cb61ea49e
+  Starscream: 08172b481e145289c4930cb567230fb55897cfa4
   UILoadControl: e742ddbe4c67ba1f13b00b7d462d4141307d021f
 
-PODFILE CHECKSUM: 1d43639773c7fdf128570a7c6d8321dc82421020
+PODFILE CHECKSUM: cb4f6a8d33379f46fa8fc79a8b4002d0e9a3c6d3
 
 COCOAPODS: 1.5.3

@@ -2,10 +2,16 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:Pruebas/Core Data/Friend+CoreDataClass.swift">
+      location = "group:Friend+CoreDataClass.swift">
    </FileRef>
    <FileRef
-      location = "group:Pruebas/Core Data/Friend+CoreDataProperties.swift">
+      location = "group:Friend+CoreDataProperties.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Pets+CoreDataClass.swift">
+   </FileRef>
+   <FileRef
+      location = "group:Pets+CoreDataProperties.swift">
    </FileRef>
    <FileRef
       location = "group:Pruebas.xcodeproj">

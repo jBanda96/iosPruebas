@@ -8,13 +8,15 @@
 
 import UIKit
 import CoreData
+import CocoaAsyncSocket
+import SocketIO
 
 func delay(seconds: Double, completion: @escaping ()-> Void) {
     DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: completion)
 }
 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
+class AppDelegate: UIResponder, UIApplicationDelegate, GCDAsyncSocketDelegate {
 
     var window: UIWindow?
 
@@ -110,6 +112,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             }
         }
     }
+    
+//    func socket(_ sock: GCDAsyncSocket, didConnectToHost host: String, port: UInt16) {
+//        print("Conectado")
+//
+//    }
+//
+//    func socket(_ sock: GCDAsyncSocket, didRead data: Data, withTag tag: Int) {
+//        print("Leyendo")
+//    }
 
 
 }

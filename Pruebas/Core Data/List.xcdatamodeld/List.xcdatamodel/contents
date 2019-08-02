@@ -3,12 +3,21 @@
     <entity name="Friend" representedClassName="Friend" syncable="YES" codeGenerationType="class">
         <attribute name="address" optional="YES" attributeType="String" syncable="YES"/>
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="pets" toMany="YES" deletionRule="Cascade" destinationEntity="Pets" inverseName="owner" inverseEntity="Pets" syncable="YES"/>
     </entity>
     <entity name="Person1" representedClassName="Person1" syncable="YES" codeGenerationType="class">
         <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
     </entity>
+    <entity name="Pets" representedClassName="Pets" syncable="YES" codeGenerationType="class">
+        <attribute name="dob" attributeType="Date" usesScalarValueType="NO" syncable="YES"/>
+        <attribute name="kind" optional="YES" attributeType="Binary" allowsExternalBinaryDataStorage="YES" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <attribute name="picture" attributeType="String" syncable="YES"/>
+        <relationship name="owner" maxCount="1" deletionRule="Nullify" destinationEntity="Friend" inverseName="pets" inverseEntity="Friend" syncable="YES"/>
+    </entity>
     <elements>
-        <element name="Friend" positionX="-54" positionY="0" width="128" height="75"/>
+        <element name="Friend" positionX="-54" positionY="0" width="128" height="90"/>
         <element name="Person1" positionX="-54" positionY="-9" width="128" height="60"/>
+        <element name="Pets" positionX="-54" positionY="9" width="128" height="120"/>
     </elements>
 </model>

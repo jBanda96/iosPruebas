@@ -44,6 +44,7 @@ enum Endpoint {
             
         case .byPokemon:
             return "https://pokeapi.co/api/v2/pokemon/pikachu"
+            
         }
     }
     
@@ -53,6 +54,8 @@ func createGETRequest(url: URL) -> URLRequest {
     var request = URLRequest(url: url)
     request.httpMethod = "GET"
     request.setValue("application/json", forHTTPHeaderField: "Content-Type")
+    request.setValue("Authorization", forHTTPHeaderField: "Client-ID%20126701cd8332f32")
+    //Authorization: Client-ID 126701cd8332f32
     
     return request
 }

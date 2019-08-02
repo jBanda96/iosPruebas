@@ -239,9 +239,29 @@ class PersonView: UITableViewController {
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         print(PersonViewModel(person: persons[indexPath.row]).description)
+        
+        let viewController = DetailViewController()
+        viewController.label.text = persons[indexPath.row].name
+        self.navigationController?.pushViewController(viewController, animated: true)
+        
     }
     
 }
+
+class DetailViewController: UIViewController {
+    
+    let label = UILabel()
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        self.view.addSubview(label)
+        label.textColor = .white
+        label.centerInParent()
+        
+    }
+}
+
 
 class PersonCell: UITableViewCell {
     
@@ -341,9 +361,25 @@ class PersonCell: UITableViewCell {
     
 }
 
+
 let vc = PersonView()
 let vc2 = ViewController()
-PlaygroundPage.current.liveView = vc
+
+let navigationController = UINavigationController(rootViewController: vc)
+vc.navigationItem.title = "Super Heroes"
+
+PlaygroundPage.current.liveView = navigationController
+
+
+extension UIView {
+    
+    func centerInParent() {
+        self.centerXAnchor.constraint(equalTo: self.superview!.centerXAnchor).isActive = true
+        self.centerYAnchor.constraint(equalTo: self.superview!.centerYAnchor).isActive = true
+    }
+    
+}
+
 
 //: [Next](@next)
 
