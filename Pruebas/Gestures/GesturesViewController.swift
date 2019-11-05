@@ -30,6 +30,19 @@ class GesturesViewController: NoNavigationBarViewController {
         self.view.clipsToBounds = true
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        UIGraphicsBeginImageContext(view.frame.size)
+        view.layer.render(in: UIGraphicsGetCurrentContext()!)
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        let imageToShare = [image]
+        let shareController = UIActivityViewController(activityItems: imageToShare as! [Any], applicationActivities: nil)
+        shareController.popoverPresentationController?.sourceView = self.view
+        present(shareController, animated: true)
+    }
+    
     @IBAction func handlePan(_ recognizer: UIPanGestureRecognizer) {
         guard let recognizerView = recognizer.view else { return }
         

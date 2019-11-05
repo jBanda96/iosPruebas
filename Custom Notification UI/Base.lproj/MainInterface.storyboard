@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15400" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="M4Y-Lb-cyx">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15404"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Notification View Controller-->
+        <scene sceneID="cwh-vc-ff4">
+            <objects>
+                <viewController id="M4Y-Lb-cyx" userLabel="Notification View Controller" customClass="NotificationViewController" customModule="Custom_Notification_UI" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" simulatedAppContext="notificationCenter" id="S3S-Oj-5AN">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="320"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="FFr-W8-mhk">
+                                <rect key="frame" x="0.0" y="44" width="320" height="276"/>
+                            </mapView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mzN-0z-4qm">
+                                <rect key="frame" x="232" y="52" width="80" height="80"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="80" id="UKj-M2-IMZ"/>
+                                    <constraint firstAttribute="width" constant="80" id="sEN-5q-dAp"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="mzN-0z-4qm" secondAttribute="trailing" constant="8" id="0sd-uN-yRP"/>
+                            <constraint firstItem="FFr-W8-mhk" firstAttribute="leading" secondItem="2BE-c3-nQJ" secondAttribute="leading" id="7vv-rG-QCX"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="bottom" secondItem="FFr-W8-mhk" secondAttribute="bottom" id="9PP-tF-3Yg"/>
+                            <constraint firstItem="2BE-c3-nQJ" firstAttribute="trailing" secondItem="FFr-W8-mhk" secondAttribute="trailing" id="DbO-d9-whb"/>
+                            <constraint firstItem="FFr-W8-mhk" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" id="lic-Wg-aqP"/>
+                            <constraint firstItem="mzN-0z-4qm" firstAttribute="top" secondItem="2BE-c3-nQJ" secondAttribute="top" constant="8" id="mfg-cw-hVO"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2BE-c3-nQJ"/>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout"/>
+                    <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <size key="freeformSize" width="320" height="320"/>
+                    <connections>
+                        <outlet property="imageView" destination="mzN-0z-4qm" id="Nib-0O-dqN"/>
+                        <outlet property="mapView" destination="FFr-W8-mhk" id="oBq-nM-JDX"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="vXp-U4-Rya" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="129"/>
+        </scene>
+    </scenes>
+</document>

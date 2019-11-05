@@ -9,5 +9,10 @@
         <page name='MVP'/>
         <page name='Algorithms'/>
         <page name='CALayer'/>
+        <page name='Observer Pattern'/>
+        <page name='Builder Pattern'/>
+        <page name='Factory Pattern'/>
+        <page name='Untitled Page 2'/>
+        <page name='Adapter Protocol'/>
     </pages>
 </playground>

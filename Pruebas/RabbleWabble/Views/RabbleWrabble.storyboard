@@ -76,7 +76,13 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Yf3-u4-BDe"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Select Question Groups" id="IYP-Hq-SCW"/>
+                    <navigationItem key="navigationItem" title="Select Question Groups" id="IYP-Hq-SCW">
+                        <barButtonItem key="leftBarButtonItem" title="App Settings" image="ic_settings" id="dTd-kK-3lZ">
+                            <connections>
+                                <segue destination="nfH-7p-Jjw" kind="show" id="yNN-mC-JXN"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="G1q-Ni-OqE" id="GgD-Om-Cpo"/>
                     </connections>
@@ -84,6 +90,24 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cQy-MF-6B0" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-157.97101449275362" y="-324.10714285714283"/>
+        </scene>
+        <!--App Settings-->
+        <scene sceneID="4Ii-JW-wht">
+            <objects>
+                <tableViewController title="App Settings" id="nfH-7p-Jjw" customClass="AppSettingsViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" id="Oxz-uE-Eff">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <connections>
+                            <outlet property="dataSource" destination="nfH-7p-Jjw" id="frB-ag-A7r"/>
+                            <outlet property="delegate" destination="nfH-7p-Jjw" id="uiZ-aO-ZO8"/>
+                        </connections>
+                    </tableView>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fEV-be-Fn1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-158" y="-1029"/>
         </scene>
         <!--Questions View Controller-->
         <scene sceneID="YhX-BM-l8o">
@@ -201,5 +225,6 @@
     <resources>
         <image name="ic_circle_check" width="80" height="80"/>
         <image name="ic_circle_x" width="80" height="80"/>
+        <image name="ic_settings" width="26" height="26"/>
     </resources>
 </document>

@@ -18,8 +18,15 @@ class SelectQuestionGroupViewController: UIViewController {
     }
     
     // MARK: Properties
-    public let questionGroups = QuestionGroup.allGroups()
-    private var selectedQuestionGroup: QuestionGroup!
+private let questionGroupTaker = QuestionGroupCaretaker()
+    public var questionGroups: [QuestionGroup] {
+        return questionGroupTaker.questionGroups
+    }
+    private var selectedQuestionGroup: QuestionGroup! {
+        get { return questionGroupTaker.selectedQuestionGroup }
+        set { questionGroupTaker.selectedQuestionGroup = newValue }
+    }
+    private let appSettings = AppSettings.shared
 
 }
 
@@ -50,18 +57,17 @@ extension SelectQuestionGroupViewController: UITableViewDelegate {
     
     public override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let viewController = segue.destination as? QuestionsViewController else { return }
-        viewController.questionGroup = selectedQuestionGroup
+        viewController.questionStrategy = appSettings.questionStrategy(for: questionGroupTaker)
         viewController.delegate = self
     }
 }
 
 extension SelectQuestionGroupViewController: QuestionViewControllerProtocol {
-    func questionViewController(_ viewController: QuestionsViewController, didCancel questionGroup: QuestionGroup, at questionIndex: Int) {
-        
+    func questionViewController(_ viewController: QuestionsViewController, didCancel questionGroup: QuestionStrategy, at questionIndex: Int) {
         navigationController?.popToViewController(self, animated: true)
     }
     
-    func questionViewController(_ viewController: QuestionsViewController, didComplete questionGroup: QuestionGroup) {
+    func questionViewController(_ viewController: QuestionsViewController, didComplete questionGroup: QuestionStrategy) {
         navigationController?.popToViewController(self, animated: true)
     }
 }

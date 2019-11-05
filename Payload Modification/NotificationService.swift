@@ -13,24 +13,48 @@ class NotificationService: UNNotificationServiceExtension {
     var contentHandler: ((UNNotificationContent) -> Void)?
     var bestAttemptContent: UNMutableNotificationContent?
 
-    override func didReceive(_ request: UNNotificationRequest, withContentHandler contentHandler: @escaping (UNNotificationContent) -> Void) {
+    override func didReceive(_ request: UNNotificationRequest,
+                             withContentHandler contentHandler:
+        @escaping (UNNotificationContent) -> Void) {
         self.contentHandler = contentHandler
-        bestAttemptContent = (request.content.mutableCopy() as? UNMutableNotificationContent)
+        self.bestAttemptContent = (request.content.mutableCopy()
+            as? UNMutableNotificationContent)
         
+        // Try to decode the encrypted message data.
         if let bestAttemptContent = bestAttemptContent {
-            // Modify the notification content here...
-            bestAttemptContent.title = "\(bestAttemptContent.title) [modified]"
+            bestAttemptContent.title = ROT13.shared.decrypt(bestAttemptContent.title)
+            bestAttemptContent.body = ROT13.shared.decrypt(bestAttemptContent.body)
             
+            if let urlPath = request.content.userInfo["media-url"] as? String,
+                let url = URL(string: ROT13.shared.decrypt(urlPath)) {
+                let destination = URL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent(url.lastPathComponent)
+                
+                do {
+                    let data = try Data(contentsOf: url)
+                    try data.write(to: destination)
+                    let attachment = try UNNotificationAttachment.init(identifier: "", url: destination)
+                    bestAttemptContent.attachments = [attachment]
+                } catch {
+                    print(error.localizedDescription)
+                }
+                
+            }
+            
+            // Always call the completion handler when done.
             contentHandler(bestAttemptContent)
         }
     }
     
+    // Return something before time expires.
     override func serviceExtensionTimeWillExpire() {
-        // Called just before the extension will be terminated by the system.
-        // Use this as an opportunity to deliver your "best attempt" at modified content, otherwise the original push payload will be used.
-        if let contentHandler = contentHandler, let bestAttemptContent =  bestAttemptContent {
-            contentHandler(bestAttemptContent)
-        }
+       if let contentHandler = contentHandler,
+          let bestAttemptContent = bestAttemptContent {
+             
+          // Mark the message as still encrypted.
+          bestAttemptContent.subtitle = ROT13.shared.decrypt(bestAttemptContent.title)
+          bestAttemptContent.body = ROT13.shared.decrypt(bestAttemptContent.body)
+          contentHandler(bestAttemptContent)
+       }
     }
 
 }

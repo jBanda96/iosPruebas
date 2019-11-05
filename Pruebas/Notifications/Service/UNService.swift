@@ -24,7 +24,6 @@ class UNService : NSObject {
                                                .carPlay]
         
         unCenter.requestAuthorization(options: options) { (granted, error) in
-            print(error ?? "No UserNotification authorization error")
             
             guard granted else {
                 print("USER DENIED ACCESS")

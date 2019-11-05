@@ -7,6 +7,8 @@
 //
 
 import UIKit
+import Firebase
+import FirebaseMessaging
 
 class TableViewController: UIViewController {
     
@@ -24,6 +26,12 @@ class TableViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    
+        
+        FirebaseApp.configure(name: "Secondary", options: FirebaseOptions(googleAppID: "1:549816511553:ios:83051794e1cffd650c6ac0", gcmSenderID: "119468746430"))
+        Messaging.messaging().retrieveFCMToken(forSenderID: "119468746430") { (token, error) in
+            print("Token for secondary app: \(token)")
+        }
 
         tableView.estimatedRowHeight = 45
         tableView.rowHeight = UITableViewAutomaticDimension

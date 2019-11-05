@@ -1,8 +1,37 @@
 PODS:
   - CocoaAsyncSocket (7.6.3)
+  - Firebase/CoreOnly (5.20.2):
+    - FirebaseCore (= 5.4.1)
+  - Firebase/Messaging (5.20.2):
+    - Firebase/CoreOnly
+    - FirebaseMessaging (= 3.5.0)
+  - FirebaseAnalyticsInterop (1.2.0)
+  - FirebaseCore (5.4.1):
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/Logger (~> 5.2)
+  - FirebaseInstanceID (3.8.1):
+    - FirebaseCore (~> 5.2)
+    - GoogleUtilities/Environment (~> 5.2)
+    - GoogleUtilities/UserDefaults (~> 5.2)
+  - FirebaseMessaging (3.5.0):
+    - FirebaseAnalyticsInterop (~> 1.1)
+    - FirebaseCore (~> 5.2)
+    - FirebaseInstanceID (~> 3.6)
+    - GoogleUtilities/Environment (~> 5.3)
+    - GoogleUtilities/Reachability (~> 5.3)
+    - GoogleUtilities/UserDefaults (~> 5.3)
+    - Protobuf (~> 3.1)
   - GoogleAnalytics (3.17.0)
+  - GoogleUtilities/Environment (5.8.0)
+  - GoogleUtilities/Logger (5.8.0):
+    - GoogleUtilities/Environment
+  - GoogleUtilities/Reachability (5.8.0):
+    - GoogleUtilities/Logger
+  - GoogleUtilities/UserDefaults (5.8.0):
+    - GoogleUtilities/Logger
   - KeychainAccess (3.1.1)
   - NSGIF (1.2.4)
+  - Protobuf (3.7.0)
   - Socket.IO-Client-Swift (15.0.0):
     - Starscream (~> 3.1)
   - Starscream (3.1.0)
@@ -10,6 +39,7 @@ PODS:
 
 DEPENDENCIES:
   - CocoaAsyncSocket
+  - Firebase/Messaging
   - GoogleAnalytics
   - KeychainAccess (~> 3.1)
   - NSGIF (~> 1.0)
@@ -19,22 +49,36 @@ DEPENDENCIES:
 SPEC REPOS:
   https://github.com/cocoapods/specs.git:
     - CocoaAsyncSocket
+    - Firebase
+    - FirebaseAnalyticsInterop
+    - FirebaseCore
+    - FirebaseInstanceID
+    - FirebaseMessaging
     - GoogleAnalytics
+    - GoogleUtilities
     - KeychainAccess
     - NSGIF
+    - Protobuf
     - Socket.IO-Client-Swift
     - Starscream
     - UILoadControl
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
+  Firebase: 0c8cf33f266410c61ab3e2265cfa412200351d9c
+  FirebaseAnalyticsInterop: efbe45c8385ec626e29f9525e5ebd38520dfb6c1
+  FirebaseCore: f1a9a8be1aee4bf71a2fc0f4096df6788bdfda61
+  FirebaseInstanceID: a122b0c258720cf250551bb2bedf48c699f80d90
+  FirebaseMessaging: 4235f949ce1c4e827aeb19705ba5c53f9b85aa10
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
+  GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
   KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
   NSGIF: 442808fd1667ebac3d09046c3f6d4bdd6720cded
+  Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
   Socket.IO-Client-Swift: c039a808195d22a7192962841b8c035cb61ea49e
   Starscream: 08172b481e145289c4930cb567230fb55897cfa4
   UILoadControl: e742ddbe4c67ba1f13b00b7d462d4141307d021f
 
-PODFILE CHECKSUM: cb4f6a8d33379f46fa8fc79a8b4002d0e9a3c6d3
+PODFILE CHECKSUM: 1452f93c4a3bae36bde9603faa6838fd5e3c7463
 
 COCOAPODS: 1.5.3

@@ -257,7 +257,6 @@ class DetailViewController: UIViewController {
         
         self.view.addSubview(label)
         label.textColor = .white
-        label.centerInParent()
         
     }
 }

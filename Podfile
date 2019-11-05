@@ -11,5 +11,6 @@ target 'Pruebas' do
   pod "NSGIF", "~> 1.0"
   pod 'CocoaAsyncSocket'
   pod 'Socket.IO-Client-Swift'
+  pod 'Firebase/Messaging' 
 
 end
