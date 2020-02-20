@@ -101,3 +101,10 @@ doGenericGETRequest(to: .byPokemon, ofType: Pokemon.self) { (pokemon, error) in
     print(pokemon ?? "")
     print(error ?? "")
 }
+
+doGenericGETRequest(to: .allPokemon, ofType: PokeAll.self) { (pokemon, error) in
+    print("\n\n---------------- Generic Request - Pokemon ----------------")
+    
+    print(pokemon ?? "")
+    print(error ?? "")
+}

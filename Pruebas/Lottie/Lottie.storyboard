@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="wsW-9g-3Y0">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Lottie View Controller-->
+        <scene sceneID="Dzi-HF-v22">
+            <objects>
+                <viewController id="wsW-9g-3Y0" customClass="LottieViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xcE-N6-obW">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hnk-Ip-ItH" customClass="AnimationView" customModule="Lottie">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="hnk-Ip-ItH" firstAttribute="top" secondItem="xcE-N6-obW" secondAttribute="top" id="7Vo-HL-PJx"/>
+                            <constraint firstItem="hnk-Ip-ItH" firstAttribute="leading" secondItem="xcE-N6-obW" secondAttribute="leading" id="BRD-qz-mPg"/>
+                            <constraint firstAttribute="bottom" secondItem="hnk-Ip-ItH" secondAttribute="bottom" id="V69-qt-Nif"/>
+                            <constraint firstAttribute="trailing" secondItem="hnk-Ip-ItH" secondAttribute="trailing" id="oAd-BB-fdg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="2cy-fW-wD7"/>
+                    </view>
+                    <connections>
+                        <outlet property="animationView" destination="hnk-Ip-ItH" id="bGN-Px-9dO"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Jku-B1-UEe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-3291" y="-676"/>
+        </scene>
+    </scenes>
+</document>

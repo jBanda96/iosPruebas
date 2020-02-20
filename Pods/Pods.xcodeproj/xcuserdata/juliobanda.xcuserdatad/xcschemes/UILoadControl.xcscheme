@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "0930"
+   LastUpgradeVersion = "1100"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,10 +14,10 @@
             buildForArchiving = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "657430808257516E0A206D0F030C5749"
+               BlueprintIdentifier = "9E50973EECDF5CAC627F73748F98D4FF"
+               BuildableName = "UILoadControl.framework"
                BlueprintName = "UILoadControl"
-               ReferencedContainer = "container:Pods.xcodeproj"
-               BuildableName = "UILoadControl.framework">
+               ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>

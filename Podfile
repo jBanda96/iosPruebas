@@ -12,5 +12,10 @@ target 'Pruebas' do
   pod 'CocoaAsyncSocket'
   pod 'Socket.IO-Client-Swift'
   pod 'Firebase/Messaging' 
+  pod 'lottie-ios' 
 
 end
+
+target 'PruebasTests' do
+    inherit! :search_paths
+ end

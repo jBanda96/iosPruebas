@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import UserNotifications
 import Firebase
+import CoreNFC
 
 func delay(seconds: Double, completion: @escaping ()-> Void) {
     DispatchQueue.main.asyncAfter(deadline: .now() + seconds, execute: completion)
@@ -17,9 +18,9 @@ func delay(seconds: Double, completion: @escaping ()-> Void) {
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
-    
-    var window: UIWindow?
 
+    var window: UIWindow?
+    var session: NFCNDEFReaderSession?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
@@ -29,6 +30,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         InstanceID.instanceID().instanceID { (token, _) in
             print("Token for primary app: \(token?.token)")
         }
+        
+        print("Operation: \(String(describing: Calculator.sharedCalculator.performOperation(1, .plus, 3)))")                // 4
+        print("Operation: \(String(describing: Calculator.sharedCalculator.performOperation(1, .minus, 3)))")               // -2
+        print("Operation: \(String(describing: Calculator.sharedCalculator.performOperation(1, .multiplication, 3)))")      // 3
+        print("Operation: \(String(describing: Calculator.sharedCalculator.performOperation(1, .division, 3)))")            // 1/3
+        
         return true
     }
 
@@ -85,3 +92,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+extension AppDelegate: NFCNDEFReaderSessionDelegate {
+    func readerSession(_ session: NFCNDEFReaderSession, didInvalidateWithError error: Error) {
+        print(error.localizedDescription)
+    }
+    
+    func readerSession(_ session: NFCNDEFReaderSession, didDetectNDEFs messages: [NFCNDEFMessage]) {
+        print("NFC Messages: \(messages)")
+    }
+}

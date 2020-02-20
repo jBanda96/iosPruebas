@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<playground version='6.0' target-platform='ios' display-mode='rendered' executeOnSourceChanges='true'>
+<playground version='6.0' target-platform='ios' display-mode='rendered'>
     <pages>
         <page name='Untitled Page'/>
         <page name='Network operations'/>
@@ -13,6 +13,8 @@
         <page name='Builder Pattern'/>
         <page name='Factory Pattern'/>
         <page name='Untitled Page 2'/>
-        <page name='Adapter Protocol'/>
+        <page name='Adapter Pattern'/>
+        <page name='Prototype Pattern'/>
+        <page name='Protocol Oriented Programming'/>
     </pages>
 </playground>

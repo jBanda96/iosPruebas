@@ -30,6 +30,7 @@ PODS:
   - GoogleUtilities/UserDefaults (5.8.0):
     - GoogleUtilities/Logger
   - KeychainAccess (3.1.1)
+  - lottie-ios (3.1.5)
   - NSGIF (1.2.4)
   - Protobuf (3.7.0)
   - Socket.IO-Client-Swift (15.0.0):
@@ -42,12 +43,13 @@ DEPENDENCIES:
   - Firebase/Messaging
   - GoogleAnalytics
   - KeychainAccess (~> 3.1)
+  - lottie-ios
   - NSGIF (~> 1.0)
   - Socket.IO-Client-Swift
   - UILoadControl (~> 2.1)
 
 SPEC REPOS:
-  https://github.com/cocoapods/specs.git:
+  https://github.com/CocoaPods/Specs.git:
     - CocoaAsyncSocket
     - Firebase
     - FirebaseAnalyticsInterop
@@ -62,6 +64,8 @@ SPEC REPOS:
     - Socket.IO-Client-Swift
     - Starscream
     - UILoadControl
+  trunk:
+    - lottie-ios
 
 SPEC CHECKSUMS:
   CocoaAsyncSocket: eafaa68a7e0ec99ead0a7b35015e0bf25d2c8987
@@ -73,12 +77,13 @@ SPEC CHECKSUMS:
   GoogleAnalytics: f42cc53a87a51fe94334821868d9c8481ff47a7b
   GoogleUtilities: 04fce34bcd5620c1ee76fb79172105c74a4df335
   KeychainAccess: 7bd430028059754a3debab3cfc0bd1fc7fb85df3
+  lottie-ios: 32bf84389337d86fbc8b12266e88452e0abf1dee
   NSGIF: 442808fd1667ebac3d09046c3f6d4bdd6720cded
   Protobuf: 7a877b7f3e5964e3fce995e2eb323dbc6831bb5a
   Socket.IO-Client-Swift: c039a808195d22a7192962841b8c035cb61ea49e
   Starscream: 08172b481e145289c4930cb567230fb55897cfa4
   UILoadControl: e742ddbe4c67ba1f13b00b7d462d4141307d021f
 
-PODFILE CHECKSUM: 1452f93c4a3bae36bde9603faa6838fd5e3c7463
+PODFILE CHECKSUM: 4bece17e31a50bde893d378b4fc3405af64eccf5
 
-COCOAPODS: 1.5.3
+COCOAPODS: 1.8.3
