@@ -16,5 +16,6 @@
         <page name='Adapter Pattern'/>
         <page name='Prototype Pattern'/>
         <page name='Protocol Oriented Programming'/>
+        <page name='QR Builder'/>
     </pages>
 </playground>

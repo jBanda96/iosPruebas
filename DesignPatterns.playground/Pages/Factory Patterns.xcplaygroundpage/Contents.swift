@@ -76,24 +76,97 @@ QrGenerator().generateQr(with: call)
 
 
 
-func fizzbuzz(number: Int) -> String {
-    switch (number % 3 == 0, number % 5 == 0) {
-    case (true, false):
-        return "Fizz"
-    case (false, true):
-        return "Buzz"
-    case (true, true):
-        return "FizzBuzz"
-    default:
-        return String(number)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Product
+struct CoDi {
+    let name:       String
+    let code:       Int
+    let amount:     Double?
+    let concept:    String
+    let reference:  Int
+}
+
+
+extension CoDi: CustomStringConvertible {
+    var description: String {
+        return """
+            CoDi(
+                Name:       \(name),
+                Code:       \(code),
+                Amount:     \(String(describing: amount)),
+                Concept:    \(concept),
+                Reference:  \(reference)
+            )
+        """
     }
 }
 
-print(fizzbuzz(number: 15))
-
-
-let url = URLRequest(url: URL(string: "https://jsonplaceholder.typicode.com/posts")!)
-let session = URLSession.shared.dataTask(with: url) { (data, response, error) in
-    print((response as? HTTPURLResponse)?.statusCode ?? 0)
+protocol Builder {
+    func setName(_: String)
+    func setCode(_: Int)
+    func setAmount(_: Double)
+    func setConcept(_: String)
+    func setReference(_: Int)
 }
-session.resume()
+
+class CoDiBuilder: Builder {
+    private(set) var name:      String?
+    private(set) var code:      Int?
+    private(set) var amount:    Double?
+    private(set) var concept:   String?
+    private(set) var reference: Int?
+    
+    public func setName(_ name: String) {
+        self.name = name
+    }
+    
+    public func setCode(_ code: Int) {
+        self.code = code
+    }
+    
+    public func setAmount(_ amount: Double) {
+        self.amount = amount
+    }
+    
+    public func setConcept(_ concept: String) {
+        self.concept = concept
+    }
+    
+    public func setReference(_ reference: Int) {
+        self.reference = reference
+    }
+    
+    public func build() -> CoDi? {
+        guard let name = name, let code = code, let concept = concept, let reference = reference else { return nil }
+        return CoDi(name: name, code: code, amount: amount, concept: concept, reference: reference)
+    }
+}
+
+
+let codiBuilder = CoDiBuilder()
+codiBuilder.setName("Julio")
+codiBuilder.setCode(1)
+codiBuilder.setConcept("Sn")
+codiBuilder.setReference(13543)
+
+print(codiBuilder.build())
