@@ -2,14 +2,13 @@
 //  FrontCardView.swift
 //  Pruebas
 //
-//  Created by Julio Banda on 2/8/19.
-//  Copyright © 2019 Julio Banda. All rights reserved.
+//  Created by Julio Banda on 22/03/20.
+//  Copyright © 2020 Julio Banda. All rights reserved.
 //
 
 import UIKit
 
-class FrontCardView: DFCardView {
-    
+class FrontCardView: CardView {
     @IBOutlet var imageView: FrontCardImageView!
     
     override var card: Card! {
@@ -17,11 +16,6 @@ class FrontCardView: DFCardView {
             imageView.maskImage = card.image
         }
     }
-    
-    override var side: Side {
-        return .front
-    }
-    
 }
 
 @IBDesignable class FrontCardImageView: UIImageView {

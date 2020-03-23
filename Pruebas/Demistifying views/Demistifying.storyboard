@@ -1,59 +1,53 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hDm-dw-9XM">
-    <device id="retina4_7" orientation="portrait">
-        <adaptation id="fullscreen"/>
-    </device>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="hDm-dw-9XM">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Lesson-->
+        <!--View Controller-->
         <scene sceneID="smT-9g-27u">
             <objects>
-                <viewController id="hDm-dw-9XM" customClass="LessonViewController" sceneMemberID="viewController">
+                <viewController id="hDm-dw-9XM" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DVO-se-ygc">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="4an-kz-iVD">
-                                <rect key="frame" x="0.0" y="84.5" width="375" height="518"/>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="OX8-LS-Amv">
+                                <rect key="frame" x="0.0" y="66.5" width="375" height="534"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="E3A-H0-xVq" customClass="CardSuperview" customModule="Pruebas" customModuleProvider="target">
-                                        <rect key="frame" x="62" y="0.0" width="251" height="251"/>
-                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pOe-sw-9j4" customClass="CardSuperView" customModule="Pruebas" customModuleProvider="target">
+                                        <rect key="frame" x="58" y="0.0" width="259" height="259"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                         <constraints>
-                                            <constraint firstAttribute="width" secondItem="E3A-H0-xVq" secondAttribute="height" multiplier="1:1" id="kMf-e6-cpF"/>
+                                            <constraint firstAttribute="width" secondItem="pOe-sw-9j4" secondAttribute="height" multiplier="1:1" id="gOt-go-6L3"/>
                                         </constraints>
                                     </view>
-                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDd-h5-WDO">
-                                        <rect key="frame" x="62" y="267" width="251" height="251"/>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gPX-Ut-diW">
+                                        <rect key="frame" x="58" y="275" width="259" height="259"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" secondItem="gPX-Ut-diW" secondAttribute="height" multiplier="1:1" id="to0-4d-Mny"/>
+                                        </constraints>
                                     </view>
                                 </subviews>
-                                <constraints>
-                                    <constraint firstItem="vDd-h5-WDO" firstAttribute="width" secondItem="E3A-H0-xVq" secondAttribute="width" id="1B0-A9-oKc"/>
-                                </constraints>
                             </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="BSq-p3-zM0" firstAttribute="trailing" secondItem="4an-kz-iVD" secondAttribute="trailing" id="0j1-qI-hKd"/>
-                            <constraint firstItem="4an-kz-iVD" firstAttribute="height" secondItem="BSq-p3-zM0" secondAttribute="height" multiplier="4/5" id="bHV-Lu-ezL"/>
-                            <constraint firstItem="4an-kz-iVD" firstAttribute="centerY" secondItem="BSq-p3-zM0" secondAttribute="centerY" id="o4p-kM-chW"/>
-                            <constraint firstItem="4an-kz-iVD" firstAttribute="leading" secondItem="BSq-p3-zM0" secondAttribute="leading" id="utM-H6-HNR"/>
+                            <constraint firstItem="OX8-LS-Amv" firstAttribute="leading" secondItem="BSq-p3-zM0" secondAttribute="leading" id="9H4-A5-7e0"/>
+                            <constraint firstItem="BSq-p3-zM0" firstAttribute="trailing" secondItem="OX8-LS-Amv" secondAttribute="trailing" id="XW8-xI-ugM"/>
+                            <constraint firstItem="OX8-LS-Amv" firstAttribute="centerY" secondItem="BSq-p3-zM0" secondAttribute="centerY" id="m3z-2u-Jsr"/>
+                            <constraint firstItem="OX8-LS-Amv" firstAttribute="height" secondItem="BSq-p3-zM0" secondAttribute="height" multiplier="4/5" id="oyu-nC-EX8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BSq-p3-zM0"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Lesson" image="Lesson" id="RpN-aC-1gw"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aFI-Px-S9M" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-694" y="1112"/>
+            <point key="canvasLocation" x="-695.20000000000005" y="1111.3943028485758"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="Lesson" width="62" height="57"/>
-    </resources>
 </document>

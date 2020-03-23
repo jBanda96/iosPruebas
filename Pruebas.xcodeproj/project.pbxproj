@@ -76,16 +76,10 @@
 		2A35D74921A27C9A00FA6657 /* TorchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35D74821A27C9A00FA6657 /* TorchViewController.swift */; };
 		2A35D74B21A27CD700FA6657 /* CardStack.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35D74A21A27CD700FA6657 /* CardStack.swift */; };
 		2A35D75821A27EA400FA6657 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35D75721A27EA400FA6657 /* Person.swift */; };
-		2A35D75A21A2808300FA6657 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35D75921A2808300FA6657 /* CardView.swift */; };
+		2A35D75A21A2808300FA6657 /* CardViewA.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A35D75921A2808300FA6657 /* CardViewA.swift */; };
 		2A367480221A5E71000E7B25 /* MoreAppsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36747F221A5E71000E7B25 /* MoreAppsViewController.swift */; };
 		2A36F5D0220E5C6900E2F873 /* Demistifying.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A36F5CF220E5C6900E2F873 /* Demistifying.storyboard */; };
-		2A36F5D2220E5DCD00E2F873 /* LessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5D1220E5DCC00E2F873 /* LessonViewController.swift */; };
-		2A36F5D4220E5DFB00E2F873 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5D3220E5DFB00E2F873 /* Card.swift */; };
-		2A36F5D7220E5E6400E2F873 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A36F5D6220E5E6400E2F873 /* CardView.xib */; };
-		2A36F5D9220E614200E2F873 /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5D8220E614200E2F873 /* FrontCardView.swift */; };
 		2A36F5DC220E624D00E2F873 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5DB220E624D00E2F873 /* UIView.swift */; };
-		2A36F5DE220E62FC00E2F873 /* DFCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5DD220E62FC00E2F873 /* DFCardView.swift */; };
-		2A36F5E0220E659100E2F873 /* CardSuperview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A36F5DF220E659100E2F873 /* CardSuperview.swift */; };
 		2A37888A21A5077B00AD1957 /* R2D2.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 2A37888921A5077B00AD1957 /* R2D2.mp3 */; };
 		2A38BAC72100000800FC3022 /* StacksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A38BAC62100000800FC3022 /* StacksViewController.swift */; };
 		2A38EBA621B444C60089883A /* BullsEyeGame.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A38EBA521B444C60089883A /* BullsEyeGame.storyboard */; };
@@ -304,6 +298,14 @@
 		2AFC4221209D6429000C1E42 /* deathStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC4220209D6429000C1E42 /* deathStar.png */; };
 		2AFD910221A09A3100682B3A /* TimeAlert.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AFD910121A09A3100682B3A /* TimeAlert.gif */; };
 		2AFF8253214B70F500A742FF /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF8252214B70F500A742FF /* FontsViewController.swift */; };
+		438AB900242841C900DDD944 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB8FF242841C900DDD944 /* CardView.swift */; };
+		438AB9022428429700DDD944 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB9012428429700DDD944 /* Card.swift */; };
+		438AB904242844C000DDD944 /* CardSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB903242844C000DDD944 /* CardSuperView.swift */; };
+		43966AE824294F5800B68A2B /* AddressSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43966AE724294F5800B68A2B /* AddressSuperView.swift */; };
+		43C0308A24283C90006961FD /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C0308924283C90006961FD /* FrontCardView.swift */; };
+		43DDCA2824284C9400EBF54B /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DDCA2724284C9400EBF54B /* CardView.xib */; };
+		43FCC4552427F47A0087178D /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCC4542427F47A0087178D /* AddressView.swift */; };
+		43FCC4572427F4870087178D /* AddressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FCC4562427F4870087178D /* AddressView.xib */; };
 		462D899960A975034E5043A2 /* Pods_Pruebas.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0AAB803ADAE59DA3A4F634E8 /* Pods_Pruebas.framework */; };
 		DF829DFAC67F45303ED1CC31 /* libPods-PruebasTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 8C75F104B41B7FBF3F044C83 /* libPods-PruebasTests.a */; };
 /* End PBXBuildFile section */
@@ -428,16 +430,10 @@
 		2A35D74821A27C9A00FA6657 /* TorchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TorchViewController.swift; sourceTree = "<group>"; };
 		2A35D74A21A27CD700FA6657 /* CardStack.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardStack.swift; sourceTree = "<group>"; };
 		2A35D75721A27EA400FA6657 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
-		2A35D75921A2808300FA6657 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		2A35D75921A2808300FA6657 /* CardViewA.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewA.swift; sourceTree = "<group>"; };
 		2A36747F221A5E71000E7B25 /* MoreAppsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MoreAppsViewController.swift; sourceTree = "<group>"; };
 		2A36F5CF220E5C6900E2F873 /* Demistifying.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Demistifying.storyboard; sourceTree = "<group>"; };
-		2A36F5D1220E5DCC00E2F873 /* LessonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LessonViewController.swift; sourceTree = "<group>"; };
-		2A36F5D3220E5DFB00E2F873 /* Card.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
-		2A36F5D6220E5E6400E2F873 /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
-		2A36F5D8220E614200E2F873 /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
 		2A36F5DB220E624D00E2F873 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		2A36F5DD220E62FC00E2F873 /* DFCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DFCardView.swift; sourceTree = "<group>"; };
-		2A36F5DF220E659100E2F873 /* CardSuperview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSuperview.swift; sourceTree = "<group>"; };
 		2A37888921A5077B00AD1957 /* R2D2.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = R2D2.mp3; sourceTree = "<group>"; };
 		2A38BAC62100000800FC3022 /* StacksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StacksViewController.swift; sourceTree = "<group>"; };
 		2A38EBA521B444C60089883A /* BullsEyeGame.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = BullsEyeGame.storyboard; sourceTree = "<group>"; };
@@ -675,6 +671,14 @@
 		2AFD910121A09A3100682B3A /* TimeAlert.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TimeAlert.gif; sourceTree = "<group>"; };
 		2AFEDACD2130572300052FEE /* Pruebas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pruebas-Bridging-Header.h"; sourceTree = "<group>"; };
 		2AFF8252214B70F500A742FF /* FontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsViewController.swift; sourceTree = "<group>"; };
+		438AB8FF242841C900DDD944 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		438AB9012428429700DDD944 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
+		438AB903242844C000DDD944 /* CardSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSuperView.swift; sourceTree = "<group>"; };
+		43966AE724294F5800B68A2B /* AddressSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSuperView.swift; sourceTree = "<group>"; };
+		43C0308924283C90006961FD /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
+		43DDCA2724284C9400EBF54B /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		43FCC4542427F47A0087178D /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
+		43FCC4562427F4870087178D /* AddressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressView.xib; sourceTree = "<group>"; };
 		87ED70DF90561C7F8A1DA4C1 /* Pods-Pruebas.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pruebas.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Pruebas/Pods-Pruebas.debug.xcconfig"; sourceTree = "<group>"; };
 		8C75F104B41B7FBF3F044C83 /* libPods-PruebasTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-PruebasTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D4673D2C4B2266D48E6D18E2 /* Pods-Pruebas.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Pruebas.release.xcconfig"; path = "Pods/Target Support Files/Pods-Pruebas/Pods-Pruebas.release.xcconfig"; sourceTree = "<group>"; };
@@ -757,6 +761,9 @@
 			children = (
 				2A06E5BE2257CD110069270E /* MVC.storyboard */,
 				2A06E5C02257CD420069270E /* MVCViewController.swift */,
+				43FCC4542427F47A0087178D /* AddressView.swift */,
+				43FCC4562427F4870087178D /* AddressView.xib */,
+				43966AE724294F5800B68A2B /* AddressSuperView.swift */,
 			);
 			path = MVC;
 			sourceTree = "<group>";
@@ -966,7 +973,7 @@
 				2A35D74821A27C9A00FA6657 /* TorchViewController.swift */,
 				2A35D75721A27EA400FA6657 /* Person.swift */,
 				2A35D74A21A27CD700FA6657 /* CardStack.swift */,
-				2A35D75921A2808300FA6657 /* CardView.swift */,
+				2A35D75921A2808300FA6657 /* CardViewA.swift */,
 				2A09380721A3C1C600A1EBFE /* StatusPill.swift */,
 			);
 			path = Torch;
@@ -976,8 +983,7 @@
 			isa = PBXGroup;
 			children = (
 				2A36F5CF220E5C6900E2F873 /* Demistifying.storyboard */,
-				2A36F5D1220E5DCC00E2F873 /* LessonViewController.swift */,
-				2A36F5D3220E5DFB00E2F873 /* Card.swift */,
+				438AB9012428429700DDD944 /* Card.swift */,
 				2A36F5D5220E5E4700E2F873 /* CardView */,
 				2A36F5DA220E622A00E2F873 /* Extension */,
 			);
@@ -987,10 +993,10 @@
 		2A36F5D5220E5E4700E2F873 /* CardView */ = {
 			isa = PBXGroup;
 			children = (
-				2A36F5D6220E5E6400E2F873 /* CardView.xib */,
-				2A36F5D8220E614200E2F873 /* FrontCardView.swift */,
-				2A36F5DD220E62FC00E2F873 /* DFCardView.swift */,
-				2A36F5DF220E659100E2F873 /* CardSuperview.swift */,
+				43DDCA2724284C9400EBF54B /* CardView.xib */,
+				438AB903242844C000DDD944 /* CardSuperView.swift */,
+				438AB8FF242841C900DDD944 /* CardView.swift */,
+				43C0308924283C90006961FD /* FrontCardView.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -1886,9 +1892,11 @@
 			files = (
 				2ADFC932227628DA003BAE00 /* CoreLocation.storyboard in Resources */,
 				2A3FAA0122570DC700FF12C3 /* MVVM.storyboard in Resources */,
+				43DDCA2824284C9400EBF54B /* CardView.xib in Resources */,
 				2A38EBA621B444C60089883A /* BullsEyeGame.storyboard in Resources */,
 				2AD1108D209A300C002F4B3C /* Video.mp4 in Resources */,
 				2A3A094420956F6A0095F163 /* LaunchScreen.storyboard in Resources */,
+				43FCC4572427F4870087178D /* AddressView.xib in Resources */,
 				2AA4CFEE214189B00054EAC9 /* ObjcNet.storyboard in Resources */,
 				2A07BB0221DC343200513EFB /* ToDoList.storyboard in Resources */,
 				2AD11090209A3463002F4B3C /* PhotosAndVideos.storyboard in Resources */,
@@ -1905,7 +1913,6 @@
 				2AAC95C4209C1C6900255840 /* Location.storyboard in Resources */,
 				2A4B0D99226982AD007D02D1 /* CustomTransition.storyboard in Resources */,
 				2AA806A422162CEC0009B070 /* chomp.caf in Resources */,
-				2A36F5D7220E5E6400E2F873 /* CardView.xib in Resources */,
 				2A98A76E209FF5C1004A39A0 /* CoreData.storyboard in Resources */,
 				2AA249F52126790400874A60 /* Emojis.storyboard in Resources */,
 				2AEA95C422679DD3002E782D /* Snap.storyboard in Resources */,
@@ -2085,7 +2092,6 @@
 				2AA806A0221619030009B070 /* NoNavigationBarViewController.swift in Sources */,
 				2A09380821A3C1C600A1EBFE /* StatusPill.swift in Sources */,
 				2AE6CB1522166D5700597888 /* CGPoint.swift in Sources */,
-				2A36F5D4220E5DFB00E2F873 /* Card.swift in Sources */,
 				2A218BF3213750CC005AC2B2 /* Registration.swift in Sources */,
 				2AD22FEC22F927AC00DFBCA4 /* QuestionStrategy.swift in Sources */,
 				2A98A770209FF5E1004A39A0 /* CoreDataViewController.swift in Sources */,
@@ -2105,7 +2111,6 @@
 				2AEDC60A20A8EF5E0066170F /* Connections.swift in Sources */,
 				2A4B0D9F22698630007D02D1 /* CustomCardViewController.swift in Sources */,
 				2AD1108A209A2AA3002F4B3C /* VideoViewController.swift in Sources */,
-				2A36F5DE220E62FC00E2F873 /* DFCardView.swift in Sources */,
 				2A28B153214F1FD3004D7153 /* RPSGame.m in Sources */,
 				2A3054AE228E5B99004A6A0D /* PhotoCollectionViewCell.swift in Sources */,
 				2A4B0D9B22698340007D02D1 /* PageViewController.swift in Sources */,
@@ -2113,6 +2118,7 @@
 				2A19D1B022091103007E08AC /* HorizontalItemList.swift in Sources */,
 				2ADE62EC225AE18900B31D8D /* PlayerScoreBoardMoveEditorViewModelFromPlayer.swift in Sources */,
 				2A407D2B2155FECD001FCFC3 /* CollectionViewCell.m in Sources */,
+				43966AE824294F5800B68A2B /* AddressSuperView.swift in Sources */,
 				2AC41CFA226AD55B00A49137 /* FlipDismissAnimationController.swift in Sources */,
 				2AC780F5225EE52200AA6294 /* AppConstants.swift in Sources */,
 				2A9180D023B9935F00D1697C /* BlueButton.swift in Sources */,
@@ -2122,7 +2128,6 @@
 				2AA4CFF121418DE20054EAC9 /* Model.m in Sources */,
 				2A63FC80215328F8009E03D2 /* PickerViewController.m in Sources */,
 				2AE2DA2920CB2B8400C3DD37 /* AndroidTableViewController.swift in Sources */,
-				2A36F5D9220E614200E2F873 /* FrontCardView.swift in Sources */,
 				2A2EAFB420C3AA3500073860 /* GesturesViewController.swift in Sources */,
 				2AEA95D922679F7D002E782D /* DiscoverViewController.swift in Sources */,
 				2A35D74B21A27CD700FA6657 /* CardStack.swift in Sources */,
@@ -2138,7 +2143,7 @@
 				2AA4C9B82099731700E004CD /* MultimediaViewController.swift in Sources */,
 				2A5983F823DF505300C96D5E /* ContactsViewController.swift in Sources */,
 				2A053E75209820CB00928204 /* TableViewController.swift in Sources */,
-				2A35D75A21A2808300FA6657 /* CardView.swift in Sources */,
+				2A35D75A21A2808300FA6657 /* CardViewA.swift in Sources */,
 				2AC78102225EF1C000AA6294 /* NoticeRouter.swift in Sources */,
 				2A3054B1228E5B99004A6A0D /* Photo.swift in Sources */,
 				2ADFC93722762A03003BAE00 /* CoreLocationViewController.swift in Sources */,
@@ -2156,6 +2161,7 @@
 				2A053E79209821B100928204 /* Text.swift in Sources */,
 				2AEDC60620A8EE3E0066170F /* Info.swift in Sources */,
 				2AEDC60420A8EDF00066170F /* Responser.swift in Sources */,
+				43FCC4552427F47A0087178D /* AddressView.swift in Sources */,
 				2A06E5C52257CE9D0069270E /* MainTableTableViewController.swift in Sources */,
 				2AFF8253214B70F500A742FF /* FontsViewController.swift in Sources */,
 				2AAA9DE2209F7BC60034D1BF /* ContactsManager.swift in Sources */,
@@ -2205,11 +2211,13 @@
 				2A4B0DA322699001007D02D1 /* Pets.swift in Sources */,
 				2A28B156214F1FE5004D7153 /* RPSTurn.m in Sources */,
 				2AEA95D622679F7D002E782D /* MainViewController.swift in Sources */,
-				2A36F5E0220E659100E2F873 /* CardSuperview.swift in Sources */,
 				2AC3DE892119606E0077A57E /* LongPressViewController.swift in Sources */,
 				2AC1B41620AE84E700CA0858 /* UserResponse.swift in Sources */,
 				2AA249F921267E7A00874A60 /* EmojiTableViewController.swift in Sources */,
+				438AB9022428429700DDD944 /* Card.swift in Sources */,
+				438AB904242844C000DDD944 /* CardSuperView.swift in Sources */,
 				2AA6578F212925EF00268B29 /* AddEditEmojiTableViewController.swift in Sources */,
+				43C0308A24283C90006961FD /* FrontCardView.swift in Sources */,
 				2A3A093A20956F690095F163 /* AppDelegate.swift in Sources */,
 				2A6E6A4D22EFFA9400D6C3A9 /* SelectQuestionGroupViewController.swift in Sources */,
 				2A35D75821A27EA400FA6657 /* Person.swift in Sources */,
@@ -2235,6 +2243,7 @@
 				2A4D8B8D2259A9250003F7DB /* NSTimer+Closure.swift in Sources */,
 				2A3FAA0C22570EC100FF12C3 /* GreetingViewModel.swift in Sources */,
 				2A23243321547CAA00E929D4 /* Gif.m in Sources */,
+				438AB900242841C900DDD944 /* CardView.swift in Sources */,
 				2A445755220A97FA0024F658 /* FlightData.swift in Sources */,
 				2ADA09E520993C7600FDB60F /* CustomSegue.swift in Sources */,
 				2A48E8822303BA0F00C35426 /* QuestionGroupCaretaker.swift in Sources */,
@@ -2254,7 +2263,6 @@
 				2AC780FE225EE9CA00AA6294 /* NoticePresenter.swift in Sources */,
 				2A65E5A221DDC14200EF4C59 /* ItemDetailViewController.swift in Sources */,
 				2A4D8B992259AAA40003F7DB /* InMemoryGameLibrary.swift in Sources */,
-				2A36F5D2220E5DCD00E2F873 /* LessonViewController.swift in Sources */,
 				2A697DC621F5486B001E473A /* PiratesViewController.swift in Sources */,
 				2AD22FF022F92A7D00DFBCA4 /* RandomQuestionStrategy.swift in Sources */,
 				2A140D8520ABC83000202E0F /* ButtonedTableViewController.swift in Sources */,

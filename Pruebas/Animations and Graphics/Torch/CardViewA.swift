@@ -8,7 +8,7 @@
 
 import Foundation
 
-class CardView: UIView {
+class CardViewA: UIView {
     
     var person : Person! {
         didSet {

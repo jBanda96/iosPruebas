@@ -10,7 +10,7 @@ import Foundation
 
 class CardStack: UIView {
 
-    var cards: [CardView] = []
+    var cards: [CardViewA] = []
     
     override init(frame: CGRect) {
         super.init(frame: frame)
@@ -30,7 +30,7 @@ class CardStack: UIView {
     }
     
     func addPerson(person: Person) {
-        let card = CardView()
+        let card = CardViewA()
             card.person = person
         
         self.addSubview(card)
@@ -69,7 +69,7 @@ class CardStack: UIView {
     
     @objc
     func pan(gesture: UIPanGestureRecognizer){
-        let card        =   gesture.view as! CardView
+        let card        =   gesture.view as! CardViewA
         let translation =   gesture.translation(in: self)
         
         var rotationPercentage: CGFloat = translation.x / self.bounds.midX
