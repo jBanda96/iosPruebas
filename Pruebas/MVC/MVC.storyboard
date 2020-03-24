@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="S5g-pJ-D3t">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
@@ -12,7 +12,7 @@
         <scene sceneID="3zX-KS-xw2">
             <objects>
                 <viewController id="S5g-pJ-D3t" customClass="MVCViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9K3-lP-pzx" customClass="AddressView" customModule="Pruebas" customModuleProvider="target">
+                    <view key="view" contentMode="scaleToFill" id="9K3-lP-pzx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
@@ -24,7 +24,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="ywi-DL-Ooq" firstAttribute="centerX" secondItem="9K3-lP-pzx" secondAttribute="centerX" id="9Gg-Gu-mhQ"/>
                             <constraint firstItem="ywi-DL-Ooq" firstAttribute="centerY" secondItem="9K3-lP-pzx" secondAttribute="centerY" id="pJp-Qh-03n"/>

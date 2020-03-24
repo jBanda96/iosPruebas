@@ -1,10 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina4_0" orientation="portrait" appearance="dark"/>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -40,7 +39,7 @@
                     </subviews>
                 </stackView>
             </subviews>
-            <color key="backgroundColor" name="Orange"/>
+            <color key="backgroundColor" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="O0S-12-nsw" secondAttribute="bottom" constant="28" id="Cgf-QU-zTe"/>
                 <constraint firstItem="O0S-12-nsw" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="24" id="Mdo-2g-zjR"/>
@@ -62,9 +61,4 @@
             <point key="canvasLocation" x="-218.4375" y="59.683098591549296"/>
         </view>
     </objects>
-    <resources>
-        <namedColor name="Orange">
-            <color red="0.99607843137254903" green="0.7686274509803922" blue="0.20392156862745098" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
-    </resources>
 </document>

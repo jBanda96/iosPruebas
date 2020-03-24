@@ -302,6 +302,8 @@
 		438AB9022428429700DDD944 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB9012428429700DDD944 /* Card.swift */; };
 		438AB904242844C000DDD944 /* CardSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB903242844C000DDD944 /* CardSuperView.swift */; };
 		43966AE824294F5800B68A2B /* AddressSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43966AE724294F5800B68A2B /* AddressSuperView.swift */; };
+		43B1DEC72429D12E008ADA44 /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B1DEC62429D12E008ADA44 /* LessonsViewController.swift */; };
+		43B1DEC92429D9C2008ADA44 /* BackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B1DEC82429D9C2008ADA44 /* BackCardView.swift */; };
 		43C0308A24283C90006961FD /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C0308924283C90006961FD /* FrontCardView.swift */; };
 		43DDCA2824284C9400EBF54B /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DDCA2724284C9400EBF54B /* CardView.xib */; };
 		43FCC4552427F47A0087178D /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCC4542427F47A0087178D /* AddressView.swift */; };
@@ -675,6 +677,8 @@
 		438AB9012428429700DDD944 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		438AB903242844C000DDD944 /* CardSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSuperView.swift; sourceTree = "<group>"; };
 		43966AE724294F5800B68A2B /* AddressSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressSuperView.swift; sourceTree = "<group>"; };
+		43B1DEC62429D12E008ADA44 /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
+		43B1DEC82429D9C2008ADA44 /* BackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardView.swift; sourceTree = "<group>"; };
 		43C0308924283C90006961FD /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
 		43DDCA2724284C9400EBF54B /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		43FCC4542427F47A0087178D /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
@@ -983,6 +987,7 @@
 			isa = PBXGroup;
 			children = (
 				2A36F5CF220E5C6900E2F873 /* Demistifying.storyboard */,
+				43B1DEC62429D12E008ADA44 /* LessonsViewController.swift */,
 				438AB9012428429700DDD944 /* Card.swift */,
 				2A36F5D5220E5E4700E2F873 /* CardView */,
 				2A36F5DA220E622A00E2F873 /* Extension */,
@@ -997,6 +1002,7 @@
 				438AB903242844C000DDD944 /* CardSuperView.swift */,
 				438AB8FF242841C900DDD944 /* CardView.swift */,
 				43C0308924283C90006961FD /* FrontCardView.swift */,
+				43B1DEC82429D9C2008ADA44 /* BackCardView.swift */,
 			);
 			path = CardView;
 			sourceTree = "<group>";
@@ -2106,6 +2112,7 @@
 				2A3020D9220E105800DE70E3 /* HerbViewController.swift in Sources */,
 				2A3A093C20956F690095F163 /* ViewController.swift in Sources */,
 				2A6E6A4F22EFFC8900D6C3A9 /* QuestionGroupCell.swift in Sources */,
+				43B1DEC72429D12E008ADA44 /* LessonsViewController.swift in Sources */,
 				2AABA4C2209FB333008CB7FC /* Response.swift in Sources */,
 				2A06061F20B6032C005BED85 /* NewWayViewController.swift in Sources */,
 				2AEDC60A20A8EF5E0066170F /* Connections.swift in Sources */,
@@ -2142,6 +2149,7 @@
 				2A06E5CE2257D3A60069270E /* MVPModel.swift in Sources */,
 				2AA4C9B82099731700E004CD /* MultimediaViewController.swift in Sources */,
 				2A5983F823DF505300C96D5E /* ContactsViewController.swift in Sources */,
+				43B1DEC92429D9C2008ADA44 /* BackCardView.swift in Sources */,
 				2A053E75209820CB00928204 /* TableViewController.swift in Sources */,
 				2A35D75A21A2808300FA6657 /* CardViewA.swift in Sources */,
 				2AC78102225EF1C000AA6294 /* NoticeRouter.swift in Sources */,

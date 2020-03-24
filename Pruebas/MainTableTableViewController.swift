@@ -12,9 +12,12 @@ class MainTableTableViewController: UITableViewController {
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "mvcSegue" {
-            let vc = segue.destination as! MVCViewController
+            let _ = segue.destination as! MVCViewController
         } else if segue.identifier == "mvpSegue" {
-            let vc = segue.destination as! MVPViewController
+            let _ = segue.destination as! MVPViewController
+        } else if segue.identifier == "demys" {
+            let vc = segue.destination as! LessonsViewController
+            vc.cards = initCards()
         }
     }
 
@@ -28,6 +31,21 @@ class MainTableTableViewController: UITableViewController {
             
             self.navigationController?.pushViewController(notice, animated: true)
         }
+    }
+    
+    private func initCards() -> [Card] {
+        [
+            "Aye-Aye",
+            "Blobfish",
+            "Goblin Shark",
+            "Gulabi Goat",
+            "Jerboa",
+            "Maned Wolf",
+            "Pallas Cat",
+            "Potoo",
+            "Saiga Antelope",
+            "Tufted Deer"
+        ].map(Card.init)
     }
     
 }

@@ -11,6 +11,8 @@ import UIKit
 class FrontCardView: CardView {
     @IBOutlet var imageView: FrontCardImageView!
     
+    override var side: CardView.Side { .front }
+    
     override var card: Card! {
         didSet {
             imageView.maskImage = card.image

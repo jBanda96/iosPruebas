@@ -9,7 +9,7 @@
 import UIKit
 import PDFKit
 
-class MVCViewController: UIViewController {
+class MVCViewController: NoNavigationBarViewController {
     
     internal struct Address {
         public var street:  String
