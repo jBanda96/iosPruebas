@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="LessonsImageView" customModule="Pruebas" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="oYT-gf-y9x" customClass="LessonImagesStackView" customModule="Pruebas" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="oFR-sG-1De">
+                            <rect key="frame" x="0.0" y="0.0" width="1000" height="476"/>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="760-cp-Zoo">
+                            <rect key="frame" x="0.0" y="524" width="1000" height="476"/>
+                        </stackView>
+                    </subviews>
+                </stackView>
+            </subviews>
+            <constraints>
+                <constraint firstItem="oYT-gf-y9x" firstAttribute="height" secondItem="iN0-l3-epB" secondAttribute="height" id="MM6-Ub-IGV"/>
+                <constraint firstItem="oYT-gf-y9x" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="SGB-bL-jKz"/>
+                <constraint firstItem="oYT-gf-y9x" firstAttribute="width" secondItem="iN0-l3-epB" secondAttribute="width" id="ghg-r2-0cx"/>
+                <constraint firstItem="oYT-gf-y9x" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="nkX-nI-RNT"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="stackView" destination="oYT-gf-y9x" id="KGk-40-Wl1"/>
+            </connections>
+            <point key="canvasLocation" x="347.82608695652175" y="73.325892857142847"/>
+        </view>
+    </objects>
+</document>

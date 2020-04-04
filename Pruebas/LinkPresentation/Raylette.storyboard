@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="rNU-YJ-WSu">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Saved-->
+        <scene sceneID="JSV-rW-Wv1">
+            <objects>
+                <viewController id="0bY-gM-9QY" customClass="SavedViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ck2-aB-r7F">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="U4i-rk-HId">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="618"/>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="abo-a9-rI6">
+                                        <rect key="frame" x="24" y="0.0" width="327" height="618"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="abo-a9-rI6" secondAttribute="bottom" id="6Xg-Af-kRi"/>
+                                    <constraint firstItem="abo-a9-rI6" firstAttribute="centerY" secondItem="U4i-rk-HId" secondAttribute="centerY" priority="250" id="KPb-lX-OGL"/>
+                                    <constraint firstItem="abo-a9-rI6" firstAttribute="top" secondItem="U4i-rk-HId" secondAttribute="top" id="M1A-32-bb7"/>
+                                    <constraint firstItem="abo-a9-rI6" firstAttribute="leading" secondItem="U4i-rk-HId" secondAttribute="leading" constant="24" id="jnL-zB-Kmx"/>
+                                    <constraint firstAttribute="trailing" secondItem="abo-a9-rI6" secondAttribute="trailing" constant="24" id="l2t-ZW-JSS"/>
+                                    <constraint firstItem="abo-a9-rI6" firstAttribute="centerX" secondItem="U4i-rk-HId" secondAttribute="centerX" id="qNa-i0-cwI"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="yob-Kx-1kY"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="JAC-YJ-Bcf"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="U4i-rk-HId" firstAttribute="leading" secondItem="CIO-vc-KY9" secondAttribute="leading" id="AP1-Jf-v7C"/>
+                            <constraint firstItem="CIO-vc-KY9" firstAttribute="trailing" secondItem="U4i-rk-HId" secondAttribute="trailing" id="C3i-sy-kHj"/>
+                            <constraint firstItem="U4i-rk-HId" firstAttribute="top" secondItem="CIO-vc-KY9" secondAttribute="top" id="GpZ-nI-1MQ"/>
+                            <constraint firstItem="CIO-vc-KY9" firstAttribute="bottom" secondItem="U4i-rk-HId" secondAttribute="bottom" id="Hvq-I5-gBF"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="CIO-vc-KY9"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Saved" image="star.fill" catalog="system" id="4cm-Dt-fok"/>
+                    <connections>
+                        <outlet property="stackView" destination="abo-a9-rI6" id="DKO-5S-wsU"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="zEc-Yi-fHP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="628.33583208395805"/>
+        </scene>
+        <!--Spin-->
+        <scene sceneID="f12-iB-4Yq">
+            <objects>
+                <viewController id="DRo-FP-Mei" customClass="SpinViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="NgV-mb-c5J">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="4iE-LX-FJv">
+                                <rect key="frame" x="16" y="302.5" width="343" height="62.5"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Error fetching metadata..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o8U-HK-D1h">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="nbf-jr-fyW">
+                                        <rect key="frame" x="0.0" y="40.5" width="343" height="22"/>
+                                        <subviews>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C80-ow-KtE">
+                                                <rect key="frame" x="0.0" y="0.0" width="178" height="22"/>
+                                                <state key="normal" title=" Share" image="square.and.arrow.up" catalog="system">
+                                                    <color key="titleColor" name="rw-green"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="share:" destination="DRo-FP-Mei" eventType="touchUpInside" id="auG-km-eSH"/>
+                                                </connections>
+                                            </button>
+                                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fom-ZE-Byf">
+                                                <rect key="frame" x="178" y="0.0" width="165" height="22"/>
+                                                <state key="normal" title=" Save" image="star" catalog="system">
+                                                    <color key="titleColor" name="rw-green"/>
+                                                </state>
+                                                <connections>
+                                                    <action selector="save:" destination="DRo-FP-Mei" eventType="touchUpInside" id="wZs-CE-Dud"/>
+                                                </connections>
+                                            </button>
+                                        </subviews>
+                                    </stackView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3j3-bF-IwJ">
+                                <rect key="frame" x="0.0" y="574" width="375" height="44"/>
+                                <color key="backgroundColor" name="rw-green"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="rPC-Jk-Q6p"/>
+                                </constraints>
+                                <state key="normal" title="Spin the Wheel">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="spin:" destination="DRo-FP-Mei" eventType="touchUpInside" id="m0E-KC-Dk6"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="4iE-LX-FJv" firstAttribute="centerY" secondItem="NgV-mb-c5J" secondAttribute="centerY" id="C96-z8-XjF"/>
+                            <constraint firstItem="a2r-v0-sot" firstAttribute="trailing" secondItem="4iE-LX-FJv" secondAttribute="trailing" constant="16" id="DcV-zY-bAw"/>
+                            <constraint firstItem="4iE-LX-FJv" firstAttribute="leading" secondItem="a2r-v0-sot" secondAttribute="leading" constant="16" id="JAc-ne-d4r"/>
+                            <constraint firstItem="3j3-bF-IwJ" firstAttribute="centerX" secondItem="a2r-v0-sot" secondAttribute="centerX" id="LOL-vg-iTK"/>
+                            <constraint firstItem="a2r-v0-sot" firstAttribute="bottom" secondItem="3j3-bF-IwJ" secondAttribute="bottom" id="Spp-IU-Oa1"/>
+                            <constraint firstItem="3j3-bF-IwJ" firstAttribute="width" secondItem="NgV-mb-c5J" secondAttribute="width" id="ySN-iV-Tja"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="a2r-v0-sot"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Spin" image="sparkles" catalog="system" id="bGk-Dv-MYs"/>
+                    <connections>
+                        <outlet property="actionsStackView" destination="nbf-jr-fyW" id="Sg5-UL-Mnb"/>
+                        <outlet property="errorLabel" destination="o8U-HK-D1h" id="1fC-nX-dk9"/>
+                        <outlet property="spinButton" destination="3j3-bF-IwJ" id="s0x-LF-NLJ"/>
+                        <outlet property="stackView" destination="4iE-LX-FJv" id="aKx-3b-ZH1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="env-Wc-O1p" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1052" y="-35.532233883058474"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="UMc-MR-1w3">
+            <objects>
+                <tabBarController id="rNU-YJ-WSu" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="aMB-d0-aqj">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="selectedImageTintColor" name="rw-green"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="DRo-FP-Mei" kind="relationship" relationship="viewControllers" id="CGk-nE-REW"/>
+                        <segue destination="0bY-gM-9QY" kind="relationship" relationship="viewControllers" id="GYE-p2-uz1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wg7-up-hPx" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-162" y="282"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="sparkles" catalog="system" width="56" height="64"/>
+        <image name="square.and.arrow.up" catalog="system" width="56" height="64"/>
+        <image name="star" catalog="system" width="64" height="58"/>
+        <image name="star.fill" catalog="system" width="64" height="58"/>
+        <namedColor name="rw-green">
+            <color red="0.0" green="0.40784313725490196" blue="0.21568627450980393" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+    <color key="tintColor" name="rw-green"/>
+</document>

@@ -298,6 +298,22 @@
 		2AFC4221209D6429000C1E42 /* deathStar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2AFC4220209D6429000C1E42 /* deathStar.png */; };
 		2AFD910221A09A3100682B3A /* TimeAlert.gif in Resources */ = {isa = PBXBuildFile; fileRef = 2AFD910121A09A3100682B3A /* TimeAlert.gif */; };
 		2AFF8253214B70F500A742FF /* FontsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2AFF8252214B70F500A742FF /* FontsViewController.swift */; };
+		372BD3D62433F81700F5B100 /* Raylette.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 372BD3D52433F81700F5B100 /* Raylette.storyboard */; };
+		372BD3D82433F8E700F5B100 /* LPError+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BD3D72433F8E700F5B100 /* LPError+Extensions.swift */; };
+		372BD3DC2433F92200F5B100 /* MetadataCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BD3DB2433F92200F5B100 /* MetadataCache.swift */; };
+		372BD3DF2433F92B00F5B100 /* SavedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BD3DD2433F92B00F5B100 /* SavedViewController.swift */; };
+		372BD3E02433F92B00F5B100 /* SpinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 372BD3DE2433F92B00F5B100 /* SpinViewController.swift */; };
+		37382B4824369F9300108763 /* MementoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37382B4724369F9300108763 /* MementoViewController.swift */; };
+		37382B4A24369FB900108763 /* Memento.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37382B4924369FB900108763 /* Memento.storyboard */; };
+		379DA790242AFE440008709C /* LessonImagesStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DA78F242AFE440008709C /* LessonImagesStackView.swift */; };
+		379DA792242B02560008709C /* LessonsImageView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 379DA791242B02560008709C /* LessonsImageView.xib */; };
+		379DA796242B28B20008709C /* LessonsImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 379DA795242B28B20008709C /* LessonsImageView.swift */; };
+		37D027182437B84600F13682 /* SavedOriginatorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D027172437B84600F13682 /* SavedOriginatorViewController.swift */; };
+		37D0271A243804F800F13682 /* MementoButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D02719243804F800F13682 /* MementoButton.swift */; };
+		37D0D6962431B685008C5A27 /* Strategy.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D0D6952431B685008C5A27 /* Strategy.storyboard */; };
+		37D0D6982431B6C2008C5A27 /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D0D6972431B6C2008C5A27 /* StrategyViewController.swift */; };
+		37D216C9242F1A6700F624E0 /* Delegation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D216C8242F1A6700F624E0 /* Delegation.storyboard */; };
+		37D216CB242F1AAC00F624E0 /* DelegationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D216CA242F1AAC00F624E0 /* DelegationViewController.swift */; };
 		438AB900242841C900DDD944 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB8FF242841C900DDD944 /* CardView.swift */; };
 		438AB9022428429700DDD944 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB9012428429700DDD944 /* Card.swift */; };
 		438AB904242844C000DDD944 /* CardSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB903242844C000DDD944 /* CardSuperView.swift */; };
@@ -673,6 +689,22 @@
 		2AFD910121A09A3100682B3A /* TimeAlert.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = TimeAlert.gif; sourceTree = "<group>"; };
 		2AFEDACD2130572300052FEE /* Pruebas-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Pruebas-Bridging-Header.h"; sourceTree = "<group>"; };
 		2AFF8252214B70F500A742FF /* FontsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FontsViewController.swift; sourceTree = "<group>"; };
+		372BD3D52433F81700F5B100 /* Raylette.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Raylette.storyboard; sourceTree = "<group>"; };
+		372BD3D72433F8E700F5B100 /* LPError+Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "LPError+Extensions.swift"; sourceTree = "<group>"; };
+		372BD3DB2433F92200F5B100 /* MetadataCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MetadataCache.swift; sourceTree = "<group>"; };
+		372BD3DD2433F92B00F5B100 /* SavedViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SavedViewController.swift; sourceTree = "<group>"; };
+		372BD3DE2433F92B00F5B100 /* SpinViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SpinViewController.swift; sourceTree = "<group>"; };
+		37382B4724369F9300108763 /* MementoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoViewController.swift; sourceTree = "<group>"; };
+		37382B4924369FB900108763 /* Memento.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Memento.storyboard; sourceTree = "<group>"; };
+		379DA78F242AFE440008709C /* LessonImagesStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonImagesStackView.swift; sourceTree = "<group>"; };
+		379DA791242B02560008709C /* LessonsImageView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LessonsImageView.xib; sourceTree = "<group>"; };
+		379DA795242B28B20008709C /* LessonsImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsImageView.swift; sourceTree = "<group>"; };
+		37D027172437B84600F13682 /* SavedOriginatorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedOriginatorViewController.swift; sourceTree = "<group>"; };
+		37D02719243804F800F13682 /* MementoButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MementoButton.swift; sourceTree = "<group>"; };
+		37D0D6952431B685008C5A27 /* Strategy.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Strategy.storyboard; sourceTree = "<group>"; };
+		37D0D6972431B6C2008C5A27 /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
+		37D216C8242F1A6700F624E0 /* Delegation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Delegation.storyboard; sourceTree = "<group>"; };
+		37D216CA242F1AAC00F624E0 /* DelegationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationViewController.swift; sourceTree = "<group>"; };
 		438AB8FF242841C900DDD944 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		438AB9012428429700DDD944 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		438AB903242844C000DDD944 /* CardSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSuperView.swift; sourceTree = "<group>"; };
@@ -986,6 +1018,7 @@
 		2A36F5CE220E5C4800E2F873 /* Demistifying views */ = {
 			isa = PBXGroup;
 			children = (
+				379DA78E242AFE170008709C /* ImagesView */,
 				2A36F5CF220E5C6900E2F873 /* Demistifying.storyboard */,
 				43B1DEC62429D12E008ADA44 /* LessonsViewController.swift */,
 				438AB9012428429700DDD944 /* Card.swift */,
@@ -1092,6 +1125,9 @@
 				2A06E5BD2257CCD30069270E /* MVC */,
 				2A06E5C62257D36C0069270E /* MVP */,
 				2A0ED7C7225EE3F7007B901A /* VIPER */,
+				37D216C7242F1A5400F624E0 /* Delegation */,
+				37D0D6942431B66C008C5A27 /* Strategy */,
+				37382B4624369F6E00108763 /* Memento */,
 				2AEA95C222679DBE002E782D /* Snap */,
 				2AE64F8922698234008FB349 /* Custom Transition */,
 				2ADFC93022762876003BAE00 /* CoreLocation */,
@@ -1101,6 +1137,7 @@
 				2AD44C6C238268F600DBD2DA /* Tests */,
 				2AB590F523A0A8020005D9F3 /* Lottie */,
 				2A5983F623DF502700C96D5E /* Contacts */,
+				372BD3D42433F62900F5B100 /* LinkPresentation */,
 				2A3A094020956F6A0095F163 /* coi.xcassets */,
 				2AFD910121A09A3100682B3A /* TimeAlert.gif */,
 				2AD2CD6121A09B9100F033EB /* LocationAlert.gif */,
@@ -1730,6 +1767,73 @@
 			path = Honolulu;
 			sourceTree = "<group>";
 		};
+		372BD3D42433F62900F5B100 /* LinkPresentation */ = {
+			isa = PBXGroup;
+			children = (
+				372BD3D52433F81700F5B100 /* Raylette.storyboard */,
+				372BD3DD2433F92B00F5B100 /* SavedViewController.swift */,
+				372BD3DE2433F92B00F5B100 /* SpinViewController.swift */,
+				372BD3DA2433F91600F5B100 /* Utils */,
+				372BD3D92433F8EA00F5B100 /* Extensions */,
+			);
+			path = LinkPresentation;
+			sourceTree = "<group>";
+		};
+		372BD3D92433F8EA00F5B100 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				372BD3D72433F8E700F5B100 /* LPError+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		372BD3DA2433F91600F5B100 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				372BD3DB2433F92200F5B100 /* MetadataCache.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		37382B4624369F6E00108763 /* Memento */ = {
+			isa = PBXGroup;
+			children = (
+				37382B4924369FB900108763 /* Memento.storyboard */,
+				37382B4724369F9300108763 /* MementoViewController.swift */,
+				37D027172437B84600F13682 /* SavedOriginatorViewController.swift */,
+				37D02719243804F800F13682 /* MementoButton.swift */,
+			);
+			path = Memento;
+			sourceTree = "<group>";
+		};
+		379DA78E242AFE170008709C /* ImagesView */ = {
+			isa = PBXGroup;
+			children = (
+				379DA78F242AFE440008709C /* LessonImagesStackView.swift */,
+				379DA791242B02560008709C /* LessonsImageView.xib */,
+				379DA795242B28B20008709C /* LessonsImageView.swift */,
+			);
+			path = ImagesView;
+			sourceTree = "<group>";
+		};
+		37D0D6942431B66C008C5A27 /* Strategy */ = {
+			isa = PBXGroup;
+			children = (
+				37D0D6952431B685008C5A27 /* Strategy.storyboard */,
+				37D0D6972431B6C2008C5A27 /* StrategyViewController.swift */,
+			);
+			path = Strategy;
+			sourceTree = "<group>";
+		};
+		37D216C7242F1A5400F624E0 /* Delegation */ = {
+			isa = PBXGroup;
+			children = (
+				37D216C8242F1A6700F624E0 /* Delegation.storyboard */,
+				37D216CA242F1AAC00F624E0 /* DelegationViewController.swift */,
+			);
+			path = Delegation;
+			sourceTree = "<group>";
+		};
 		3E994BBDF84B761C777CA9E6 /* Pods */ = {
 			isa = PBXGroup;
 			children = (
@@ -1909,6 +2013,7 @@
 				2ABDF5BE219BB2B9004A4D9D /* Notifications.storyboard in Resources */,
 				2A06E5C82257D37E0069270E /* MVP.storyboard in Resources */,
 				2A48E8842303BC3A00C35426 /* QuestionGroupData.json in Resources */,
+				37D0D6962431B685008C5A27 /* Strategy.storyboard in Resources */,
 				2AE2DA2320CB245D00C3DD37 /* SameAsAndroid.storyboard in Resources */,
 				2A218BF2213750CC005AC2B2 /* HotelManzana.storyboard in Resources */,
 				2A63FC82215329EA009E03D2 /* Picker.storyboard in Resources */,
@@ -1925,6 +2030,7 @@
 				2A4D4C98209EC1D700D498F0 /* Networking.storyboard in Resources */,
 				2A37888A21A5077B00AD1957 /* R2D2.mp3 in Resources */,
 				2ABA9C9A2165C5B60054BFD8 /* xibs.xib in Resources */,
+				379DA792242B02560008709C /* LessonsImageView.xib in Resources */,
 				2AD2CD6621A09CC400F033EB /* DateAlert.gif in Resources */,
 				2AB590F723A0A83F0005D9F3 /* Lottie.storyboard in Resources */,
 				2AFC4221209D6429000C1E42 /* deathStar.png in Resources */,
@@ -1938,6 +2044,8 @@
 				2AD7E82E2123DD480073B944 /* CustomTabBar.storyboard in Resources */,
 				2A9180CA23B982C600D1697C /* ImageCell.xib in Resources */,
 				2AFA322722B6C32F008D7C13 /* Honolulu.storyboard in Resources */,
+				37382B4A24369FB900108763 /* Memento.storyboard in Resources */,
+				372BD3D62433F81700F5B100 /* Raylette.storyboard in Resources */,
 				2AA4C9AF209970FF00E004CD /* TableView.storyboard in Resources */,
 				2AA4C9AD2099708900E004CD /* ScrollView.storyboard in Resources */,
 				2AA4C9BA209975FA00E004CD /* Song.mp3 in Resources */,
@@ -1949,6 +2057,7 @@
 				2A0ED7C9225EE408007B901A /* VIPER.storyboard in Resources */,
 				2A80481A2195458E002F7081 /* CollapsableTableView.storyboard in Resources */,
 				2AD2CD6221A09B9100F033EB /* LocationAlert.gif in Resources */,
+				37D216C9242F1A6700F624E0 /* Delegation.storyboard in Resources */,
 				2A36F5D0220E5C6900E2F873 /* Demistifying.storyboard in Resources */,
 				2A3A093F20956F690095F163 /* Main.storyboard in Resources */,
 				2AA4C9B62099721900E004CD /* Multimedia.storyboard in Resources */,
@@ -2064,6 +2173,7 @@
 				2AEA95D822679F7D002E782D /* ChatViewController.swift in Sources */,
 				2A31269C2153427600960871 /* UIImage+Gif.m in Sources */,
 				2A36F5DC220E624D00E2F873 /* UIView.swift in Sources */,
+				379DA796242B28B20008709C /* LessonsImageView.swift in Sources */,
 				2A3020D8220E105800DE70E3 /* HerbDetailsViewController.swift in Sources */,
 				2AA83BBD227664C800949FC6 /* Location.swift in Sources */,
 				2AC1B41820AE851800CA0858 /* User64.swift in Sources */,
@@ -2079,11 +2189,13 @@
 				2A3054B8228E5B99004A6A0D /* PhotoDetailViewController.swift in Sources */,
 				2A7DB310221A279E00155D33 /* LargerScrollViewController.swift in Sources */,
 				2A218BF521375349005AC2B2 /* AddRegistrationTableViewController.swift in Sources */,
+				372BD3D82433F8E700F5B100 /* LPError+Extensions.swift in Sources */,
 				2AE2DA2520CB28E900C3DD37 /* WordViewController.swift in Sources */,
 				2A3054B7228E5B99004A6A0D /* CheckMark.swift in Sources */,
 				2AA4CFF421418EF30054EAC9 /* NetUtils.m in Sources */,
 				2A445754220A97FA0024F658 /* FlightsViewController.swift in Sources */,
 				2AC778B522EE9D6500583281 /* Question.swift in Sources */,
+				37D027182437B84600F13682 /* SavedOriginatorViewController.swift in Sources */,
 				2AEA95CB22679F67002E782D /* NavigationView.swift in Sources */,
 				2A4D4C9A209EC1E400D498F0 /* NetworkingViewController.swift in Sources */,
 				2ADA09E220993A0100FDB60F /* FirstViewController.swift in Sources */,
@@ -2107,6 +2219,7 @@
 				2A3054B4228E5B99004A6A0D /* AssetPickerDelegate.swift in Sources */,
 				2A4D8B9F2259ABC90003F7DB /* GameLibrary.swift in Sources */,
 				2A59DC9C21DFE7E700C80E1C /* CheckListCell.swift in Sources */,
+				37D216CB242F1AAC00F624E0 /* DelegationViewController.swift in Sources */,
 				2A84578E23E128C10019AE40 /* Scanner.swift in Sources */,
 				2A3A4A9122584E5A0002DE90 /* Player.swift in Sources */,
 				2A3020D9220E105800DE70E3 /* HerbViewController.swift in Sources */,
@@ -2143,6 +2256,7 @@
 				2AEA95DB22679F7D002E782D /* CameraViewController.swift in Sources */,
 				2A1AF2A6212E5B35002C8BFA /* FlyingSquaresViewController.swift in Sources */,
 				2A1D6BB122FD1DFE00AD6218 /* AppSettingsViewController.swift in Sources */,
+				379DA790242AFE440008709C /* LessonImagesStackView.swift in Sources */,
 				2A4D8B9D2259AB4B0003F7DB /* HomeViewController.swift in Sources */,
 				2ADAD1C720B5F8BA0080B03B /* PercentageView.swift in Sources */,
 				2A4D8B912259A9DB0003F7DB /* UIColor+Theme.swift in Sources */,
@@ -2170,11 +2284,14 @@
 				2AEDC60620A8EE3E0066170F /* Info.swift in Sources */,
 				2AEDC60420A8EDF00066170F /* Responser.swift in Sources */,
 				43FCC4552427F47A0087178D /* AddressView.swift in Sources */,
+				37D0271A243804F800F13682 /* MementoButton.swift in Sources */,
 				2A06E5C52257CE9D0069270E /* MainTableTableViewController.swift in Sources */,
+				37D0D6982431B6C2008C5A27 /* StrategyViewController.swift in Sources */,
 				2AFF8253214B70F500A742FF /* FontsViewController.swift in Sources */,
 				2AAA9DE2209F7BC60034D1BF /* ContactsManager.swift in Sources */,
 				2A3054B2228E5B99004A6A0D /* UIImage+Alpha.swift in Sources */,
 				2A07BB0421DC349A00513EFB /* ToDoListController.swift in Sources */,
+				37382B4824369F9300108763 /* MementoViewController.swift in Sources */,
 				2A367480221A5E71000E7B25 /* MoreAppsViewController.swift in Sources */,
 				2AEA95DA22679F7D002E782D /* LensViewController.swift in Sources */,
 				2ABDF5C0219BB2F9004A4D9D /* NotificationsViewController.swift in Sources */,
@@ -2201,6 +2318,7 @@
 				2A49D20A2249E74800E82287 /* StretchyHeaderLayout.swift in Sources */,
 				2AC78100225EEBED00AA6294 /* NoticeInteractor.swift in Sources */,
 				2AAC95C6209C1C7800255840 /* LocationViewController.swift in Sources */,
+				372BD3DF2433F92B00F5B100 /* SavedViewController.swift in Sources */,
 				2A38EBA821B447090089883A /* BullEyeGameViewController.swift in Sources */,
 				2AC778B122EE970E00583281 /* QuestionsViewController.swift in Sources */,
 				2A3054AC228E5B99004A6A0D /* SelectedAssets.swift in Sources */,
@@ -2242,8 +2360,10 @@
 				2A726CD621BA279A006E8679 /* AboutViewController.swift in Sources */,
 				2AC780FB225EE99500AA6294 /* NoticeViewController.swift in Sources */,
 				2A56D8502098E836001A1352 /* AnimationsViewController.swift in Sources */,
+				372BD3E02433F92B00F5B100 /* SpinViewController.swift in Sources */,
 				2ABA9C932165C1BE0054BFD8 /* xibViewController.m in Sources */,
 				2AC780F7225EE5F800AA6294 /* NoticeModel.swift in Sources */,
+				372BD3DC2433F92200F5B100 /* MetadataCache.swift in Sources */,
 				2AF90C362217BA2F00444D16 /* DIYScrollView.swift in Sources */,
 				2A49D2022249D78F00E82287 /* StrettchyHeaderViewController.swift in Sources */,
 				2A4B0DA122698FD9007D02D1 /* PetsStore.swift in Sources */,

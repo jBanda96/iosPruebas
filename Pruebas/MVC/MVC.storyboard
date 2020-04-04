@@ -12,24 +12,50 @@
         <scene sceneID="3zX-KS-xw2">
             <objects>
                 <viewController id="S5g-pJ-D3t" customClass="MVCViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="9K3-lP-pzx">
+                    <view key="view" contentMode="scaleToFill" id="9K3-lP-pzx" customClass="AddressView" customModule="Pruebas" customModuleProvider="target">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ywi-DL-Ooq" customClass="AddressSuperView" customModule="Pruebas" customModuleProvider="target">
-                                <rect key="frame" x="67.666666666666686" y="256" width="240" height="300"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="300" id="9uJ-Z4-BKV"/>
-                                    <constraint firstAttribute="width" constant="240" id="Baz-EN-U36"/>
-                                </constraints>
-                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="h9m-c8-ne4">
+                                <rect key="frame" x="48" y="68" width="279" height="208"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Street" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="qyy-4S-aIJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="279" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="City" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="BC1-UP-8Sb">
+                                        <rect key="frame" x="0.0" y="58" width="279" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="State" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Bbv-P6-CdF">
+                                        <rect key="frame" x="0.0" y="116" width="279" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Zip Code" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="st9-xs-bQQ">
+                                        <rect key="frame" x="0.0" y="174" width="279" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                    </textField>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="ywi-DL-Ooq" firstAttribute="centerX" secondItem="9K3-lP-pzx" secondAttribute="centerX" id="9Gg-Gu-mhQ"/>
-                            <constraint firstItem="ywi-DL-Ooq" firstAttribute="centerY" secondItem="9K3-lP-pzx" secondAttribute="centerY" id="pJp-Qh-03n"/>
+                            <constraint firstItem="h9m-c8-ne4" firstAttribute="centerX" secondItem="9K3-lP-pzx" secondAttribute="centerX" id="6Nd-Xq-59w"/>
+                            <constraint firstItem="9x6-kY-MPT" firstAttribute="trailing" secondItem="h9m-c8-ne4" secondAttribute="trailing" constant="48" id="bhS-1f-vpj"/>
+                            <constraint firstItem="h9m-c8-ne4" firstAttribute="top" secondItem="9x6-kY-MPT" secondAttribute="top" constant="24" id="fYr-kV-UCU"/>
+                            <constraint firstItem="h9m-c8-ne4" firstAttribute="leading" secondItem="9x6-kY-MPT" secondAttribute="leading" constant="48" id="lIi-R3-H8N"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="9x6-kY-MPT"/>
+                        <connections>
+                            <outlet property="cityTextField" destination="BC1-UP-8Sb" id="NVR-3g-cEX"/>
+                            <outlet property="stateTextField" destination="Bbv-P6-CdF" id="L84-T7-pPY"/>
+                            <outlet property="streetTextField" destination="qyy-4S-aIJ" id="3c8-JV-6rO"/>
+                            <outlet property="zipCodeTextField" destination="st9-xs-bQQ" id="ZU3-vO-k4g"/>
+                        </connections>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hlG-9e-yuc" userLabel="First Responder" sceneMemberID="firstResponder"/>

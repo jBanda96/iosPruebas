@@ -18,6 +18,11 @@ class MVCViewController: NoNavigationBarViewController {
         public var zipCode: String
     }
     
+    var addressView: AddressView? {
+        guard isViewLoaded else { return nil }
+        return view as? AddressView
+    }
+    
     internal var address: Address? {
         didSet {
             self.updateViewFromAddress()
@@ -34,24 +39,24 @@ class MVCViewController: NoNavigationBarViewController {
     }
     
     @IBAction func updateAddressFromView(_ sender: UIButton) {
-//        guard let street    =     addressView.streetTextField.text,   street.count > 0,
-//              let city      =     addressView.cityTextField.text,     city.count > 0,
-//              let state     =     addressView.stateTextField.text,    state.count > 0,
-//              let zipCode   =     addressView.zipCodeTextField.text,  zipCode.count > 0
-//              else{ return }
-//
-//        address = Address(street:   street,
-//                          city:     city,
-//                          state:    state,
-//                          zipCode:  zipCode)
+        guard let street    =     addressView?.streetTextField.text,   street.count > 0,
+              let city      =     addressView?.cityTextField.text,     city.count > 0,
+              let state     =     addressView?.stateTextField.text,    state.count > 0,
+              let zipCode   =     addressView?.zipCodeTextField.text,  zipCode.count > 0
+              else{ return }
+
+        address = Address(street:   street,
+                          city:     city,
+                          state:    state,
+                          zipCode:  zipCode)
     }
     
     private func updateViewFromAddress() {
-//        guard let addressView = addressView, let address = address else { return }
-//        addressView.streetTextField.text     =   address.street
-//        addressView.cityTextField.text       =   address.city
-//        addressView.stateTextField.text      =   address.state
-//        addressView.zipCodeTextField.text    =   address.zipCode
+        guard let addressView = addressView, let address = address else { return }
+        addressView.streetTextField.text     =   address.street
+        addressView.cityTextField.text       =   address.city
+        addressView.stateTextField.text      =   address.state
+        addressView.zipCodeTextField.text    =   address.zipCode
     }
     
 }

@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Qz7-hb-uhz">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Strategy View Controller-->
+        <scene sceneID="nFE-tV-zvK">
+            <objects>
+                <viewController id="Qz7-hb-uhz" customClass="StrategyViewController" customModule="Pruebas" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VhJ-hM-r4h">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="Oj6-0h-2PZ">
+                                <rect key="frame" x="14" y="385" width="386" height="126"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tangled" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4nx-M5-f2C">
+                                        <rect key="frame" x="163" y="0.0" width="60.5" height="20.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AKY-Bv-Wxx">
+                                        <rect key="frame" x="0.0" y="44.5" width="386" height="81.5"/>
+                                        <string key="text">The magically long-haired Rapunzel has spent her entire life in a tower, but now that a runaway thief has stumbled upon her, she is about to discover the world for the first time, and who she really is.</string>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" style="large" translatesAutoresizingMaskIntoConstraints="NO" id="7BI-cS-xR2">
+                                <rect key="frame" x="188.5" y="429.5" width="37" height="37"/>
+                                <color key="color" systemColor="systemGrayColor" red="0.5568627451" green="0.5568627451" blue="0.57647058819999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </activityIndicatorView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GV3-Kc-xRf">
+                                <rect key="frame" x="24" y="828" width="366" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" returnKeyType="go" enablesReturnKeyAutomatically="YES"/>
+                                <connections>
+                                    <outlet property="delegate" destination="Qz7-hb-uhz" id="f7z-ey-I2l"/>
+                                </connections>
+                            </textField>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" apportionsSegmentWidthsByContent="YES" segmentControlStyle="plain" selectedSegmentIndex="1" translatesAutoresizingMaskIntoConstraints="NO" id="TlG-be-rc4">
+                                <rect key="frame" x="16" y="52" width="382" height="32"/>
+                                <segments>
+                                    <segment title="Rotten Tomatoes"/>
+                                    <segment title="OMDb"/>
+                                    <segment title="Chicken Coop"/>
+                                </segments>
+                                <connections>
+                                    <action selector="didSelectStrategy:" destination="Qz7-hb-uhz" eventType="valueChanged" id="gej-WC-b1z"/>
+                                </connections>
+                            </segmentedControl>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Rotten Tomatoes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jeH-af-urN">
+                                <rect key="frame" x="24" y="97" width="366" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="HoN-7c-vWY" firstAttribute="trailing" secondItem="Oj6-0h-2PZ" secondAttribute="trailing" constant="14" id="HcO-Yb-lZI"/>
+                            <constraint firstItem="HoN-7c-vWY" firstAttribute="trailing" secondItem="TlG-be-rc4" secondAttribute="trailing" constant="16" id="MCC-pi-7Pm"/>
+                            <constraint firstItem="jeH-af-urN" firstAttribute="leading" secondItem="HoN-7c-vWY" secondAttribute="leading" constant="24" id="PJs-QZ-Qq5"/>
+                            <constraint firstItem="HoN-7c-vWY" firstAttribute="trailing" secondItem="jeH-af-urN" secondAttribute="trailing" constant="24" id="VgW-rs-ok4"/>
+                            <constraint firstItem="7BI-cS-xR2" firstAttribute="centerY" secondItem="VhJ-hM-r4h" secondAttribute="centerY" id="Xjo-4L-CUG"/>
+                            <constraint firstItem="Oj6-0h-2PZ" firstAttribute="centerY" secondItem="VhJ-hM-r4h" secondAttribute="centerY" id="Yip-zz-YfF"/>
+                            <constraint firstItem="GV3-Kc-xRf" firstAttribute="bottom" secondItem="HoN-7c-vWY" secondAttribute="bottom" id="ZVn-Db-zmH"/>
+                            <constraint firstItem="TlG-be-rc4" firstAttribute="top" secondItem="HoN-7c-vWY" secondAttribute="top" constant="8" id="aVI-6H-QZU"/>
+                            <constraint firstItem="Oj6-0h-2PZ" firstAttribute="leading" secondItem="HoN-7c-vWY" secondAttribute="leading" constant="14" id="etN-ej-17L"/>
+                            <constraint firstItem="jeH-af-urN" firstAttribute="top" secondItem="TlG-be-rc4" secondAttribute="bottom" constant="14" id="lhX-Uh-7rb"/>
+                            <constraint firstItem="GV3-Kc-xRf" firstAttribute="leading" secondItem="HoN-7c-vWY" secondAttribute="leading" constant="24" id="nQr-AZ-Rvc"/>
+                            <constraint firstItem="TlG-be-rc4" firstAttribute="leading" secondItem="HoN-7c-vWY" secondAttribute="leading" constant="16" id="pfI-Ki-zH1"/>
+                            <constraint firstItem="7BI-cS-xR2" firstAttribute="centerX" secondItem="VhJ-hM-r4h" secondAttribute="centerX" id="v7g-q4-3OQ"/>
+                            <constraint firstItem="Oj6-0h-2PZ" firstAttribute="centerX" secondItem="VhJ-hM-r4h" secondAttribute="centerX" id="z14-uJ-luE"/>
+                            <constraint firstItem="HoN-7c-vWY" firstAttribute="trailing" secondItem="GV3-Kc-xRf" secondAttribute="trailing" constant="24" id="zLl-Vm-gIN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="HoN-7c-vWY"/>
+                    </view>
+                    <connections>
+                        <outlet property="activityIndicator" destination="7BI-cS-xR2" id="ayQ-cB-FIk"/>
+                        <outlet property="searchMovieTextField" destination="GV3-Kc-xRf" id="3Wv-OI-pAw"/>
+                        <outlet property="strategyNameLabel" destination="jeH-af-urN" id="DiA-IY-rso"/>
+                        <outlet property="strategyRatingLabel" destination="4nx-M5-f2C" id="HCD-nF-t20"/>
+                        <outlet property="strategyReviewLabel" destination="AKY-Bv-Wxx" id="lv1-10-LZK"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cNK-dE-FIA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-42" y="-37"/>
+        </scene>
+    </scenes>
+</document>

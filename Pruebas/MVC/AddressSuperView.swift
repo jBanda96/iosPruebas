@@ -10,6 +10,8 @@ import UIKit
 
 @IBDesignable class AddressSuperView: UIView {
 
+    var view: AddressView?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         setup()
@@ -21,10 +23,14 @@ import UIKit
     }
     
     func setup() {
-        let view = Bundle(for: AddressView.self).loadNibNamed(String.init(describing: AddressView.self), owner: self)?.first as? AddressView
+        view = Bundle(for: AddressView.self).loadNibNamed(String.init(describing: AddressView.self), owner: self)?.first as? AddressView
         view?.frame = bounds
         
        addSubview(view!)
+    }
+    
+    func updateAddressValues(street: String, city: String, state: String, zipCode: String) {
+        
     }
 
 }
