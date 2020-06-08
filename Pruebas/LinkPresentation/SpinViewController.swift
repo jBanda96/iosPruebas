@@ -52,7 +52,8 @@ class SpinViewController: NoNavigationBarViewController  {
         "https://www.raywenderlich.com/3153-table-view-helper-class-for-ios",
         "https://www.raywenderlich.com/3152-auto-complete-tutorial-for-ios-how-to-auto-complete-with-custom-values",
         "https://www.facebook.com/166724973732883/posts/884912251914148/?sfnsn=scwspwa&d=w&vh=e&extid=TPR4z2gM0ldsJPcY",
-        "http://192.168.1.250/Disney/index.html"
+        "http://192.168.1.250/Disney/index.html",
+        "https://www.twitch.tv/mym_alkapone/clip/HardFrozenRhinocerosWoofer?filter=clips&range=7d&sort=time"
     ]
     
     private let activityIndicator = UIActivityIndicatorView()
