@@ -53,9 +53,38 @@ class AddRegistrationTableViewController: UITableViewController {
         }
     }
     
+    let dateString = "Wed, 03 Jun 2020 05:30:00 GMT"
+    
+    
     // MARK: - Lifecycle
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+//        Timer.scheduledTimer(withTimeInterval: 5.0, repeats: true) { [weak self] timer in
+//            let randomNumber = Int.random(in: 1...20)
+//            print("Number: \(randomNumber)")
+//
+//            if randomNumber == 10 {
+//                timer.invalidate()
+//            }
+//        }
+        
+        timer = Timer.scheduledTimer(timeInterval: 5.0, target: self, selector: #selector(generateRandomNumber), userInfo: nil, repeats: true)
+        
+        let formatter = DateFormatter()
+        formatter.dateFormat = "EE, dd MMM yyyy hh:mm:ss ZZZZ"
+        formatter.locale = Locale.current
+        formatter.timeZone = TimeZone(abbreviation: "GMT")
+        if let date = formatter.date(from: dateString) {
+            //540seconds -> 9minutes
+            
+            let seconds = Date() - date
+            if seconds <= 540 {
+                print("Aún tenemos tiempo")
+            } else {
+                print("Han pasado 9 minutos o más")
+            }
+        }
 
         let midnightToday = Calendar.autoupdatingCurrent.startOfDay(for: Date())
         checkInDatePicker.minimumDate = midnightToday
@@ -65,6 +94,11 @@ class AddRegistrationTableViewController: UITableViewController {
         updateNumberOfGuests()
         updateRoomType()
         setInputs()
+    }
+    
+    override func viewDidDisappear(_ animated: Bool)  {
+        super.viewDidDisappear(animated)
+        timer?.invalidate()
     }
     
     
@@ -109,6 +143,18 @@ class AddRegistrationTableViewController: UITableViewController {
     
     @IBAction func done(_ button: UIBarButtonItem) {
         self.view.endEditing(true)
+    }
+    
+    // MARK: - Timer
+    var timer: Timer?
+    
+    @objc func generateRandomNumber() {
+        let randomNumber = Int.random(in: 1...20)
+        print("Number: \(randomNumber)")
+        
+        if randomNumber == 10 {
+            self.timer?.invalidate()
+        }
     }
     
     // MARK: - Private functions
@@ -220,5 +266,12 @@ extension AddRegistrationTableViewController: SelectRoomTypeTableViewControllerD
     internal func didSelect(roomType: RoomType) {
         self.roomType = roomType
         updateRoomType()
+    }
+}
+
+// MARK: - Date extension
+extension Date {
+    static func -(lhs: Date, rhs: Date) -> TimeInterval {
+        return lhs.timeIntervalSinceReferenceDate - rhs.timeIntervalSinceReferenceDate
     }
 }
