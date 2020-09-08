@@ -7,3 +7,23 @@
 //
 
 import Foundation
+import AVKit
+
+struct AudioPlayer {
+  
+  func makeUIViewController() -> AVPlayerViewController {
+    let player = AVPlayer(url: songUrl)
+    let playerViewController = AVPlayerViewController()
+    playerViewController.player = player
+    playerViewController.entersFullScreenWhenPlaybackBegins = true
+    playerViewController.player?.play()
+    return playerViewController
+  }
+  
+  func updateUIViewController(_ uiViewController: AVPlayerViewController) {
+    
+  }
+  
+  let songUrl: URL
+  
+}

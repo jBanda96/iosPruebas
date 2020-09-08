@@ -167,3 +167,33 @@ struct RacingScore: Score {
         return lhs.value < rhs.value
     }
 }
+
+class Service {
+    var id: String
+    
+    init(id: String) {
+        self.id = id
+    }
+}
+
+let services = [Service(id: "no"), Service(id: "appoinment")]
+services.contains { service -> Bool in
+    service.id == "appoinment"
+}
+
+
+
+enum BGMLocationType: String {
+    case atm
+    case branch
+    case kiosk
+}
+
+let atm: BGMLocationType = .atm
+let branch: BGMLocationType = .branch
+let kiosk: BGMLocationType = .kiosk
+
+atm
+branch
+kiosk.rawValue
+

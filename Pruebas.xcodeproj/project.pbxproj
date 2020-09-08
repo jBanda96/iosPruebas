@@ -314,6 +314,12 @@
 		37D0D6982431B6C2008C5A27 /* StrategyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D0D6972431B6C2008C5A27 /* StrategyViewController.swift */; };
 		37D216C9242F1A6700F624E0 /* Delegation.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37D216C8242F1A6700F624E0 /* Delegation.storyboard */; };
 		37D216CB242F1AAC00F624E0 /* DelegationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37D216CA242F1AAC00F624E0 /* DelegationViewController.swift */; };
+		43203EC024F61E6B00E275EA /* Prefetch.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43203EBF24F61E6B00E275EA /* Prefetch.storyboard */; };
+		43203EC224F61E7F00E275EA /* PrefetchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43203EC124F61E7F00E275EA /* PrefetchViewController.swift */; };
+		43203EC624F621DC00E275EA /* RandomUserCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43203EC424F621DC00E275EA /* RandomUserCell.swift */; };
+		43203EC724F621DC00E275EA /* RandomUserCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43203EC524F621DC00E275EA /* RandomUserCell.xib */; };
+		43203ECA24F6294700E275EA /* SectionHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43203EC824F6294700E275EA /* SectionHeader.swift */; };
+		43203ECB24F6294700E275EA /* SectionHeader.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43203EC924F6294700E275EA /* SectionHeader.xib */; };
 		438AB900242841C900DDD944 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB8FF242841C900DDD944 /* CardView.swift */; };
 		438AB9022428429700DDD944 /* Card.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB9012428429700DDD944 /* Card.swift */; };
 		438AB904242844C000DDD944 /* CardSuperView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 438AB903242844C000DDD944 /* CardSuperView.swift */; };
@@ -321,6 +327,11 @@
 		43B1DEC72429D12E008ADA44 /* LessonsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B1DEC62429D12E008ADA44 /* LessonsViewController.swift */; };
 		43B1DEC92429D9C2008ADA44 /* BackCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43B1DEC82429D9C2008ADA44 /* BackCardView.swift */; };
 		43C0308A24283C90006961FD /* FrontCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C0308924283C90006961FD /* FrontCardView.swift */; };
+		43C12B332493FB48001DF122 /* Songs.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 43C12B322493FB48001DF122 /* Songs.storyboard */; };
+		43C12B352493FB67001DF122 /* SongsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C12B342493FB67001DF122 /* SongsViewController.swift */; };
+		43C12B372493FC11001DF122 /* SongDownload.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C12B362493FC11001DF122 /* SongDownload.swift */; };
+		43C12B39249401B1001DF122 /* MusicItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C12B38249401B1001DF122 /* MusicItem.swift */; };
+		43C12B3B249405E1001DF122 /* AudioPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43C12B3A249405E1001DF122 /* AudioPlayer.swift */; };
 		43DDCA2824284C9400EBF54B /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43DDCA2724284C9400EBF54B /* CardView.xib */; };
 		43FCC4552427F47A0087178D /* AddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 43FCC4542427F47A0087178D /* AddressView.swift */; };
 		43FCC4572427F4870087178D /* AddressView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 43FCC4562427F4870087178D /* AddressView.xib */; };
@@ -705,6 +716,12 @@
 		37D0D6972431B6C2008C5A27 /* StrategyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StrategyViewController.swift; sourceTree = "<group>"; };
 		37D216C8242F1A6700F624E0 /* Delegation.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Delegation.storyboard; sourceTree = "<group>"; };
 		37D216CA242F1AAC00F624E0 /* DelegationViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DelegationViewController.swift; sourceTree = "<group>"; };
+		43203EBF24F61E6B00E275EA /* Prefetch.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Prefetch.storyboard; sourceTree = "<group>"; };
+		43203EC124F61E7F00E275EA /* PrefetchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrefetchViewController.swift; sourceTree = "<group>"; };
+		43203EC424F621DC00E275EA /* RandomUserCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RandomUserCell.swift; sourceTree = "<group>"; };
+		43203EC524F621DC00E275EA /* RandomUserCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = RandomUserCell.xib; sourceTree = "<group>"; };
+		43203EC824F6294700E275EA /* SectionHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SectionHeader.swift; sourceTree = "<group>"; };
+		43203EC924F6294700E275EA /* SectionHeader.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SectionHeader.xib; sourceTree = "<group>"; };
 		438AB8FF242841C900DDD944 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		438AB9012428429700DDD944 /* Card.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Card.swift; sourceTree = "<group>"; };
 		438AB903242844C000DDD944 /* CardSuperView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardSuperView.swift; sourceTree = "<group>"; };
@@ -712,6 +729,11 @@
 		43B1DEC62429D12E008ADA44 /* LessonsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LessonsViewController.swift; sourceTree = "<group>"; };
 		43B1DEC82429D9C2008ADA44 /* BackCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackCardView.swift; sourceTree = "<group>"; };
 		43C0308924283C90006961FD /* FrontCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FrontCardView.swift; sourceTree = "<group>"; };
+		43C12B322493FB48001DF122 /* Songs.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Songs.storyboard; sourceTree = "<group>"; };
+		43C12B342493FB67001DF122 /* SongsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongsViewController.swift; sourceTree = "<group>"; };
+		43C12B362493FC11001DF122 /* SongDownload.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SongDownload.swift; sourceTree = "<group>"; };
+		43C12B38249401B1001DF122 /* MusicItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MusicItem.swift; sourceTree = "<group>"; };
+		43C12B3A249405E1001DF122 /* AudioPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AudioPlayer.swift; sourceTree = "<group>"; };
 		43DDCA2724284C9400EBF54B /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		43FCC4542427F47A0087178D /* AddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddressView.swift; sourceTree = "<group>"; };
 		43FCC4562427F4870087178D /* AddressView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AddressView.xib; sourceTree = "<group>"; };
@@ -1096,6 +1118,7 @@
 				2A63FC8321532A99009E03D2 /* Strings.h */,
 				2A053E772098216100928204 /* Working with interface builder */,
 				2A053E762098213F00928204 /* Working with tableViews */,
+				43203EBE24F61E4F00E275EA /* Prefetch */,
 				2A218BED213750BD005AC2B2 /* Hotel Manzana */,
 				2A56D8512098E83D001A1352 /* Animations and Graphics */,
 				2ADA09DC2099396D00FDB60F /* Segues */,
@@ -1138,6 +1161,7 @@
 				2AB590F523A0A8020005D9F3 /* Lottie */,
 				2A5983F623DF502700C96D5E /* Contacts */,
 				372BD3D42433F62900F5B100 /* LinkPresentation */,
+				43C12B312493FB35001DF122 /* Songs */,
 				2A3A094020956F6A0095F163 /* coi.xcassets */,
 				2AFD910121A09A3100682B3A /* TimeAlert.gif */,
 				2AD2CD6121A09B9100F033EB /* LocationAlert.gif */,
@@ -1845,6 +1869,39 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		43203EBE24F61E4F00E275EA /* Prefetch */ = {
+			isa = PBXGroup;
+			children = (
+				43203EC324F621B800E275EA /* Cells */,
+				43203EBF24F61E6B00E275EA /* Prefetch.storyboard */,
+				43203EC124F61E7F00E275EA /* PrefetchViewController.swift */,
+			);
+			path = Prefetch;
+			sourceTree = "<group>";
+		};
+		43203EC324F621B800E275EA /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				43203EC424F621DC00E275EA /* RandomUserCell.swift */,
+				43203EC524F621DC00E275EA /* RandomUserCell.xib */,
+				43203EC824F6294700E275EA /* SectionHeader.swift */,
+				43203EC924F6294700E275EA /* SectionHeader.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		43C12B312493FB35001DF122 /* Songs */ = {
+			isa = PBXGroup;
+			children = (
+				43C12B322493FB48001DF122 /* Songs.storyboard */,
+				43C12B342493FB67001DF122 /* SongsViewController.swift */,
+				43C12B362493FC11001DF122 /* SongDownload.swift */,
+				43C12B38249401B1001DF122 /* MusicItem.swift */,
+				43C12B3A249405E1001DF122 /* AudioPlayer.swift */,
+			);
+			path = Songs;
+			sourceTree = "<group>";
+		};
 		7BE645D48D9B59BBA8416E16 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -2006,6 +2063,7 @@
 				2A38EBA621B444C60089883A /* BullsEyeGame.storyboard in Resources */,
 				2AD1108D209A300C002F4B3C /* Video.mp4 in Resources */,
 				2A3A094420956F6A0095F163 /* LaunchScreen.storyboard in Resources */,
+				43203ECB24F6294700E275EA /* SectionHeader.xib in Resources */,
 				43FCC4572427F4870087178D /* AddressView.xib in Resources */,
 				2AA4CFEE214189B00054EAC9 /* ObjcNet.storyboard in Resources */,
 				2A07BB0221DC343200513EFB /* ToDoList.storyboard in Resources */,
@@ -2023,6 +2081,7 @@
 				2ACE4D2D21FD6E0700E53219 /* CollectionView.storyboard in Resources */,
 				2AAC95C4209C1C6900255840 /* Location.storyboard in Resources */,
 				2A4B0D99226982AD007D02D1 /* CustomTransition.storyboard in Resources */,
+				43203EC724F621DC00E275EA /* RandomUserCell.xib in Resources */,
 				2AA806A422162CEC0009B070 /* chomp.caf in Resources */,
 				2A98A76E209FF5C1004A39A0 /* CoreData.storyboard in Resources */,
 				2AA249F52126790400874A60 /* Emojis.storyboard in Resources */,
@@ -2049,6 +2108,7 @@
 				2AA4C9AF209970FF00E004CD /* TableView.storyboard in Resources */,
 				2AA4C9AD2099708900E004CD /* ScrollView.storyboard in Resources */,
 				2AA4C9BA209975FA00E004CD /* Song.mp3 in Resources */,
+				43C12B332493FB48001DF122 /* Songs.storyboard in Resources */,
 				2A4D8B8F2259A9A00003F7DB /* PlayerScoreboardMoveEditorView.xib in Resources */,
 				2AA4C9B12099714500E004CD /* CustomView.storyboard in Resources */,
 				2AD7CA6D20E463CE001A8F12 /* Stacks.storyboard in Resources */,
@@ -2069,6 +2129,7 @@
 				2AD756B52335E2D40053C8E1 /* GoogleService-Info.plist in Resources */,
 				2A9180CE23B98D1200D1697C /* BodyCell.xib in Resources */,
 				2A30549A228E5AFB004A6A0D /* GCD.storyboard in Resources */,
+				43203EC024F61E6B00E275EA /* Prefetch.storyboard in Resources */,
 				2AB3CA592141FA1D00CF8F35 /* Fonts.storyboard in Resources */,
 				2A2EAFB220C3A9BC00073860 /* Gestures.storyboard in Resources */,
 				2AB3CA5D2142076700CF8F35 /* IndieFlower.ttf in Resources */,
@@ -2195,12 +2256,14 @@
 				2AA4CFF421418EF30054EAC9 /* NetUtils.m in Sources */,
 				2A445754220A97FA0024F658 /* FlightsViewController.swift in Sources */,
 				2AC778B522EE9D6500583281 /* Question.swift in Sources */,
+				43C12B39249401B1001DF122 /* MusicItem.swift in Sources */,
 				37D027182437B84600F13682 /* SavedOriginatorViewController.swift in Sources */,
 				2AEA95CB22679F67002E782D /* NavigationView.swift in Sources */,
 				2A4D4C9A209EC1E400D498F0 /* NetworkingViewController.swift in Sources */,
 				2ADA09E220993A0100FDB60F /* FirstViewController.swift in Sources */,
 				2A16D0A5226C1A1600EC7BEF /* SwipeInteractionController.swift in Sources */,
 				2ABA9C9D2165C6A70054BFD8 /* xibs.m in Sources */,
+				43C12B372493FC11001DF122 /* SongDownload.swift in Sources */,
 				2A06E5CC2257D39B0069270E /* Presenter.swift in Sources */,
 				2AE46D0D219BBC8D00A8FB69 /* UNService.swift in Sources */,
 				2A4B0D9D226985A3007D02D1 /* CustomDetailViewController.swift in Sources */,
@@ -2219,6 +2282,7 @@
 				2A3054B4228E5B99004A6A0D /* AssetPickerDelegate.swift in Sources */,
 				2A4D8B9F2259ABC90003F7DB /* GameLibrary.swift in Sources */,
 				2A59DC9C21DFE7E700C80E1C /* CheckListCell.swift in Sources */,
+				43C12B352493FB67001DF122 /* SongsViewController.swift in Sources */,
 				37D216CB242F1AAC00F624E0 /* DelegationViewController.swift in Sources */,
 				2A84578E23E128C10019AE40 /* Scanner.swift in Sources */,
 				2A3A4A9122584E5A0002DE90 /* Player.swift in Sources */,
@@ -2237,9 +2301,11 @@
 				2A407D2E2155FF15001FCFC3 /* GifCollectionViewController.m in Sources */,
 				2A19D1B022091103007E08AC /* HorizontalItemList.swift in Sources */,
 				2ADE62EC225AE18900B31D8D /* PlayerScoreBoardMoveEditorViewModelFromPlayer.swift in Sources */,
+				43C12B3B249405E1001DF122 /* AudioPlayer.swift in Sources */,
 				2A407D2B2155FECD001FCFC3 /* CollectionViewCell.m in Sources */,
 				43966AE824294F5800B68A2B /* AddressSuperView.swift in Sources */,
 				2AC41CFA226AD55B00A49137 /* FlipDismissAnimationController.swift in Sources */,
+				43203EC224F61E7F00E275EA /* PrefetchViewController.swift in Sources */,
 				2AC780F5225EE52200AA6294 /* AppConstants.swift in Sources */,
 				2A9180D023B9935F00D1697C /* BlueButton.swift in Sources */,
 				2A3F799322B6F0A500809154 /* ArtWork.swift in Sources */,
@@ -2251,6 +2317,7 @@
 				2A2EAFB420C3AA3500073860 /* GesturesViewController.swift in Sources */,
 				2AEA95D922679F7D002E782D /* DiscoverViewController.swift in Sources */,
 				2A35D74B21A27CD700FA6657 /* CardStack.swift in Sources */,
+				43203EC624F621DC00E275EA /* RandomUserCell.swift in Sources */,
 				2ACE4D2F21FD6E4200E53219 /* CollectionViewController.swift in Sources */,
 				2A2F715E214EF5B700348C2A /* Bedroom.m in Sources */,
 				2AEA95DB22679F7D002E782D /* CameraViewController.swift in Sources */,
@@ -2358,6 +2425,7 @@
 				2AEDC60220A8EA310066170F /* Model.swift in Sources */,
 				2A3054B9228E5B99004A6A0D /* PhotoCollectionViewController.swift in Sources */,
 				2A726CD621BA279A006E8679 /* AboutViewController.swift in Sources */,
+				43203ECA24F6294700E275EA /* SectionHeader.swift in Sources */,
 				2AC780FB225EE99500AA6294 /* NoticeViewController.swift in Sources */,
 				2A56D8502098E836001A1352 /* AnimationsViewController.swift in Sources */,
 				372BD3E02433F92B00F5B100 /* SpinViewController.swift in Sources */,

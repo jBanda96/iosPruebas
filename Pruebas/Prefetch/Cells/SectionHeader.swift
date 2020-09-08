@@ -10,6 +10,8 @@ import UIKit
 
 class SectionHeader: UICollectionReusableView {
 
+    @IBOutlet weak var sectionHeaderlabel: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code

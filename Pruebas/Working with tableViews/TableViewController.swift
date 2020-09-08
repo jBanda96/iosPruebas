@@ -9,6 +9,7 @@
 import UIKit
 import Firebase
 import FirebaseMessaging
+import CoreBluetooth
 
 class TableViewController: UIViewController {
     
@@ -24,9 +25,12 @@ class TableViewController: UIViewController {
                  Text(string: "Some text goes here Some text goes here Some text goes here Some text goes here Some text goes here"),
                  Text(string: "Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here")]
 
+    var centralManager: CBCentralManager?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     
+        centralManager = CBCentralManager(delegate: self, queue: nil)
         
         FirebaseApp.configure(name: "Secondary", options: FirebaseOptions(googleAppID: "1:549816511553:ios:83051794e1cffd650c6ac0", gcmSenderID: "119468746430"))
         Messaging.messaging().retrieveFCMToken(forSenderID: "119468746430") { (token, error) in
@@ -144,3 +148,36 @@ extension TableViewController: UITableViewDataSource {
     
 }
 
+extension TableViewController: CBCentralManagerDelegate {
+    func centralManagerDidUpdateState(_ central: CBCentralManager) {
+        switch central.state {
+        case .unauthorized:
+            if #available(iOS 13.0, *) {
+                switch central.authorization {
+                case .allowedAlways:
+                    print("allowedAlways")
+                case .denied:
+                    print("denied")
+                case .restricted:
+                    print("restricted")
+                case .notDetermined:
+                    print("notDetermined")
+                }
+            } else {
+                // Fallback on earlier versions
+            }
+        case .unknown:
+            print("unknown")
+        case .unsupported:
+            print("unsupported")
+        case .poweredOn:
+            print("poweredOn")
+        case .poweredOff:
+            print("poweredOff")
+        case .resetting:
+            print("resetting")
+        @unknown default:
+            print("default")
+        }
+    }
+}
