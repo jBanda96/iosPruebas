@@ -8,7 +8,7 @@
 
 import Foundation
 
-class Text {
+class Texts {
     
     let string: String
     

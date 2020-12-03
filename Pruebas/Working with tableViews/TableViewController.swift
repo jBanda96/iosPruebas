@@ -20,10 +20,10 @@ class TableViewController: UIViewController {
     var isEditingMode: Bool = false
     
     let cellIdentifier: String = "autoresizingCell"
-    var texts = [Text(string: "This is very simple text"),
-                 Text(string: "Long text goes here, Long text goes here, Long text goes here"),
-                 Text(string: "Some text goes here Some text goes here Some text goes here Some text goes here Some text goes here"),
-                 Text(string: "Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here")]
+    var texts = [Texts(string: "This is very simple text"),
+                 Texts(string: "Long text goes here, Long text goes here, Long text goes here"),
+                 Texts(string: "Some text goes here Some text goes here Some text goes here Some text goes here Some text goes here"),
+                 Texts(string: "Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here Very looooooooooooong text goes here")]
 
     var centralManager: CBCentralManager?
     
@@ -50,7 +50,7 @@ class TableViewController: UIViewController {
         let createAction = UIAlertAction(title: doneTitle, style: .default) { (action) in
             
             let stringName = alertController.textFields?.first?.text
-            let newString = Text(string: stringName!)
+            let newString = Texts(string: stringName!)
             
             self.texts.append(newString)
             

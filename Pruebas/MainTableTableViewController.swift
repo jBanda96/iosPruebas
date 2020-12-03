@@ -26,7 +26,7 @@ class MainTableTableViewController: UITableViewController {
             performSegue(withIdentifier: "mvcSegue", sender: nil)
         } else if indexPath.row == 32 {
             performSegue(withIdentifier: "mvpSegue", sender: nil)
-        } else if indexPath.row == 34 {
+        } else if indexPath.row == 33 {
             let notice = NoticeRouter.createModule()
             
             self.navigationController?.pushViewController(notice, animated: true)

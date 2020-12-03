@@ -37,7 +37,7 @@ extension PrefetchViewController: UICollectionViewDataSource {
     }
     
     func collectionView(_ collectionView: UICollectionView, willDisplay cell: UICollectionViewCell, forItemAt indexPath: IndexPath) {
-        <#code#>
+        
     }
 }
 

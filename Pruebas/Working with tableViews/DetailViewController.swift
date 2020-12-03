@@ -10,7 +10,7 @@ import UIKit
 
 class DetailViewController: UIViewController {
 
-    var info: Text!
+    var info: Texts!
     
     @IBOutlet weak var label: UILabel!
     
